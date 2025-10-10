@@ -20,8 +20,9 @@ import hashlib
 import subprocess
 import re
 from pathlib import Path
-from typing import Dict, List, Tuple, Optional
+from typing import Dict, List, Tuple, Optional, Set
 from datetime import datetime
+from unidecode import unidecode
 
 
 class SRSConverter:
@@ -94,8 +95,101 @@ class SRSConverter:
             print(f"Pandoc stderr: {e.stderr}", file=sys.stderr)
             raise
     
+    def post_process_markdown(self, content: str) -> str:
+        """Post-process markdown to clean up tables and images"""
+        lines = content.split('\n')
+        processed_lines = []
+        in_grid_table = False
+        grid_table_buffer = []
+        
+        for i, line in enumerate(lines):
+            # Remove Pandoc image attributes like {width="..."}
+            if '![' in line and '{' in line:
+                line = re.sub(r'\{[^}]*\}', '', line)
+            
+            # Detect grid table borders (+---+)
+            if re.match(r'^\+[-+=]+\+', line):
+                if not in_grid_table:
+                    # Start of a new grid table
+                    in_grid_table = True
+                    grid_table_buffer = []
+                # Skip the border line
+                continue
+            
+            # Process table rows in grid tables
+            if in_grid_table:
+                if line.strip().startswith('|'):
+                    # This is a table row, store it
+                    grid_table_buffer.append(line)
+                else:
+                    # End of grid table - process and output the buffer
+                    if grid_table_buffer:
+                        processed_table = self._convert_grid_table_to_gfm(grid_table_buffer)
+                        processed_lines.extend(processed_table)
+                        grid_table_buffer = []
+                    in_grid_table = False
+                    processed_lines.append(line)
+                continue
+            
+            # Regular line (not in grid table)
+            processed_lines.append(line)
+        
+        # Handle any remaining grid table at the end of file
+        if in_grid_table and grid_table_buffer:
+            processed_table = self._convert_grid_table_to_gfm(grid_table_buffer)
+            processed_lines.extend(processed_table)
+        
+        return '\n'.join(processed_lines)
+    
+    def _convert_grid_table_to_gfm(self, table_lines: List[str]) -> List[str]:
+        """Convert grid table lines to GFM pipe table format"""
+        gfm_lines = []
+        header_detected = False
+        first_row = True
+        
+        for line in table_lines:
+            # Extract cells from the line
+            cells = line.split('|')[1:-1]  # Remove first and last empty elements
+            
+            # Clean each cell
+            cleaned_cells = []
+            for cell in cells:
+                # Remove blockquote markers (>) and excessive whitespace
+                cell = cell.strip()
+                cell = re.sub(r'^>\s*', '', cell)
+                cell = re.sub(r'\s+', ' ', cell)
+                cleaned_cells.append(cell)
+            
+            # Check if this is a header separator row (contains =)
+            if any('=' in cell for cell in cells):
+                # This marks the end of header - output a GFM separator
+                if not header_detected:
+                    gfm_lines.append('| ' + ' | '.join(['---'] * len(cleaned_cells)) + ' |')
+                    header_detected = True
+                continue
+            
+            # Skip empty rows
+            if all(not cell.strip() for cell in cleaned_cells):
+                continue
+            
+            # Output the row
+            gfm_lines.append('| ' + ' | '.join(cleaned_cells) + ' |')
+            
+            # If this is the first row and we haven't seen a header separator yet,
+            # assume it's a header and add a separator after it
+            if first_row and not header_detected:
+                # Check if the first row looks like a header (has bold text)
+                if any('**' in cell for cell in cleaned_cells):
+                    gfm_lines.append('| ' + ' | '.join(['---'] * len(cleaned_cells)) + ' |')
+                    header_detected = True
+                first_row = False
+        
+        return gfm_lines
+    
     def slugify(self, text: str) -> str:
-        """Convert text to URL-friendly slug"""
+        """Convert text to ASCII-only URL-friendly slug"""
+        # Convert to ASCII (remove accents)
+        text = unidecode(text)
         # Remove special characters and convert to lowercase
         text = text.lower()
         # Replace spaces and special chars with hyphens
@@ -103,12 +197,18 @@ class SRSConverter:
         text = re.sub(r'[-\s]+', '-', text)
         return text.strip('-')
     
+    def _clean_heading_text(self, text: str) -> str:
+        """Remove invisible characters and clean heading text"""
+        # Remove zero-width spaces and other invisible Unicode characters
+        text = re.sub(r'[\u200B-\u200D\uFEFF]', '', text)
+        return text.strip()
+    
     def split_markdown_by_sections(self, content: str) -> List[Tuple[str, str, str]]:
         """
         Split markdown content by H1 and H2 headings, creating individual files.
         Returns list of (filename, title, content) tuples.
         
-        For H3 headings that start with "UC" or "UC ", creates separate files.
+        For headings (H2, H3, H4) that start with "UC", creates separate files.
         """
         sections = []
         lines = content.split('\n')
@@ -140,34 +240,71 @@ class SRSConverter:
                 current_h2 = None
                 current_section_content = [line]
             
-            # Check for H2
+            # Check for H2 (could be UC or regular section)
             elif line.startswith('## ') and not line.startswith('### '):
-                # Save previous UC if any
-                if current_uc_header:
-                    sections.append(self._create_uc_section(current_uc_header, current_uc_content))
-                    current_uc_content = []
-                    current_uc_header = None
-                elif current_section_content:
-                    sections.append(self._create_regular_section(
-                        current_h1, current_h2, current_section_content
-                    ))
-                    current_section_content = []
+                heading_text = self._clean_heading_text(line[3:])
                 
-                current_h2 = line[3:].strip()
-                current_section_content = [line]
+                # Check if it's a Use Case
+                if re.match(r'^UC\s*[\d.]+', heading_text, re.IGNORECASE):
+                    # Save previous content
+                    if current_uc_header:
+                        sections.append(self._create_uc_section(current_uc_header, current_uc_content))
+                    elif current_section_content:
+                        sections.append(self._create_regular_section(
+                            current_h1, current_h2, current_section_content
+                        ))
+                        current_section_content = []
+                    
+                    # Start new UC
+                    current_uc_header = heading_text
+                    current_uc_content = [line]
+                else:
+                    # Regular H2 section
+                    if current_uc_header:
+                        sections.append(self._create_uc_section(current_uc_header, current_uc_content))
+                        current_uc_content = []
+                        current_uc_header = None
+                    elif current_section_content:
+                        sections.append(self._create_regular_section(
+                            current_h1, current_h2, current_section_content
+                        ))
+                        current_section_content = []
+                    
+                    current_h2 = heading_text
+                    current_section_content = [line]
             
             # Check for H3 (potential Use Case)
-            elif line.startswith('### '):
-                uc_title = line[4:].strip()
+            elif line.startswith('### ') and not line.startswith('#### '):
+                heading_text = self._clean_heading_text(line[4:])
                 
                 # Check if it's a Use Case (starts with UC or UC followed by number)
-                if re.match(r'^UC\s*[\d.]+', uc_title, re.IGNORECASE):
+                if re.match(r'^UC\s*[\d.]+', heading_text, re.IGNORECASE):
                     # Save previous UC if any
                     if current_uc_header:
                         sections.append(self._create_uc_section(current_uc_header, current_uc_content))
                     
                     # Start new UC
-                    current_uc_header = uc_title
+                    current_uc_header = heading_text
+                    current_uc_content = [line]
+                else:
+                    # Not a UC, treat as regular content
+                    if current_uc_header:
+                        current_uc_content.append(line)
+                    else:
+                        current_section_content.append(line)
+            
+            # Check for H4 (potential Use Case)
+            elif line.startswith('#### '):
+                heading_text = self._clean_heading_text(line[5:])
+                
+                # Check if it's a Use Case
+                if re.match(r'^UC\s*[\d.]+', heading_text, re.IGNORECASE):
+                    # Save previous UC if any
+                    if current_uc_header:
+                        sections.append(self._create_uc_section(current_uc_header, current_uc_content))
+                    
+                    # Start new UC
+                    current_uc_header = heading_text
                     current_uc_content = [line]
                 else:
                     # Not a UC, treat as regular content
@@ -194,11 +331,37 @@ class SRSConverter:
         
         return sections
     
+    def extract_all_uc_numbers(self, content: str) -> Set[str]:
+        """Extract all UC numbers from markdown content"""
+        uc_numbers = set()
+        lines = content.split('\n')
+        
+        for line in lines:
+            # Match headings with UC numbers (any level)
+            if line.startswith('#'):
+                # Extract heading text
+                heading_text = re.sub(r'^#+\s*', '', line)
+                # Clean invisible characters
+                heading_text = self._clean_heading_text(heading_text)
+                # Check for UC pattern
+                match = re.match(r'^UC\s*([\d.]+)', heading_text, re.IGNORECASE)
+                if match:
+                    uc_num = match.group(1)
+                    # Normalize trailing dots
+                    uc_num = uc_num.rstrip('.')
+                    if uc_num and not uc_num.endswith('.'):
+                        uc_numbers.add(uc_num)
+        
+        return uc_numbers
+    
     def _create_uc_section(self, uc_header: str, content: List[str]) -> Tuple[str, str, str]:
         """Create a section tuple for a Use Case"""
         # Extract UC number (e.g., "UC1.1.1" or "UC 2.1.1")
         match = re.match(r'^UC\s*([\d.]+)', uc_header, re.IGNORECASE)
         uc_num = match.group(1) if match else "unknown"
+        
+        # Normalize UC number (remove trailing dots)
+        uc_num = uc_num.rstrip('.')
         
         # Create filename: uc-1.1.1-description.md
         desc = re.sub(r'^UC\s*[\d.]+:?\s*', '', uc_header, flags=re.IGNORECASE)
@@ -271,9 +434,32 @@ type: "section"
         print(f"  Converting to Markdown...")
         markdown_content = self.convert_docx_to_markdown(docx_path)
         
+        # Post-process markdown (clean tables, images, etc.)
+        print(f"  Post-processing markdown...")
+        markdown_content = self.post_process_markdown(markdown_content)
+        
+        # Extract all UC numbers for diagnostics
+        all_uc_numbers = self.extract_all_uc_numbers(markdown_content)
+        print(f"  Found {len(all_uc_numbers)} UC sections in source")
+        
         # Split into sections
         print(f"  Splitting into sections...")
         sections = self.split_markdown_by_sections(markdown_content)
+        
+        # Track extracted UC numbers
+        extracted_uc_numbers = set()
+        for filename, title, content in sections:
+            if filename.startswith('uc-'):
+                match = re.match(r'^uc-([\d.]+)-', filename)
+                if match:
+                    extracted_uc_numbers.add(match.group(1))
+        
+        # Report missing UCs
+        missing_ucs = all_uc_numbers - extracted_uc_numbers
+        if missing_ucs:
+            print(f"  ⚠️  WARNING: {len(missing_ucs)} UC section(s) not extracted:")
+            for uc_num in sorted(missing_ucs, key=lambda x: [int(n) if n.isdigit() else n for n in re.split(r'\.', x)]):
+                print(f"      - UC {uc_num}")
         
         # Write section files
         generated_files = []
@@ -293,7 +479,7 @@ type: "section"
             "processed_at": datetime.now().isoformat()
         }
         
-        print(f"  Generated {len(generated_files)} files")
+        print(f"  Generated {len(generated_files)} files ({len(extracted_uc_numbers)} UC files)")
     
     def cleanup_old_files(self, file_key: str):
         """Remove old generated files for a source file"""

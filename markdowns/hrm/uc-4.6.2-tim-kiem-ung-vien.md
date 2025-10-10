@@ -1,0 +1,48 @@
+---
+title: "UC4.6.2: Tìm kiếm ứng viên"
+type: "use-case"
+uc_number: "4.6.2"
+---
+
+### UC4.6.2: Tìm kiếm ứng viên
+
+| **Mục tiêu:** | Cho phép người dùng tra cứu thông tin ứng viên trên hệ thống. |
+| --- | --- |
+| **Tài khoản:** | Người sử dụng. |
+| **Sự kiện kích hoạt:** | Người dùng truy cập chức năng *Quản lý tuyển dụng/Quản lý ứng viên* |
+| **Điều kiện tiên quyết:** | Người dùng login vào hệ thống và được phân quyền. |
+| **Kết quả bắt buộc:** | Hệ thống hiển thị danh sách kênh tuyển dụng đã được lọc theo từ khóa/tiêu chí tìm kiếm mà người dùng nhập. |
+
+#### Quy tắc nghiệp vụ
+
+| **Mã QTNV** | **Mô tả** |
+| --- | --- |
+| QTNV 4.6.2 | **Searching Rules:** |
+|  | ❖ Cho phép người dùng tìm kiếm bằng các từ khóa liên quan đến mô tả công việc. Người dùng click "Tìm kiếm": |
+|  | ⮚ Kết quả tìm kiếm bao gồm: danh sách theo tham số đã nhập |
+|  | ⮚ Hệ thống hiển thị màn hình Kết quả tìm kiếm. |
+|  | ⮚ Kết quả trả về được sắp xếp theo thứ tự thời gian tạo giảm dần. Nếu cùng ngày tạo thì xét đến giờ tạo. |
+|  | ⮚ Nếu không điền trường thông tin mặc định là tất cả dữ liệu. |
+
+#### Mô tả màn hình
+
+| **STT** | **Thông tin** | **Kiểu dữ liệu** | **Bắt buộc** | **Giá trị mặc định** | **Ràng buộc** |
+| --- | --- | --- | --- | --- | --- |
+| ***Thông tin tra cứu*** |  |  |  |  |  |
+| 1\. | Mã ứng viên | Ký tự (10) |  |  | Cho phép nhập |
+| 2\. | Tên ứng viên | Ký tự (100) |  |  | Cho phép nhập |
+| 3\. | CCCD | Ký tự (12) |  |  | Cho phép nhập |
+| 4\. | Vị trí ứng tuyển | Ký tự (100) |  |  | Cho phép nhập |
+| 5\. | Nguồn | Dropdown |  |  | Cho phép nhập hoặc chọn một/ nhiều trong danh sách |
+| 6\. | Kênh | Dropdown |  |  | Cho phép nhập hoặc chọn một/ nhiều trong danh sách |
+| 7\. | Ngày nộp đơn | DD/MM/YYYY |  |  | Cho phép nhập hoặc chọn theo lịch |
+| 8\. | Trạng thái | Dropdown |  |  | Cho phép nhập hoặc chọn một/ nhiều trong danh sách: |
+|  |  |  |  |  | \- Đã liên hệ |
+|  |  |  |  |  | \- Đã hẹn PV |
+|  |  |  |  |  | \- Đã PV vòng 1 |
+|  |  |  |  |  | \- Đã hẹn PV vòng 2 |
+|  |  |  |  |  | \- Đã PV vòng 2 |
+|  |  |  |  |  | \- Đã nhận việc |
+|  |  |  |  |  | \- Loại |
+| ***Nút chức năng*** |  |  |  |  |  |
+| 9\. | Áp dụng | Button |  |  | Cho phép tra cứu theo thông tin đã nhận |

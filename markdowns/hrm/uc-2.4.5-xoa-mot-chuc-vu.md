@@ -1,0 +1,50 @@
+---
+title: "UC 2.4.5: Xóa một Chức vụ"
+type: "use-case"
+uc_number: "2.4.5"
+---
+
+### UC 2.4.5: Xóa một Chức vụ
+
+  ---------------------------------------------------------------------------------------------------
+  **Mục tiêu:**               Cho phép người dùng Xóa thông tin Chức vụ đã có
+  --------------------------- -----------------------------------------------------------------------
+  **Tài khoản:**              Tài khoản được phân quyền Xóa Chức vụ trong phân hệ "Quản lý Chức vụ"
+
+  **Sự kiện kích hoạt:**      Người dùng truy cập nhấn nút "Xóa" tại màn hình "Quản lý Chức vụ"
+
+  **Điều kiện tiên quyết:**   Người dùng login vào hệ thống với tài khoản được phân quyền tương ứng
+
+  **Kết quả bắt buộc:**       Hệ thống xóa Chức vụ tương ứng khỏi màn hình danh sách "Chức vụ"
+  ---------------------------------------------------------------------------------------------------
+
+#### Quy tắc nghiệp vụ
+
+| **Mã QTNV** | **Mô tả** |
+| --- | --- |
+| QTNV 2.4.5 | **Quy tắc Xóa Chức vụ:** |
+|  | - Người dùng nhấn "Xóa" với một Chức vụ đã tạo → hệ thống hiển thị màn hình "Xác nhận xóa thông tin Chức vụ" |
+|  | - Người dùng nhấn: |
+|  | - Xác nhận: |
+|  | - **Nếu Chức vụ đang được sử dụng trong thông tin khác (ví dụ: Nhân viên đang gắn với Chức vụ):** |
+|  | - Hệ thống báo lỗi tương ứng |
+|  | - Nếu **Chức vụ không còn được sử dụng trong thông tin khác**: |
+|  | - Hệ thống xóa thông tin Chức vụ tương ứng khỏi màn hình danh sách |
+|  | - Thông tin vẫn được lưu trong CSDL, người dùng không thể khôi phục lại từ giao diện người dùng |
+|  | - Hệ thống quay về [[màn hình danh sách Chức vụ]{.underline}](#uc-2.4.1-xem-danh-sách-tìm-kiếm-chức-vụ) (cập nhật đã xóa Chức vụ tương ứng) |
+|  | - Hủy: |
+|  | - Hệ thống quay về [[màn hình danh sách Chức vụ]{.underline}](#uc-2.4.1-xem-danh-sách-tìm-kiếm-chức-vụ) |
+
+#### Mô tả màn hình
+
+![](media/image21.png)
+
+  -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  **Thông tin**                                 **Kiểu dữ liệu**   **Mô tả**                                **Logic nghiệp vụ**                                                                                    **Bắt buộc**
+  --------------------------------------------- ------------------ ---------------------------------------- ------------------------------------------------------------------------------------------------------ --------------
+  Bạn có chắc muốn xoá \[Tên Chức vụ\] không?   Trường dữ liệu     Hiển thị tên của Chức vụ đang được xóa   N/A                                                                                                    
+
+  Xác nhận                                      Nút                Nhấn để xác nhận xóa Chức vụ             Xác thực Chức vụ có xóa được hay không                                                                 
+
+  Hủy                                           Nút                Nhấn để hủy luồng xóa Chức vụ            Nhấn để quay về [[màn hình danh sách Chức vụ]{.underline}](#uc-2.4.1-xem-danh-sách-tìm-kiếm-chức-vụ)   
+  -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

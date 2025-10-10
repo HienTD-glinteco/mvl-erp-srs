@@ -1,0 +1,46 @@
+---
+title: "UC4.7.1: Xem Danh sách lịch phỏng vấn"
+type: "use-case"
+uc_number: "4.7.1"
+---
+
+### UC4.7.1: Xem Danh sách lịch phỏng vấn
+
+| **Mục tiêu:** | Cho phép người dùng xem danh sách lịch phỏng vấn trên hệ thống |
+| --- | --- |
+| **Tài khoản:** | Người sử dụng. |
+| **Sự kiện kích hoạt:** | Người dùng truy cập chức năng *Quản lý tuyển dụng/Quản lý lịch phỏng vấn* |
+| **Điều kiện tiên quyết:** | Người dùng login vào hệ thống và được phân quyền. |
+| **Kết quả bắt buộc:** | Người dùng xem được màn hình danh sách lịch phỏng vấn. |
+
+####  Quy tắc nghiệp vụ
+
+| **Mã QTNV** | **Mô tả** |
+| --- | --- |
+| QTNV 4.7.1 | **Screen Displaying Rules:** |
+|  | ❖ Hệ thống hiển thị Màn hình Xem danh sách lịch phỏng vấn. |
+|  | ❖ Hiển thị danh sách được sắp xếp theo thời gian tạo gần nhất. |
+|  | ❖ Chỉ hiển thị lần tạo hay lần thay đổi mới nhất. |
+|  | ❖ Cho phép kéo thả để mở rộng hoặc thu hẹp cột. |
+|  | ❖ Trang danh sách có 20 dòng/trang, có các thanh công cụ chuyển trang (Pagination) nếu dòng dữ liệu lớn hơn 20. |
+
+#### Mô tả màn hình
+
+![](media/image68.png)
+
+| **STT** | **Thông tin** | **Kiểu dữ liệu** | **Bắt buộc** | **Giá trị mặc định** | **Ràng buộc** |
+| --- | --- | --- | --- | --- | --- |
+| ***Thông tin tra cứu*** |  |  |  |  |  |
+| 1\. | Lịch phỏng vấn | Ký tự (100) |  |  | Hiển thị theo CSDL |
+| 2\. | Đề nghị tuyển dụng | Ký tự (100) |  |  | Hiển thị theo CSDL |
+| 3\. | Vị trí phỏng vấn | Ký tự (50) |  |  | Hiển thị theo CSDL |
+| 4\. | Số lượng ứng tuyển | Ký tự (4) |  |  | Hiển thị theo CSDL |
+| 5\. | Thời gian từ | DD/MM/YYYY |  |  | Hiển thị theo CSDL |
+| 6\. | Thời gian đến | DD/MM/YYYY |  |  | Hiển thị theo CSDL |
+| ***Nút chức năng*** |  |  |  |  |  |
+| 7\. | Tìm kiếm | Button |  |  | Cho phép tra cứu theo các tham số mong muốn |
+| 8\. | Thêm mới | Button |  |  | Cho phép thêm mới lịch phỏng vấn trên hệ thống |
+| 9\. | Xem chi tiết | Button |  |  | Cho phép xem chi tiết lịch phỏng vấn |
+| 10\. | Chỉnh sửa | Button |  |  | Cho phép chỉnh sửa thông tin lịch phỏng vấn |
+| 11\. | Kết xuất | Button |  |  | Cho phép kết xuất lịch phỏng vấn |
+| 12\. | Xoá | Button |  |  | Cho phép xoá lịch phỏng vấn |
