@@ -21,6 +21,7 @@ uc_number: "5.1.1"
 #### Quy tắc nghiệp vụ
 
 | **Mã QTNV** | **Mô tả** |
+| --- | --- |
 | QTNV 5.1.1 | **Quy tắc Xem màn hình danh sách Hồ sơ Nhân viên:** |
 |  | - Hệ thống hiển thị Màn hình Xem danh sách những Hồ sơ Nhân viên đã tạo với đầy đủ thông tin tương ứng từng Hồ sơ Nhân viên |
 |  | - Mỗi khi truy cập màn hình , hệ thống tự động sắp xếp dữ liệu theo thứ tự mã Nhân viên từ cao xuống thấp |
@@ -30,6 +31,7 @@ uc_number: "5.1.1"
 ![](media/image53.png)
 
 | **Thông tin** | **Kiểu dữ liệu** | **Mô tả** | **Logic nghiệp vụ** | **Bắt buộc** |
+| --- | --- | --- | --- | --- |
 | Ô Tìm kiếm | Textbox | Nhập "Họ Tên" hoặc "Mã nhân viên" để tìm kiếm | [[UC 5.1.3: Tìm kiếm thông tin nhân viên]{.underline}](#uc-5.1.3-tìm-kiếm-hồ-sơ-nhân-viên) |  |
 | STT | Trường dữ liệu | Hiển thị "Số thứ tự" tương ứng | N/A | Có |
 | Mã nhân viên | Trường dữ liệu | Hiển thị "Mã nhân viên" tương ứng | Khi nhấn vào tiêu đề cột, hệ thống sẽ đảo chiều sắp xếp giữa tăng dần và giảm dần | Có |

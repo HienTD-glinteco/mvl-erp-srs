@@ -7,6 +7,7 @@ uc_number: "4.3.1"
 ### UC 4.3.1: Xem danh sách chi phí tuyển dụng
 
 | **Mục tiêu:** | Cho phép người dùng xem danh sách các khoản cho chi phí tuyển dụng trên hệ thống |
+| --- | --- |
 | **Tài khoản:** | Người sử dụng. |
 | **Sự kiện kích hoạt:** | Người dùng truy cập chức năng *Quản lý tuyển dụng/Quản lý chi phí tuyển dụng* |
 | **Điều kiện tiên quyết:** | Người dùng login vào hệ thống và được phân quyền. |
@@ -16,6 +17,7 @@ uc_number: "4.3.1"
 ####  Quy tắc nghiệp vụ
 
 | **Mã QTNV** | **Mô tả** |
+| --- | --- |
 | QTNV 4.3.1 | **Screen Displaying Rules:** |
 |  | ❖ Hệ thống hiển thị Màn hình Xem danh sách các chi phí tuyển dụng. |
 |  | ❖ Hiển thị danh sách được sắp xếp theo thời gian tạo gần nhất |
@@ -27,6 +29,7 @@ uc_number: "4.3.1"
 ![](media/image55.png)
 
 | **STT** | **Thông tin** | **Kiểu dữ liệu** | **Bắt buộc** | **Giá trị mặc định** | **Ràng buộc** |
+| --- | --- | --- | --- | --- | --- |
 | ***Thông tin tìm kiếm*** |  |  |  |  |  |
 | 1\. | Thời gian | Date (mm/yyyy) | Không |  | Cho phép nhập |
 | 2\. | Nguồn tuyển dụng | Dropdown | Không |  | Cho phép nhập hoặc chọn. |

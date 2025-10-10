@@ -7,6 +7,7 @@ uc_number: "5.2.3"
 ### UC 5.2.3: Tạo mới Bằng cấp/Chứng chỉ môi giới
 
 | **Mục tiêu:** | Cho phép người dùng tạo mới một Bằng cấp/ Chứng chỉ môi giới |
+| --- | --- |
 | **Tài khoản:** | Tài khoản được phân quyền Tạo mới với phân hệ con "Quản lý Bằng cấp/ Chứng chỉ môi giới" |
 | **Sự kiện kích hoạt:** | Người dùng nhấn "Thêm mới" tại màn "Quản lý Bằng cấp/ Chứng chỉ môi giới" |
 | **Điều kiện tiên quyết:** | Người dùng login vào hệ thống với tài khoản được phân quyền tương ứng |
@@ -21,6 +22,7 @@ uc_number: "5.2.3"
 #### Quy tắc nghiệp vụ
 
 | **Mã QTNV** | **Mô tả** |
+| --- | --- |
 | QTNV 5.2.3 | **Quy tắc Tạo mới Bằng cấp/ Chứng chỉ môi giới:** |
 |  | - Người dùng nhấn nút "Thêm mới" và điền thông tin tương ứng của nhân viên: |
 |  | - Nhấn "Lưu" để hệ thống xác thực thông tin |
@@ -43,6 +45,7 @@ uc_number: "5.2.3"
 ![](media/image19.png)
 
 | **Thông tin** | **Kiểu dữ liệu** | **Mô tả** | **Logic nghiệp vụ** | **Bắt buộc** |
+| --- | --- | --- | --- | --- |
 | Tên chứng chỉ | Dropdownlist | Chọn "Chứng chỉ" tương ứng | Nhấn hiển thị ra dropdownlist danh sách chứng chỉ là: | Có |
 |  |  |  | -Chứng chỉ ngoại ngữ |  |
 |  |  |  | -Chứng chỉ tin học |  |

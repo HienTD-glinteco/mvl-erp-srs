@@ -21,6 +21,7 @@ uc_number: "2.3.3"
 #### Quy tắc nghiệp vụ
 
 | **Mã QTNV** | **Mô tả** |
+| --- | --- |
 | QTNV 2.3.3 | **Quy tắc Xem màn hình Chi tiết thông tin Phòng ban:** |
 |  | - Người dùng ở màn hình "Quản lý Phòng ban" -\> nhấn nút "Xem chi tiết" của Phòng ban tương ứng: |
 |  | - Hệ thống hiển thị màn hình xem thông tin chi tiết theo lần thay đổi cuối cùng của Phòng ban tương ứng |
@@ -30,6 +31,7 @@ uc_number: "2.3.3"
 ![](media/image9.png)
 
 | **Thông tin** | **Kiểu dữ liệu** | **Mô tả** | **Logic nghiệp vụ** | **Bắt buộc** |
+| --- | --- | --- | --- | --- |
 | Mã phòng ban | Trường dữ liệu | \- Hiển thị thông tin chi tiết theo lần thay đổi cuối cùng của Phòng ban tương ứng | Hiển thị dạng Read-only |  |
 |  |  | \- Hiển thị thông tin giống màn "Tạo mới một Phòng ban" |  |  |
 |  |  | - Thêm thông tin "Mã phòng ban" |  |  |

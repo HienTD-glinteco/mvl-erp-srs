@@ -7,6 +7,7 @@ uc_number: "4.6.3"
 ### UC4.6.3: Xem chi tiết một ứng viên
 
 | **Mục tiêu:** | Cho phép người dùng xem chi tiết thông tin một ứng viên trên hệ thống. |
+| --- | --- |
 | **Tài khoản:** | Người sử dụng. |
 | **Sự kiện kích hoạt:** | Người dùng click vào icon Xem chi tiết trong Màn hình Quản lý ứng viên. |
 | **Điều kiện tiên quyết:** | Người dùng login vào hệ thống và được phân quyền. |
@@ -15,6 +16,7 @@ uc_number: "4.6.3"
 #### Quy tắc nghiệp vụ
 
 | **Mã QTNV** | **Mô tả** |
+| --- | --- |
 | QTNV 4.6.3 | **Screen Displaying Rules:** |
 |  | ❖ Hệ thống hiển thị màn hình chi tiết: |
 |  | o Hiển thị tương ứng với dòng NSD thực hiện thao tác. |
@@ -24,6 +26,7 @@ uc_number: "4.6.3"
 ![](media/image103.png)
 
 | **STT** | **Thông tin** | **Kiểu dữ liệu** | **Bắt buộc** | **Giá trị mặc định** | **Ràng buộc** |
+| --- | --- | --- | --- | --- | --- |
 | ***Thông tin chi tiết*** |  |  |  |  |  |
 | 1\. | Mã ứng viên | Ký tự (10) |  |  | Hiển thị theo CSDL |
 | 2\. | Tên ứng viên | Ký tự (100) |  |  | Hiển thị theo CSDL |

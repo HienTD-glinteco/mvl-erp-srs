@@ -145,6 +145,7 @@ class SRSConverter:
         """Convert grid table lines to GFM pipe table format"""
         gfm_lines = []
         header_detected = False
+        first_row = True
         
         for line in table_lines:
             # Extract cells from the line
@@ -173,6 +174,15 @@ class SRSConverter:
             
             # Output the row
             gfm_lines.append('| ' + ' | '.join(cleaned_cells) + ' |')
+            
+            # If this is the first row and we haven't seen a header separator yet,
+            # assume it's a header and add a separator after it
+            if first_row and not header_detected:
+                # Check if the first row looks like a header (has bold text)
+                if any('**' in cell for cell in cleaned_cells):
+                    gfm_lines.append('| ' + ' | '.join(['---'] * len(cleaned_cells)) + ' |')
+                    header_detected = True
+                first_row = False
         
         return gfm_lines
     

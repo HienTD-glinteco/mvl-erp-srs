@@ -21,6 +21,7 @@ uc_number: "5.3.4"
 #### Quy tắc nghiệp vụ
 
 | **Mã QTNV** | **Mô tả** |
+| --- | --- |
 | QTNV 5.3.4 | **Quy tắc Xem màn hình Chi tiết Quan hệ Nhân thân của Nhân viên:** |
 |  | - Người dùng ở màn hình "Quản lý Quan hệ nhân thân" -\> nhấn nút "Xem chi tiết" của Quan hệ nhân thân tương ứng |
 |  | - Hệ thống hiển thị màn hình xem thông tin Chi tiết theo lần thay đổi cuối cùng của Quan hệ nhân thân tương ứng |
@@ -30,6 +31,7 @@ uc_number: "5.3.4"
 ![](media/image83.png)
 
 | **Thông tin** | **Kiểu dữ liệu** | **Mô tả** | **Logic nghiệp vụ** | **Bắt buộc** |
+| --- | --- | --- | --- | --- |
 | Mã nhân viên | Trường dữ liệu | Autofill những thông tin tương ứng của Quan hệ nhân thân của Nhân viên | \- Hiển thị dang: Read-only |  |
 |  |  |  | \- Những trường thông tin giống của [[màn Tạo mới một Quan hệ Nhân thân]{.underline}](#uc-5.3.3-tạo-mới-một-quan-hệ-nhân-thân-của-nhân-viên) |  |
 | Tên nhân viên | Trường dữ liệu |  |  |  |

@@ -7,6 +7,7 @@ uc_number: "3.1.4"
 ### UC 3.1.4: Chỉnh sửa thông tin Vai trò (Role)
 
 | **Mục tiêu:** | Cho phép người dùng chỉnh sửa thông tin một Vai trò (Role) đã có |
+| --- | --- |
 | **Tài khoản:** | Tài khoản được phân quyền chỉnh sửa trong phân hệ "Quản lý Vai trò (Role)" |
 | **Sự kiện kích hoạt:** | Người dùng truy cập nhấn nút "Chỉnh sửa" tại màn hình "Quản lý Vai trò (Role)" hoặc màn Xem chi tiết thông tin một Vai trò |
 | **Điều kiện tiên quyết:** | Người dùng login vào hệ thống với tài khoản được phân quyền tương ứng |
@@ -16,6 +17,7 @@ uc_number: "3.1.4"
 #### Quy tắc nghiệp vụ
 
 | **Mã QTNV** | **Mô tả** |
+| --- | --- |
 | QTNV 3.1.4 | **Quy tắc Chỉnh sửa thông tin Vai trò (Role):** |
 |  | - Người dùng nhấn "Chỉnh sửa" với một Vai trò (Role) đã tạo -\> hệ thống hiển thị màn "Chỉnh sửa thông tin Vai trò" với những thông tin của Vai trò tương ứng |
 |  | - Người dùng chỉnh sửa thông tin Vai trò (Role) và nút "Cập nhật" để xác thực thông tin |
@@ -39,6 +41,7 @@ uc_number: "3.1.4"
 ![](media/image5.png)
 
 | **Thông tin** | **Kiểu dữ liệu** | **Mô tả** | **Logic nghiệp vụ** | **Bắt buộc** |
+| --- | --- | --- | --- | --- |
 | Những trường thông tin hiển thị như của màn hình "Tạo mới một Vai trò (Role)": |  |  |  |  |
 | \- Điền sẵn những thông tin của Vai trò tương ứng |  |  |  |  |
 | Lưu | Nút | Nhấn nút để hệ thống xác thực thông tin | Xác thực thông tin đúng định dạng + bắt buộc |  |

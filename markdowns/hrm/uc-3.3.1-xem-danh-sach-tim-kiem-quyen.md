@@ -7,6 +7,7 @@ uc_number: "3.3.1"
 ### UC 3.3.1: Xem danh sách + Tìm kiếm Quyền
 
 | **Mục tiêu:** | Cho phép người dùng xem danh sách các Quyền của hệ thống |
+| --- | --- |
 | **Tài khoản:** | Tài khoản được phân quyền xem trong phân hệ "Quản lý Quyền" |
 | **Sự kiện kích hoạt:** | Người dùng truy cập Màn hình của Phân hệ con "Quản lý Quyền" |
 | **Điều kiện tiên quyết:** | Người dùng login vào hệ thống với tài khoản được phân quyền tương ứng |
@@ -16,6 +17,7 @@ uc_number: "3.3.1"
 #### Quy tắc nghiệp vụ
 
 | **Mã QTNV** | **Mô tả** |
+| --- | --- |
 | QTNV 3.3.1.1 | **Quy tắc Xem màn hình danh sách các Quyền:** |
 |  | - Hệ thống hiển thị Màn hình Xem danh sách những Quyền của hệ thống |
 | QTNV 3.3.1.2 | **Quy tắc Tìm kiếm Quyền:** |

@@ -21,6 +21,7 @@ uc_number: "5.2.2"
 #### Quy tắc nghiệp vụ
 
 | **Mã QTNV** | **Mô tả** |
+| --- | --- |
 | QTNV 5.2.2.1 | **Quy tắc Tìm kiếm Bằng cấp/ Chứng chỉ môi giới (bằng Text) :** |
 |  | - Tìm kiếm theo Text: "Mã, Tên nhân viên"; "Mã, Tên chứng chỉ" |
 |  | - Điền "Tên nhân viên", "Tên chứng chỉ" muốn tìm kiếm vào textbox và nhấn Enter |
@@ -40,6 +41,7 @@ uc_number: "5.2.2"
 ![](media/image16.png)
 
 | **Thông tin** | **Kiểu dữ liệu** | **Mô tả** | **Logic nghiệp vụ** | **Bắt buộc** |
+| --- | --- | --- | --- | --- |
 | Lọc theo tên Chứng chỉ | Checkbox | Hiển thị danh sách chứng chỉ để lọc | Danh sách các Checkbox: |  |
 |  |  |  | \- Tất cả |  |
 |  |  |  | \- Chứng chỉ ngoại ngữ |  |

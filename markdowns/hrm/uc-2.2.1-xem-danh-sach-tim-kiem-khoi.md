@@ -7,6 +7,7 @@ uc_number: "2.2.1"
 ### UC 2.2.1: Xem danh sách + Tìm kiếm Khối
 
 | **Mục tiêu:** | Cho phép người dùng xem danh sách Khối đã tạo |
+| --- | --- |
 | **Tài khoản:** | Tài khoản được phân quyền xem trong phân hệ "Quản lý Khối" |
 | **Sự kiện kích hoạt:** | Người dùng truy cập Màn hình của Phân hệ con "Quản lý Khối" |
 | **Điều kiện tiên quyết:** | Người dùng login vào hệ thống với tài khoản được phân quyền tương ứng |
@@ -16,6 +17,7 @@ uc_number: "2.2.1"
 #### Quy tắc nghiệp vụ
 
 | **Mã QTNV** | **Mô tả** |
+| --- | --- |
 | QTNV 2.2.1.1 | **Quy tắc Xem màn hình danh sách các Khối:** |
 |  | - Hệ thống hiển thị Màn hình Xem danh sách những Khối đã tạo với đầy đủ thông tin tương ứng từng Khối |
 |  | - Mỗi khi truy cập màn hình này, hệ thống tự động sắp xếp dữ liệu theo thứ tự mã Khối từ cao xuống thấp |
@@ -29,6 +31,7 @@ uc_number: "2.2.1"
 ![](media/image82.png)
 
 | **Thông tin** | **Kiểu dữ liệu** | **Mô tả** | **Logic nghiệp vụ** | **Bắt buộc** |
+| --- | --- | --- | --- | --- |
 | Ô textbox tìm kiếm | Textbox | Tìm kiếm "Khối" tương ứng | Điền "Mã, Tên Khối" và nhấn Enter để tìm kiếm |  |
 | Tạo mới | Nút | Nhấn để thêm "Khối" mới | [[UC 2.2.2: Tạo mới một Khối]{.underline}](#uc-2.2.2-tạo-mới-một-khối) |  |
 | STT | Trường dữ liệu | Hiển thị "Số thứ tự" tương ứng | N/A | Có |

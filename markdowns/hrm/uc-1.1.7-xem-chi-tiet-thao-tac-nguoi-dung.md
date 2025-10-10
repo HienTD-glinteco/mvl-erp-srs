@@ -7,6 +7,7 @@ uc_number: "1.1.7"
 ### UC1.1.7: Xem chi tiết thao tác người dùng
 
 | **Mục tiêu:** | Cho phép người dùng xem chi tiết toàn bộ các thao tác của người dùng trên hệ thống, nhằm mục đích kiểm tra, giám sát và phục vụ truy vết khi cần. |
+| --- | --- |
 | **Tác nhân:** | Tài khoản được phân quyền. |
 | **Sự kiện kích hoạt:** | Người dùng click vào xem chi tiết ở chức năng "Lịch sử thao tác người dùng". |
 | **Điều kiện tiên quyết:** | Người dùng đã đăng nhập hợp lệ.\ |
@@ -17,6 +18,7 @@ uc_number: "1.1.7"
 #### Quy tắc nghiệp vụ
 
 | **Mã QTNV** | **Mô tả** |
+| --- | --- |
 | QTNV 1.1.7 | **User Action Tracking Rules:** |
 |  | - Dữ liệu nhạy cảm (mật khẩu, token) không lưu ở trường hiển thị; chỉ lưu trạng thái đã thay đổi hoặc dữ liệu được mask. |
 |  | - Giao diện danh sách hiển thị các bản ghi log theo thứ tự thời gian giảm dần. |
@@ -36,6 +38,7 @@ uc_number: "1.1.7"
 Thông tin hiển thị:
 
 | **STT** | **Thông tin** | **Kiểu dữ liệu** | **Bắt buộc** | **Giá trị mặc định** | **Ràng buộc** |
+| --- | --- | --- | --- | --- | --- |
 | ***Thông tin chi tiết*** |  |  |  |  |  |
 | 1. | Mã nhân viên | Ký tự (10) |  |  | Hiển thị theo CSDL |
 | 2. | Họ và tên | Ký tự (100) |  |  | Hiển thị theo CSDL |

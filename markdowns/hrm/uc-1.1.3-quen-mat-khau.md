@@ -7,6 +7,7 @@ uc_number: "1.1.3"
 ### UC1.1.3: Quên mật khẩu
 
 | **Mục tiêu:** | Cho phép người dùng đặt lại mật khẩu trong trường hợp quên mật khẩu, đảm bảo an toàn và bảo mật thông tin tài khoản. |
+| --- | --- |
 | **Tác nhân:** | Người sử dụng. |
 | **Sự kiện kích hoạt:** | Người dùng tại màn hình đăng nhập chọn chức năng "Quên mật khẩu". |
 | **Điều kiện tiên quyết:** | Người dùng đã có tài khoản hợp lệ và email/số điện thoại được đăng ký trong hệ thống.\ |
@@ -17,6 +18,7 @@ uc_number: "1.1.3"
 #### Quy tắc nghiệp vụ
 
 | **Mã QTNV** | **Mô tả** |
+| --- | --- |
 | QTNV 1.1.3 | **Forgot Password Rules:** |
 |  | - OTP có độ dài 6 ký tự số, hiệu lực trong 3 phút. |
 |  | - Hệ thống không hiển thị lại nút Quên mật khẩu 3 phút (180 giây) kể từ thời điểm người dùng ấn nút Quên mật khẩu (5). |
@@ -37,6 +39,7 @@ uc_number: "1.1.3"
 Thông tin màn hình Đặt lại mật khẩu
 
 | **STT** | **Thông tin** | **Kiểu dữ liệu** | **Bắt buộc** | **Giá trị mặc định** | **Ràng buộc** |
+| --- | --- | --- | --- | --- | --- |
 | ***Thông tin chi tiết*** |  |  |  |  |  |
 | 1. | Email/Số điện thoại | Ký tự (100) | Có |  | Cho phép nhập |
 | ***Nút chức năng*** |  |  |  |  |  |
@@ -48,6 +51,7 @@ Thông tin màn hình Đặt lại mật khẩu
 Thông tin màn hình Xác thực bảo mật OTP
 
 | **STT** | **Thông tin** | **Kiểu dữ liệu** | **Bắt buộc** | **Giá trị mặc định** | **Ràng buộc** |
+| --- | --- | --- | --- | --- | --- |
 | ***Thông tin chi tiết*** |  |  |  |  |  |
 | 1. | Mã OTP | Ký tự (6) | Có |  | Cho phép nhập. |
 | ***Nút chức năng*** |  |  |  |  |  |
@@ -59,6 +63,7 @@ Thông tin màn hình Xác thực bảo mật OTP
 Thông tin màn hình
 
 | **STT** | **Thông tin** | **Kiểu dữ liệu** | **Bắt buộc** | **Giá trị mặc định** | **Ràng buộc** |
+| --- | --- | --- | --- | --- | --- |
 | ***Thông tin chi tiết*** |  |  |  |  |  |
 | 1. | Mật khẩu mới | Ký tự (50) | Có |  | Cho phép nhập. |
 | 2. | Nhập mật khẩu mới | Ký tự (50) | Có |  | Cho phép nhập. |

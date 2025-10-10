@@ -21,6 +21,7 @@ uc_number: "5.1.3"
 #### Quy tắc nghiệp vụ
 
 | **Mã QTNV** | **Mô tả** |
+| --- | --- |
 | QTNV 5.1.3.1 | **Quy tắc Tìm kiếm Hồ sơ Nhân viên (bằng Text) :** |
 |  | - Tìm kiếm theo Text: "Mã nhân viên", "Họ tên" |
 |  | - Điền "Mã nhân viên", "Họ tên" muốn tìm kiếm vào textbox và nhấn Enter |
@@ -48,6 +49,7 @@ uc_number: "5.1.3"
 ![](media/image71.png)![](media/image60.png)
 
 | **Thông tin** | **Kiểu dữ liệu** | **Mô tả** | **Logic nghiệp vụ** | **Bắt buộc** |
+| --- | --- | --- | --- | --- |
 | Lọc theo Chi nhánh\ | Dropdownlist | Hiển thị danh sách tương ứng để lọc tìm Hồ sơ nhân viên | Danh sách các giá trị:\ |  |
 | Lọc theo Khối\ |  |  | - Tất cả\ |  |
 | Lọc theo Phòng ban |  |  | - Danh mục Chi nhánh/Khối/Phòng/Chức vụ tương ứng |  |

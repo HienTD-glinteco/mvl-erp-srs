@@ -7,6 +7,7 @@ uc_number: "4.8.5"
 ### UC4.8.5: Xem báo cáo Báo cáo nguồn tuyển dụng
 
 | **Mục tiêu:** | Cho phép người dùng xem báo cáo nguồn tuyển dụng trên hệ thống. |
+| --- | --- |
 | **Tài khoản:** | Người sử dụng. |
 | **Sự kiện kích hoạt:** | Người dùng truy cập chức năng *Quản lý tuyển dụng/Báo cáo/Báo cáo nguồn tuyển dụng.* |
 | **Điều kiện tiên quyết:** | Người dùng login vào hệ thống và được phân quyền. |
@@ -17,6 +18,7 @@ uc_number: "4.8.5"
 #### Quy tắc nghiệp vụ
 
 | **Mã QTNV** | **Mô tả** |
+| --- | --- |
 | QTNV 4.8.5 | **Screen Displaying Rules:** |
 |  | ❖ Hệ thống hiển thị báo cáo theo các nguồn tuyển dụng theo từng phòng trong tháng. |
 |  | ❖ Nếu không có dữ liệu trong tháng → Hệ thống hiển thị thông báo "Không có dữ liệu đã chọn". |
@@ -27,4 +29,3 @@ uc_number: "4.8.5"
 |  | ❖ Chỉ hiển thị các nguồn tuyển dụng có phát sinh dữ liệu. |
 |  | ❖ Dữ liệu được lấy dựa theo thông tin Ứng viên có trạng thái Đã nhận việc theo từng nguồn tuyển dụng trong tháng. |
 |  | ❖ Cho phép lọc theo tháng. |
-| --- | --- |

@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "last_updated": "2025-10-10T09:24:18.241633",
+  "last_updated": "2025-10-10T09:27:11.619382",
   "files": {
     "SRS - HRM (1,2,3,4,5) - Bản Tổng hợp - Formatted.docx": {
       "hash": "4fa9bc838b3774cb4d3374371e7d0c79ea3ea7b36d902fdda402df7a772fa944",
@@ -151,7 +151,7 @@
         "markdowns/hrm/uc-6.5.4-export-danh-sach-bang-cham-cong.md",
         "markdowns/hrm/uc-7-.md"
       ],
-      "processed_at": "2025-10-10T09:24:18.241529"
+      "processed_at": "2025-10-10T09:27:11.619261"
     }
   }
 }

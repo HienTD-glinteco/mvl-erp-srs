@@ -21,6 +21,7 @@ uc_number: "5.5.1"
 #### Quy tắc nghiệp vụ
 
 | **Mã QTNV** | **Mô tả** |
+| --- | --- |
 | QTNV 5.5.1 | **Quy tắc Xem màn hình danh sách Lịch sử công tác:** |
 |  | - Hệ thống hiển thị Màn hình Xem danh sách Lịch sử công tác với từng nhân viên |
 |  | - Mỗi khi truy cập màn hình , hệ thống tự động sắp xếp dữ liệu theo thứ tự mã Nhân viên từ cao xuống thấp |

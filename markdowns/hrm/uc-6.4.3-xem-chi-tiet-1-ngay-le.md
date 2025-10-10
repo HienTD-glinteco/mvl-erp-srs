@@ -21,6 +21,7 @@ uc_number: "6.4.3"
 #### Quy tắc nghiệp vụ
 
 | **Mã QTNV** | **Mô tả** |
+| --- | --- |
 | QTNV 6.4.3 | **Quy tắc Xem màn hình Chi tiết thông tin Ngày lễ:** |
 |  | - Người dùng ở màn hình "Quản lý Ngày lễ" -\> nhấn nút "Xem chi tiết" của Ngày lễ tương ứng: |
 |  | - Hệ thống hiển thị màn hình xem thông tin chi tiết tương ứng của Ngày lễ |
@@ -28,8 +29,8 @@ uc_number: "6.4.3"
 #### Mô tả màn hình
 
 | **Thông tin** | **Kiểu dữ liệu** | **Mô tả** | **Logic nghiệp vụ** | **Bắt buộc** |
-| Tên ngày lễ | Trường dữ liệu | \- Hiển thị thông tin chi tiết của Ngày lễ tương ứng | Hiển thị dạng Read-only | Có |
 | --- | --- | --- | --- | --- |
+| Tên ngày lễ | Trường dữ liệu | \- Hiển thị thông tin chi tiết của Ngày lễ tương ứng | Hiển thị dạng Read-only | Có |
 | Ngày bắt đầu | Trường dữ liệu |  |  | Có |
 | Ngày kết thúc | Trường dữ liệu |  |  | Có |
 | Ghi chú | Trường dữ liệu |  |  | Có |

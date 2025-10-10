@@ -21,11 +21,11 @@ uc_number: "5.1.8"
 #### Quy tắc nghiệp vụ
 
 | **Mã QTNV** | **Mô tả** |
+| --- | --- |
 | QTNV 5.1.8.1 | **Quy tắc Import danh sách Hồ sơ Nhân viên:** |
 |  | - Người dùng nhấn nút "Import" tại màn hình danh sách "Hồ sơ Nhân viên" |
 |  | - Hệ thống pop-up giao diện Import File |
 |  | - Người dùng nhấn "Tải tệp mẫu tại đây" |
-| --- | --- |
 |  | - Tab 1 của File: Hiển thị những cột thông tin để nhập thông tin |
 |  | - Tab 2 của File: Hiển thị danh sách của đã tạo của những cột thông tin tương ứng trên hệ thống |
 |  | - Người dùng nhấn "Chọn tệp" |
@@ -72,6 +72,7 @@ uc_number: "5.1.8"
 ![](media/image124.png)
 
 | **Thông tin** | **Kiểu dữ liệu** | **Mô tả** | **Logic nghiệp vụ** | **Bắt buộc** |
+| --- | --- | --- | --- | --- |
 | Hiển thị lần lượt những cột thông tin để nhập hồ sơ nhân viên. Thứ tự hiển thị lần lượt từ trái sang phải là: |  |  |  |  |
 | - Mã NV, Họ tên, Email, SĐT, Giới tính, Ngày sinh, Địa chỉ, Chi nhánh, Khối, Phòng ban, Loại HĐ, Chức vụ, Ngày bắt đầu, Trạng thái, LH khẩn cấp, SĐT khẩn cấp, CMND/CCCD, Ngân hàng, Số TK, Mã số thuế |  |  |  |  |
 
@@ -80,6 +81,7 @@ uc_number: "5.1.8"
 ![](media/image113.png)
 
 | **Thông tin** | **Kiểu dữ liệu** | **Mô tả** | **Logic nghiệp vụ** | **Bắt buộc** |
+| --- | --- | --- | --- | --- |
 | Với những cột thông tin "Chi nhánh", "Khối", "Phòng ban", Loại HĐ", "Chức vụ": hiển thị danh sách đã tạo của cột thông tin đó trên hệ thống |  |  |  |  |
 | Giới tính | Text | Hiển thị danh sách "Giới tính" | Có 2 giới tính mặc định: |  |
 |  |  |  | - Nam |  |
@@ -94,6 +96,7 @@ uc_number: "5.1.8"
 ![](media/image119.png)
 
 | **Thông tin** | **Kiểu dữ liệu** | **Mô tả** | **Logic nghiệp vụ** | **Bắt buộc** |
+| --- | --- | --- | --- | --- |
 | Hồ sơ không hợp lệ | Nút | Nhấn để sang màn danh sách hồ sơ không hợp lệ | N/A |  |
 | Import | Nút | Nhấn để Import những hồ sơ hợp lệ | \- Nhấn nút: |  |
 |  |  |  | \+ Hệ thống báo Import thành công |  |

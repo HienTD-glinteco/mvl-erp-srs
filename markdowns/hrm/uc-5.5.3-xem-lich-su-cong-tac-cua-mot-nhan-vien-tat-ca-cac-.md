@@ -7,6 +7,7 @@ uc_number: "5.5.3"
 ### UC 5.5.3: Xem lịch sử công tác của một nhân viên: tất cả các sự kiện liên quan
 
 | **Mục tiêu:** | Cho phép người dùng xem chi tiết Lịch sử công tác của Nhân viên |
+| --- | --- |
 | **Tài khoản:** | Tài khoản được phân quyền cho xem phân hệ con "Lịch sử công tác" |
 | **Sự kiện kích hoạt:** | Người dùng nhấn vào thanh thông tin của một Nhân viên tại màn hình danh sách "Lịch sử công tác" |
 | **Điều kiện tiên quyết:** | Người dùng login vào hệ thống với tài khoản được phân quyền tương ứng |
@@ -16,6 +17,7 @@ uc_number: "5.5.3"
 #### Quy tắc nghiệp vụ
 
 | **Mã QTNV** | **Mô tả** |
+| --- | --- |
 | QTNV 5.5.3 | **Quy tắc Xem màn hình Chi tiết Lịch sử công tác của Nhân viên:** |
 |  | - Người dùng ở màn hình "Lịch sử công tác" -\> nhấn vào một thanh thông tin Nhân viên |
 |  | - Hệ thống hiển thị màn hình xem thông tin Chi tiết Lịch sử công tác của Nhân viên tương ứng |
@@ -46,6 +48,7 @@ uc_number: "5.5.3"
 ![](media/image107.png)
 
 | **Thông tin** | **Kiểu dữ liệu** | **Mô tả** | **Logic nghiệp vụ** | **Bắt buộc** |
+| --- | --- | --- | --- | --- |
 | Mã NV | Trường dữ liệu | Hiển thị "Mã NV" tương ứng | Read-only | Có |
 | Họ tên | Trường dữ liệu | Hiển thị "Họ tên" tương ứng | Read-only | Có |
 | Trạng thái | Trường dữ liệu | Hiển thị "Trạng thái" tương ứng | Có 3 trạng thái + màu hiển thị:\ | Có |

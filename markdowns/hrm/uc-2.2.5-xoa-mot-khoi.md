@@ -21,6 +21,7 @@ uc_number: "2.2.5"
 #### Quy tắc nghiệp vụ
 
 | **Mã QTNV** | **Mô tả** |
+| --- | --- |
 | QTNV 2.2.5 | **Quy tắc Xóa Khối:** |
 |  | - Người dùng nhấn "Xóa" với một Khối đã tạo → hệ thống hiển thị màn hình "Xác nhận xóa thông tin Khối" |
 |  | - Người dùng nhấn: |

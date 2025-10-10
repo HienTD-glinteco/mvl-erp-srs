@@ -7,6 +7,7 @@ uc_number: "5.3.5"
 ### UC 5.3.5: Chỉnh sửa thông tin của một Quan hệ nhân thân của nhân viên
 
 | **Mục tiêu:** | Cho phép người dùng chỉnh sửa thông tin của một Quan hệ nhân thân của nhân viên |
+| --- | --- |
 | **Tài khoản:** | Tài khoản được phân quyền chỉnh sửa tại "Quản lý Quan hệ nhân thân" |
 | **Sự kiện kích hoạt:** | Người dùng nhấn nút "Chỉnh sửa" tại màn danh sách "Quản lý Quan hệ nhân thân" hoặc màn Xem chi tiết Quan hệ nhân thân |
 | **Điều kiện tiên quyết:** | Người dùng login vào hệ thống với tài khoản được phân quyền tương ứng |
@@ -16,6 +17,7 @@ uc_number: "5.3.5"
 #### Quy tắc nghiệp vụ
 
 | **Mã QTNV** | **Mô tả** |
+| --- | --- |
 | QTNV 5.3.5 | **Quy tắc Chỉnh sửa Quan hệ nhân thân:** |
 |  | - Người dùng nhấn "Chỉnh sửa" tại màn danh sách "Quản lý Quan hệ nhân thân" |
 |  | - Chỉnh sửa thông tin + nhấn nút "Cập nhật" -\> Hệ thống xác thực những trường thông tin: |
@@ -38,6 +40,7 @@ uc_number: "5.3.5"
 ![](media/image97.png)
 
 | **Thông tin** | **Kiểu dữ liệu** | **Mô tả** | **Logic nghiệp vụ** | **Bắt buộc** |
+| --- | --- | --- | --- | --- |
 | Những trường thông tin hiển thị như của [[màn hình tạo mới một Quan hệ nhân thân]{.underline}](#uc-5.3.3-tạo-mới-một-quan-hệ-nhân-thân-của-nhân-viên): |  |  |  |  |
 | \- Điền sẵn những thông tin của Quan hệ nhân thân tương ứng |  |  |  |  |
 | \- Tất cả những trường thông tin đều có thể chỉnh sửa |  |  |  |  |

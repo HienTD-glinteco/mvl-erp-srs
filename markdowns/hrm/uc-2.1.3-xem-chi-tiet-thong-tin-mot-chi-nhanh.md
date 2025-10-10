@@ -21,6 +21,7 @@ uc_number: "2.1.3"
 #### Quy tắc nghiệp vụ
 
 | **Mã QTNV** | **Mô tả** |
+| --- | --- |
 | QTNV 2.1.3 | **Quy tắc Xem màn hình Chi tiết thông tin Chi nhánh:** |
 |  | - Người dùng ở màn hình "Quản lý Chi nhánh" -\> nhấn nút "Xem chi tiết" của Chi nhánh tương ứng: |
 |  | - Hệ thống hiển thị màn hình xem thông tin chi tiết theo lần thay đổi cuối cùng của Chi nhánh tương ứng |
@@ -30,6 +31,7 @@ uc_number: "2.1.3"
 ![](media/image123.png)
 
 | **Thông tin** | **Kiểu dữ liệu** | **Mô tả** | **Logic nghiệp vụ** | **Bắt buộc** |
+| --- | --- | --- | --- | --- |
 | Mã chi nhánh | Trường dữ liệu | \- Hiển thị thông tin chi tiết theo lần thay đổi cuối cùng của Chi nhánh tương ứng | Hiển thị dạng Read-only |  |
 |  |  | \- Những trường thông tin giống [[màn tạo mới một Chi nhánh]{.underline}](#uc-2.1.2-tạo-mới-một-chi-nhánh) |  |  |
 |  |  | - Thêm thông tin "Mã chi nhánh" |  |  |

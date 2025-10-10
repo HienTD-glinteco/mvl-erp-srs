@@ -7,6 +7,7 @@ uc_number: "3.2.2"
 ### UC 3.2.2: Chỉnh sửa Role của Nhân viên
 
 | **Mục tiêu:** | Cho phép người dùng chỉnh sửa Role của Nhân viên đã có |
+| --- | --- |
 | **Tài khoản:** | Tài khoản được phân quyền chỉnh sửa trong "Quản lý Nhân viên theo Role" |
 | **Sự kiện kích hoạt:** | Người dùng truy cập nhấn nút "Chỉnh sửa" tại màn hình "Quản lý Nhân viên theo Role" |
 | **Điều kiện tiên quyết:** | Người dùng login vào hệ thống với tài khoản được phân quyền tương ứng |
@@ -16,6 +17,7 @@ uc_number: "3.2.2"
 #### Quy tắc nghiệp vụ
 
 | **Mã QTNV** | **Mô tả** |
+| --- | --- |
 | QTNV 3.2.4 | **Quy tắc Chỉnh sửa Role của nhân viên:** |
 |  | - Người dùng nhấn "Thay đổi vai trò" -\> hệ thống hiển thị màn "Thay đổi vai trò" với những nhân viên đã chọn tương ứng |
 |  | - Nếu chưa chọn nhân viên nào, báo lỗi tương ứng |
@@ -31,6 +33,7 @@ uc_number: "3.2.2"
 ![](media/image1.png)
 
 | **Thông tin** | **Kiểu dữ liệu** | **Mô tả** | **Logic nghiệp vụ** | **Bắt buộc** |
+| --- | --- | --- | --- | --- |
 | STT | Trường dữ liệu | Hiển thị "STT" tương ứng | N/A |  |
 | Mã | Trường dữ liệu | Hiển thị "Mã nhân viên" tương ứng | N/A |  |
 | Tên | Trường dữ liệu | Hiển thị "Tên nhân viên" tương ứng | N/A |  |

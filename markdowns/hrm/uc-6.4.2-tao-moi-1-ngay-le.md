@@ -7,6 +7,7 @@ uc_number: "6.4.2"
 ### UC 6.4.2: Tạo mới 1 Ngày lễ
 
 | **Mục tiêu:** | Cho phép người dùng tạo Ngày lễ mới |
+| --- | --- |
 | **Tài khoản:** | Tài khoản được phân quyền tạo mới Ngày lễ trong phân hệ "Quản lý Ngày lễ " |
 | **Sự kiện kích hoạt:** | Người dùng truy cập nhấn nút "Thêm mới" tại màn hình "Quản lý Ngày lễ" |
 | **Điều kiện tiên quyết:** | Người dùng login vào hệ thống với tài khoản được phân quyền tương ứng |
@@ -20,6 +21,7 @@ uc_number: "6.4.2"
 #### Quy tắc nghiệp vụ
 
 | **Mã QTNV** | **Mô tả** |
+| --- | --- |
 | QTNV 6.4.2 | **Quy tắc Tạo mới Ngày lễ:** |
 |  | - Người dùng nhấn nút "Thêm mới" -\> hệ thống hiển thị màn hình "Tạo Ngày lễ mới" |
 |  | - Người dùng điền thông tin Ngày lễ và nhấn "Tạo mới" để xác thực thông tin: |
@@ -39,6 +41,7 @@ uc_number: "6.4.2"
 #### Mô tả màn hình
 
 | **Thông tin** | **Kiểu dữ liệu** | **Mô tả** | **Logic nghiệp vụ** | **Bắt buộc** |
+| --- | --- | --- | --- | --- |
 | Tên ngày lễ | Textbox | Nhập "Tên ngày lễ" tương ứng | N/A | Có |
 | Ngày bắt đầu | Date picker | Chọn "Ngày bắt đầu" tương ứng | \- Xác thực: Ngày bắt đầu ≤ Ngày kết thúc | Có |
 |  |  |  | \- Nhấn sẽ hiển thị màn chọn Ngày/Tháng/Năm![](media/image46.png) |  |
@@ -46,4 +49,3 @@ uc_number: "6.4.2"
 |  |  |  | \- Nhấn sẽ hiển thị màn chọn Ngày/Tháng/Năm |  |
 | Ghi chú | Textbox | Nhập "Ghi chú" tương ứng | N/A | Không |
 | Tạo mới | Nút | Nhấn nút để hệ thống xác thực thông tin | Xác thực những trường thông tin đúng định dạng và bắt buộc điền |  |
-| --- | --- | --- | --- | --- |

@@ -21,6 +21,7 @@ uc_number: "5.3.1"
 #### Quy tắc nghiệp vụ
 
 | **Mã QTNV** | **Mô tả** |
+| --- | --- |
 | QTNV 5.3.1 | **Quy tắc Xem màn hình danh sách Quan hệ nhân thân:** |
 |  | - Hệ thống hiển thị Màn hình Xem danh sách những Quan hệ nhân thân đã tạo với đầy đủ thông tin tương ứng từng Nhân viên |
 |  | - Mỗi khi truy cập màn hình , hệ thống tự động sắp xếp dữ liệu theo thứ tự được tạo ra từ gần nhất đến xa nhất |
@@ -30,6 +31,7 @@ uc_number: "5.3.1"
 ![](media/image125.png)
 
 | **Thông tin** | **Kiểu dữ liệu** | **Mô tả** | **Logic nghiệp vụ** | **Bắt buộc** |
+| --- | --- | --- | --- | --- |
 | Ô Tìm kiếm | Textbox | Nhập "Tên,mã nhân viên", "Tên người thân", "Mối quan hệ" để tìm kiếm | [[UC 5.3.2: Tìm kiếm thông tin Quan hệ nhân thân của nhân viên]{.underline}](#uc-5.3.2-tìm-kiếm-thông-tin-quan-hệ-nhân-thân-của-nhân-viên) |  |
 | Mã nhân viên | Trường dữ liệu | Hiển thị "Mã nhân viên" tương ứng | Khi nhấn vào tiêu đề cột, hệ thống sẽ đảo chiều sắp xếp giữa tăng dần và giảm dần | Có |
 | Tên nhân viên | Trường dữ liệu | Hiển thị "Tên nhân viên" tương ứng | N/A | Có |

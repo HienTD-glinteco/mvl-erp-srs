@@ -7,6 +7,7 @@ uc_number: "4.5.6"
 ### UC4.5.6: Sao chép công việc
 
 | **Mục tiêu:** | Cho phép người dùng sao chép một mô tả công việc có sẵn. Tạo thành mô tả công việc theo ID mới trên hệ thống. |
+| --- | --- |
 | **Tài khoản:** | Người sử dụng. |
 | **Sự kiện kích hoạt:** | Người dùng click vào button Sao chép trong Màn hình Xem chi tiết mô tả công việc. |
 | **Điều kiện tiên quyết:** | Người dùng login vào hệ thống và được phân quyền. |
@@ -14,6 +15,7 @@ uc_number: "4.5.6"
 #### Quy tắc nghiệp vụ
 
 | **Mã QTNV** | **Mô tả** |
+| --- | --- |
 | QTNV 4.5.6 | **Creating Rules:** |
 |  | ❖ Người dùng click vào button Sao chép. |
 |  | ❖ Hệ thống hiển thị màn hình Sao chép công việc. |
@@ -30,6 +32,7 @@ uc_number: "4.5.6"
 ![](media/image65.png)
 
 | **STT** | **Thông tin** | **Kiểu dữ liệu** | **Bắt buộc** | **Giá trị mặc định** | **Ràng buộc** |
+| --- | --- | --- | --- | --- | --- |
 | ***Thông tin chi tiết*** |  |  |  |  |  |
 | 1\. | Mã JD | Ký tự (10) | Có |  | Không cho phép nhập |
 | 2\. | Tiêu đề | Ký tự (50) | Có |  | Cho phép sửa |

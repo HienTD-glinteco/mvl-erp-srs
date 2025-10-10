@@ -7,6 +7,7 @@ uc_number: "2.4.2"
 ### UC 2.4.2: Tạo mới một Chức vụ
 
 | **Mục tiêu:** | Cho phép người dùng tạo một Chức vụ mới |
+| --- | --- |
 | **Tài khoản:** | Tài khoản được phân quyền tạo mới Chức vụ trong phân hệ "Quản lý Chức vụ" |
 | **Sự kiện kích hoạt:** | Người dùng truy cập nhấn nút "Thêm mới" tại màn hình "Quản lý Chức vụ" |
 | **Điều kiện tiên quyết:** | Người dùng login vào hệ thống với tài khoản được phân quyền tương ứng |
@@ -21,6 +22,7 @@ uc_number: "2.4.2"
 #### Quy tắc nghiệp vụ
 
 | **Mã QTNV** | **Mô tả** |
+| --- | --- |
 | QTNV 2.4.2 | **Quy tắc Tạo mới Chức vụ:** |
 |  | - Người dùng nhấn nút "Thêm mới" -\> hệ thống hiển thị màn hình "Tạo Chức vụ mới" |
 |  | - Người dùng điền thông tin Chức vụ và nhấn "Tạo mới" để xác thực thông tin: |
@@ -29,7 +31,6 @@ uc_number: "2.4.2"
 |  | - Nếu thông tin "hợp lệ: |
 |  | - Hệ thống báo Tạo mới thành công |
 |  | - Mã chức vụ mới được hệ thống tự động sinh. Mã chức vụ có dạng: CVxxx |
-| --- | --- |
 |  | <!-- --> |
 |  | ``` |
 |  | - Với "CV" là cố định |

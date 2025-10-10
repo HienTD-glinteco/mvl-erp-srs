@@ -7,6 +7,7 @@ uc_number: "4.6.1"
 ### UC4.6.1: Xem danh sách ứng viên
 
 | **Mục tiêu:** | Cho phép người dùng xem danh sách các mô tả công việc trên hệ thống |
+| --- | --- |
 | **Tài khoản:** | Người sử dụng. |
 | **Sự kiện kích hoạt:** | Người dùng truy cập chức năng *Quản lý tuyển dụng/Quản lý ứng viên* |
 | **Điều kiện tiên quyết:** | Người dùng login vào hệ thống và được phân quyền. |
@@ -16,6 +17,7 @@ uc_number: "4.6.1"
 #### Quy tắc nghiệp vụ
 
 | **Mã QTNV** | **Mô tả** |
+| --- | --- |
 | QTNV 4.6.1 | **Screen Displaying Rules:** |
 |  | ❖ Hệ thống hiển thị Màn hình Xem danh sách các ứng viên |
 |  | ❖ Hiển thị danh sách được sắp xếp theo thời gian tạo gần nhất |
@@ -28,6 +30,7 @@ uc_number: "4.6.1"
 ![](media/image63.png)
 
 | **STT** | **Thông tin** | **Kiểu dữ liệu** | **Bắt buộc** | **Giá trị mặc định** | **Ràng buộc** |
+| --- | --- | --- | --- | --- | --- |
 | ***Thông tin chi tiết*** |  |  |  |  |  |
 | 1\. | Mã ứng viên | Ký tự (10) |  |  | Hiển thị theo CSDL |
 | 2\. | Tên ứng viên | Ký tự (100) |  |  | Hiển thị theo CSDL |

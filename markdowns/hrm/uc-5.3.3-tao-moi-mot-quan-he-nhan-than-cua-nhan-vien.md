@@ -7,6 +7,7 @@ uc_number: "5.3.3"
 ### UC 5.3.3: Tạo mới một Quan hệ nhân thân của nhân viên
 
 | **Mục tiêu:** | Cho phép người dùng tạo mới một Quan hệ nhân thân của Nhân viên |
+| --- | --- |
 | **Tài khoản:** | Tài khoản được phân quyền Tạo mới tại "Quản lý Quan hệ nhân thân" |
 | **Sự kiện kích hoạt:** | Người dùng nhấn "Thêm mới" tại màn "Quản lý Quan hệ nhân thân" |
 | **Điều kiện tiên quyết:** | Người dùng login vào hệ thống với tài khoản được phân quyền tương ứng |
@@ -21,6 +22,7 @@ uc_number: "5.3.3"
 #### Quy tắc nghiệp vụ
 
 | **Mã QTNV** | **Mô tả** |
+| --- | --- |
 | QTNV 5.3.3 | **Quy tắc Tạo mới Quan hệ Nhân thân:** |
 |  | - Người dùng nhấn nút "Thêm mới" và điền thông tin tương ứng của nhân viên: |
 |  | - Nhấn "Lưu" để hệ thống xác thực thông tin |
@@ -44,6 +46,7 @@ uc_number: "5.3.3"
 ![](media/image78.png)
 
 | **Thông tin** | **Kiểu dữ liệu** | **Mô tả** | **Logic nghiệp vụ** | **Bắt buộc** |
+| --- | --- | --- | --- | --- |
 | Tên nhân viên | Trường dữ liệu + Nút | Chọn "Tên nhân viên" | \- Nhấn để hiển thị [[màn hình "Pop-up tìm kiếm nhân viên"]{.underline}](#sos-màn-hình-pop-up-tìm-kiếm-nhân-viên-nhapsing-sẽ-có-update) | Có |
 |  |  |  | \- Fill thông tin nhân viên được chọn tương ứng |  |
 | Mã nhân viên | Trường dữ liệu + Nút | Chọn "Mã nhân viên" | \- Nhấn để hiển thị [[màn hình "Pop-up tìm kiếm nhân viên"]{.underline}](#sos-màn-hình-pop-up-tìm-kiếm-nhân-viên-nhapsing-sẽ-có-update) | Có |

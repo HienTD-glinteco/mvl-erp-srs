@@ -7,6 +7,7 @@ uc_number: "4.2.6"
 ### UC 4.2.6: Xoá nguồn tuyển dụng
 
 | **Mục tiêu:** | Cho phép người dùng xoá một nguồn tuyển dụng đã có trên hệ thống. |
+| --- | --- |
 | **Tài khoản:** | Người sử dụng. |
 | **Sự kiện kích hoạt:** | Người dùng click vào icon Xoá trong Màn hình Quản lý nguồn tuyển dụng. |
 | **Điều kiện tiên quyết:** | Người dùng login vào hệ thống và được phân quyền. |
@@ -17,6 +18,7 @@ uc_number: "4.2.6"
 ####  Quy tắc nghiệp vụ
 
 | **Mã QTNV** | **Mô tả** |
+| --- | --- |
 | QTNV 4.2.6 | **Deleting Rules:** |
 |  | ❖ Người dùng click vào icon Xoá ở dòng dữ liệu. |
 |  | ❖ Hệ thống hiển thị thông báo: 'Bạn có chắc chắn muốn xoá không?' |

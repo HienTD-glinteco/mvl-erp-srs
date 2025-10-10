@@ -21,6 +21,7 @@ uc_number: "5.2.4"
 #### Quy tắc nghiệp vụ
 
 | **Mã QTNV** | **Mô tả** |
+| --- | --- |
 | QTNV 5.2.4 | **Quy tắc Xem màn hình Chi tiết Bằng cấp/Chứng chỉ của Nhân viên:** |
 |  | - Người dùng ở màn hình "Quản lý Bằng cấp/Chứng chỉ môi giới" -\> nhấn nút "Xem chi tiết" của Bằng cấp/Chứng chỉ tương ứng |
 |  | - Hệ thống hiển thị màn hình xem thông tin Chi tiết theo lần thay đổi cuối cùng của Bằng cấp/Chứng chỉ tương ứng |
@@ -30,6 +31,7 @@ uc_number: "5.2.4"
 ![](media/image31.png)
 
 | **Thông tin** | **Kiểu dữ liệu** | **Mô tả** | **Logic nghiệp vụ** | **Bắt buộc** |
+| --- | --- | --- | --- | --- |
 | Tên chứng chỉ | Trường dữ liệu | Hiển thị đầy đủ trường thông tin như của màn [[Tạo mới một Bằng cấp/Chứng chỉ môi giới]{.underline}](#uc-5.2.3-tạo-mới-bằng-cấpchứng-chỉ-môi-giới) | \- Hiển thị dạng: Read-only |  |
 |  |  |  | \- Hiển thị thông tin của Bằng cấp/Chứng chỉ của nhân viên tương ứng |  |
 | Mã chứng chỉ | Trường dữ liệu |  |  |  |

@@ -21,6 +21,7 @@ uc_number: "5.1.5"
 #### Quy tắc nghiệp vụ
 
 | **Mã QTNV** | **Mô tả** |
+| --- | --- |
 | QTNV 5.1.5 | **Quy tắc Tạo bản sao Hồ sơ Nhân viên:** |
 |  | - Người dùng vào màn hình "Chỉnh sửa Hồ sơ nhân viên" -\> nhấn nút "Tạo bản sao nhân viên" |
 |  | - Hệ thống hiển thị [[màn hình "Tạo mới một Hồ sơ nhân viên"]{.underline}](#uc-5.1.4-tạo-mới-một-hồ-sơ-nhân-viên) với những trường thông tin sau được được điền sẵn (giống như thông tin của Hồ sơ nhân viên được tạo bản sao) |

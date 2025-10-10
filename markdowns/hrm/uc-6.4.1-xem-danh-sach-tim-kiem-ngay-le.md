@@ -7,6 +7,7 @@ uc_number: "6.4.1"
 ### UC 6.4.1: Xem danh sách + tìm kiếm Ngày lễ
 
 | **Mục tiêu:** | Cho phép người dùng xem danh sách Ngày lễ và tìm kiếm Ngày lễ đã tạo |
+| --- | --- |
 | **Tài khoản:** | Tài khoản được phân quyền xem trong phân hệ "Quản lý Ngày lễ" |
 | **Sự kiện kích hoạt:** | Người dùng truy cập Màn hình của Phân hệ con "Quản lý Ngày lễ" |
 | **Điều kiện tiên quyết:** | Người dùng login vào hệ thống với tài khoản được phân quyền tương ứng |
@@ -16,6 +17,7 @@ uc_number: "6.4.1"
 #### Quy tắc nghiệp vụ
 
 | **Mã QTNV** | **Mô tả** |
+| --- | --- |
 | QTNV 6.4.1.1 | **Quy tắc Xem màn hình danh sách các Ngày lễ:** |
 |  | - Hệ thống hiển thị Màn hình Xem danh sách những Ngày lễ đã tạo với đầy đủ thông tin tương ứng từng Ngày lễ |
 | QTNV 6.4.1.2 | **Quy tắc Tìm kiếm Ngày lễ:** |
@@ -31,6 +33,7 @@ uc_number: "6.4.1"
 ![](media/image89.png)
 
 | **Thông tin** | **Kiểu dữ liệu** | **Mô tả** | **Logic nghiệp vụ** | **Bắt buộc** |
+| --- | --- | --- | --- | --- |
 | Tên ngày lễ | Trường dữ liệu | Hiển thị "Tên ngày lễ" tương ứng | N/A | Có |
 | Ngày bắt đầu - Ngày kết thúc | Trường dữ liệu | Hiển thị "Ngày bắt đầu - Ngày kết thúc" tương ứng | N/A | Có |
 | Ghi chú | Trường dữ liệu | Hiển thị "Ghi chú" tương ứng | N/A | Không |

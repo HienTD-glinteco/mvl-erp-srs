@@ -24,6 +24,7 @@ uc_number: "1.1.6"
 #### Quy tắc nghiệp vụ
 
 | **Mã QTNV** | **Mô tả** |
+| --- | --- |
 | QTNV 1.1.6 | **User Action Tracking Rules:** |
 |  | - Tất cả thao tác (login, logout, thêm/sửa/xóa dữ liệu, thay đổi mật khẩu, phân quyền) phải được ghi log. |
 |  | - Các trường thông tin cần lưu: Mã nhân viên, Họ tên, Hành động, Đối tượng tác động, Thời gian, URL, Nội dung thay đổi, IP. |
@@ -39,6 +40,7 @@ uc_number: "1.1.6"
 Thông tin chi tiết màn hình
 
 | **STT** | **Thông tin** | **Kiểu dữ liệu** | **Bắt buộc** | **Giá trị mặc định** | **Ràng buộc** |
+| --- | --- | --- | --- | --- | --- |
 | ***Thông tin tra cứu*** |  |  |  |  |  |
 | 1. | Mã nhân viên | Multi-select Dropdown | Không |  | Cho phép tìm kiếm và chọn một hoặc nhiều thuộc danh sách |
 | 2. | Thời gian từ - đến | DD/MM/YYYY | Bắt buộc | Một tháng tính từ ngày hiện tại trở về trước | Cho phép nhập hoặc chọn trong danh mục. |

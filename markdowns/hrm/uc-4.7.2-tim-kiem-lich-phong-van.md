@@ -7,6 +7,7 @@ uc_number: "4.7.2"
 ### UC4.7.2: Tìm kiếm lịch phỏng vấn
 
 | **Mục tiêu:** | Cho phép người dùng tra cứu lịch phỏng vấn trên hệ thống. |
+| --- | --- |
 | **Tài khoản:** | Người sử dụng. |
 | **Sự kiện kích hoạt:** | Người dùng truy cập chức năng *Quản lý tuyển dụng/Quản lý lịch phỏng vấn.* |
 | **Điều kiện tiên quyết:** | Người dùng login vào hệ thống và được phân quyền. |
@@ -15,6 +16,7 @@ uc_number: "4.7.2"
 #### Quy tắc nghiệp vụ
 
 | **Mã QTNV** | **Mô tả** |
+| --- | --- |
 | QTNV 4.7.2 | **Searching Rules:** |
 |  | - Cho phép người dùng tìm kiếm bằng các từ khóa liên quan đến mô tả công việc. Người dùng click "Tìm kiếm": |
 |  | - Kết quả tìm kiếm bao gồm: danh sách theo tham số đã nhập |
@@ -27,6 +29,7 @@ uc_number: "4.7.2"
 #### Mô tả màn hình
 
 | **STT** | **Thông tin** | **Kiểu dữ liệu** | **Bắt buộc** | **Giá trị mặc định** | **Ràng buộc** |
+| --- | --- | --- | --- | --- | --- |
 | ***Thông tin chi tiết*** |  |  |  |  |  |
 | 1\. | Lịch phỏng vấn | Ký tự (100) | Không |  | Cho phép nhập |
 | 2\. | Đề nghị tuyển dụng | Ký tự (100) | Không |  | Cho phép nhập |

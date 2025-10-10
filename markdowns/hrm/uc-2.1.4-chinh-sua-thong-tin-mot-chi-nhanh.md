@@ -7,6 +7,7 @@ uc_number: "2.1.4"
 ### UC 2.1.4: Chỉnh sửa thông tin một Chi nhánh
 
 | **Mục tiêu:** | Cho phép người dùng chỉnh sửa thông tin Chi nhánh đã có |
+| --- | --- |
 | **Tài khoản:** | Tài khoản được phân quyền chỉnh sửa trong phân hệ "Quản lý Chi nhánh" |
 | **Sự kiện kích hoạt:** | Người dùng truy cập nhấn nút "Chỉnh sửa" tại màn hình "Quản lý chi nhánh" hoặc màn hình Xem chi tiết thông tin một Chi nhánh |
 | **Điều kiện tiên quyết:** | Người dùng login vào hệ thống với tài khoản được phân quyền tương ứng |
@@ -16,6 +17,7 @@ uc_number: "2.1.4"
 #### Quy tắc nghiệp vụ
 
 | **Mã QTNV** | **Mô tả** |
+| --- | --- |
 | QTNV 2.1.4 | **Quy tắc Chỉnh sửa thông tin Chi nhánh:** |
 |  | - Người dùng nhấn "Chỉnh sửa" với một chi nhánh đã tạo -\> hệ thống hiển thị màn "Chỉnh sửa thông tin Chi nhánh" với những thông tin của Chi nhánh tương ứng |
 |  | - Người dùng chỉnh sửa thông tin Chi nhánh và nút "Cập nhật" để xác thực thông tin |
@@ -38,8 +40,8 @@ uc_number: "2.1.4"
 ![](media/image122.png)
 
 | **Thông tin** | **Kiểu dữ liệu** | **Mô tả** | **Logic nghiệp vụ** | **Bắt buộc** |
+| --- | --- | --- | --- | --- |
 | Những trường thông tin hiển thị như của màn hình "Tạo mới một Chi nhánh": |  |  |  |  |
 | \- Hiển thị các thông tin theo lần thay đổi cuối cùng của Chi nhánh tương ứng |  |  |  |  |
 | \- Tất cả thông tin đều được chỉnh sửa |  |  |  |  |
 | Lưu | Nút | Nhấn nút để hệ thống xác thực thông tin | Xác thực thông tin đúng định dạng + bắt buộc |  |
-| --- | --- | --- | --- | --- |

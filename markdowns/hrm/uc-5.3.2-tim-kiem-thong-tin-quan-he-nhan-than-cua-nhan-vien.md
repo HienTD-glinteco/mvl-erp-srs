@@ -21,6 +21,7 @@ uc_number: "5.3.2"
 #### Quy tắc nghiệp vụ
 
 | **Mã QTNV** | **Mô tả** |
+| --- | --- |
 | QTNV 5.3.2 | **Quy tắc Tìm kiếm Quan hệ nhân thân (bằng Text) :** |
 |  | - Tìm kiếm theo Text: **"Mã nhân viên", "Tên nhân viên", "Tên người thân", "Mối quan hệ"** |
 |  | - Điền từ khóa muốn tìm kiếm vào textbox và nhấn Enter |
@@ -32,4 +33,5 @@ uc_number: "5.3.2"
 ![](media/image99.png)
 
 | **Thông tin** | **Kiểu dữ liệu** | **Mô tả** | **Logic nghiệp vụ** | **Bắt buộc** |
+| --- | --- | --- | --- | --- |
 | Tìm kiếm | Textbox | Nhập từ khóa cần tìm kiếm | Tìm kiếm theo **"Mã nhân viên", "Tên nhân viên", "Tên người thân", "Mối quan hệ"** |  |

@@ -7,6 +7,7 @@ uc_number: "1.1.4"
 ### UC1.1.4: Đổi mật khẩu
 
 | **Mục tiêu:** | Cho phép người dùng đổi mật khẩu tài khoản của họ. |
+| --- | --- |
 | **Tác nhân:** | Người sử dụng. |
 | **Sự kiện kích hoạt:** | Người dùng chọn chức năng "Đổi mật khẩu" từ menu tài khoản/cài đặt. |
 | **Điều kiện tiên quyết:** | Người dùng đã đăng nhập vào hệ thống. |
@@ -18,6 +19,7 @@ uc_number: "1.1.4"
 #### Quy tắc nghiệp vụ
 
 | **Mã QTNV** | **Mô tả** |
+| --- | --- |
 | QTNV 1.1.4 | **Change Password Rules:** |
 |  | - Yêu cầu đổi mật khẩu định kỳ 3 tháng/ lần. |
 |  | - Mật khẩu cũ phải chính xác. |
@@ -38,6 +40,7 @@ uc_number: "1.1.4"
 Thông tin màn hình Đổi mật khẩu
 
 | **STT** | **Thông tin** | **Kiểu dữ liệu** | **Bắt buộc** | **Giá trị mặc định** | **Ràng buộc** |
+| --- | --- | --- | --- | --- | --- |
 | ***Thông tin chi tiết*** |  |  |  |  |  |
 | 1. | Mật khẩu cũ | Ký tự (100) | Có |  | Cho phép nhập |
 | 2. | Mật khẩu mới | Ký tự (100) | Có |  | Cho phép nhập |

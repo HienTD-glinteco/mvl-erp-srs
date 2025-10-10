@@ -7,6 +7,7 @@ uc_number: "4.5.7"
 ### UC4.5.7: Kết xuất file JD
 
 | **Mục tiêu:** | Cho phép người dùng kết xuất thông tin mô tả công việc. |
+| --- | --- |
 | **Tài khoản:** | Người sử dụng. |
 | **Sự kiện kích hoạt:** | Người dùng click vào icon Kết xuất trong Màn hình Quản lý mô tả công việc. |
 | **Điều kiện tiên quyết:** | Người dùng login vào hệ thống và được phân quyền. |
@@ -14,6 +15,7 @@ uc_number: "4.5.7"
 #### Quy tắc nghiệp vụ
 
 | **Mã QTNV** | **Mô tả** |
+| --- | --- |
 | QTNV 4.5.7 | **Exporting File Rules:** |
 |  | Người dùng click vào icon Kết xuất ở dòng dữ liệu. |
 |  | Hệ thống thực hiện kết xuất thông tin mô tả công việc tương ứng với dòng dữ liệu NSD thực hiện thao tác |

@@ -7,6 +7,7 @@ uc_number: "4.2.2"
 ### UC 4.2.2: Tìm kiếm nguồn tuyển dụng
 
 | **Mục tiêu:** | Cho phép người dùng tìm kiếm nguồn tuyển dụng trên hệ thống |
+| --- | --- |
 | **Tài khoản:** | Người sử dụng. |
 | **Sự kiện kích hoạt:** | Người dùng bấm nút tìm kiếm trong Màn hình Quản lý nguồn tuyển dụng. |
 | **Điều kiện tiên quyết:** | Người dùng login vào hệ thống và được phân quyền. |
@@ -15,6 +16,7 @@ uc_number: "4.2.2"
 #### Quy tắc nghiệp vụ
 
 | **Mã QTNV** | **Mô tả** |
+| --- | --- |
 | QTNV 4.2.2 | **Searching Rules:** |
 |  | ❖ Cho phép người dùng tìm kiếm bằng các từ khóa liên quan đến nguồn tuyển dụng. Người dùng click "Tìm kiếm": |
 |  | ⮚ Kết quả tìm kiếm bao gồm: danh sách đề xuất theo tham số đã nhập |

@@ -21,6 +21,7 @@ uc_number: "5.4.1"
 #### Quy tắc nghiệp vụ
 
 | **Mã QTNV** | **Mô tả** |
+| --- | --- |
 | QTNV 5.4.1 | **Quy tắc Xem màn hình danh sách Người phụ thuộc:** |
 |  | - Hệ thống hiển thị Màn hình Xem danh sách những Người phụ thuộc đã tạo với đầy đủ thông tin tương ứng từng Nhân viên |
 |  | - Mỗi khi truy cập màn hình , hệ thống tự động sắp xếp dữ liệu theo thứ tự được tạo ra từ gần nhất đến xa nhất |
@@ -30,6 +31,7 @@ uc_number: "5.4.1"
 ![](media/image98.png)
 
 | **Thông tin** | **Kiểu dữ liệu** | **Mô tả** | **Logic nghiệp vụ** | **Bắt buộc** |
+| --- | --- | --- | --- | --- |
 | Ô Tìm kiếm | Textbox | Nhập từ khóa và nhấn Enter để tìm kiếm | UC 5.4.2: Tìm kiếm thông tin Người phụ thuộc của Nhân viên | Có |
 | Mã nhân viên | Trường dữ liệu | Hiển thị "Mã nhân viên" tương ứng | N/A | Có |
 | Tên nhân viên | Trường dữ liệu | Hiển thị "Tên nhân viên" tương ứng | N/A | Có |

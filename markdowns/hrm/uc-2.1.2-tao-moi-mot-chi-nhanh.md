@@ -7,6 +7,7 @@ uc_number: "2.1.2"
 ### UC 2.1.2: Tạo mới một Chi nhánh
 
 | **Mục tiêu:** | Cho phép người dùng tạo một Chi nhánh mới |
+| --- | --- |
 | **Tài khoản:** | Tài khoản được phân quyền tạo mới Chi nhánh trong phân hệ "Quản lý Chi nhánh" |
 | **Sự kiện kích hoạt:** | Người dùng truy cập nhấn nút "Thêm mới" tại màn hình "Quản lý Chi nhánh" |
 | **Điều kiện tiên quyết:** | Người dùng login vào hệ thống với tài khoản được phân quyền tương ứng |
@@ -21,6 +22,7 @@ uc_number: "2.1.2"
 #### Quy tắc nghiệp vụ
 
 | **Mã QTNV** | **Mô tả** |
+| --- | --- |
 | QTNV 2.1.2 | **Quy tắc Tạo mới Chi nhánh:** |
 |  | - Người dùng nhấn nút "Thêm mới" -\> hệ thống hiển thị màn hình "Tạo Chi nhánh mới" |
 |  | - Người dùng điền thông tin Chi nhánh và nhấn "Tạo mới" để xác thực thông tin: |
@@ -31,7 +33,6 @@ uc_number: "2.1.2"
 |  | - Nếu thông tin "hợp lệ: |
 |  | - Hệ thống báo Tạo mới thành công |
 |  | - Mã chi nhánh mới được hệ thống tự động sinh. Mã chi nhánh có dạng: CNxxx |
-| --- | --- |
 |  | <!-- --> |
 |  | ``` |
 |  | - Với "CN" là cố định |
@@ -50,6 +51,7 @@ uc_number: "2.1.2"
 ![](media/image118.png)
 
 | **Thông tin** | **Kiểu dữ liệu** | **Mô tả** | **Logic nghiệp vụ** | **Bắt buộc** |
+| --- | --- | --- | --- | --- |
 | Tên chi nhánh | Textbox | Nhập "Tên chi nhánh" mới | N/A | Có |
 | Địa chỉ đường phố | Textbox | Nhập "Địa chỉ đường" chi nhánh mới | N/A | Có |
 | Phường/Xã | Textbox | Nhập "Xã" chi nhánh mới | N/A | Có |
@@ -58,4 +60,3 @@ uc_number: "2.1.2"
 | Email | Textbox | Nhập Email chi nhánh mới | Xác thực: đúng định dạng Email chuẩn | Không |
 | Mô tả | Textbox | Nhập "Mô tả" tương ứng | N/A | Không |
 | Tạo mới | Nút | Nhấn nút để hệ thống xác thực thông tin | Xác thực những trường thông tin đúng định dạng và bắt buộc điền |  |
-| --- | --- | --- | --- | --- |

@@ -21,6 +21,7 @@ uc_number: "2.2.3"
 #### Quy tắc nghiệp vụ
 
 | **Mã QTNV** | **Mô tả** |
+| --- | --- |
 | QTNV 2.2.3 | **Quy tắc Xem màn hình Chi tiết thông tin Khối:** |
 |  | - Người dùng ở màn hình "Quản lý Khối" -\> nhấn nút "Xem chi tiết" của Khối tương ứng: |
 |  | - Hệ thống hiển thị màn hình xem thông tin chi tiết theo lần thay đổi cuối cùng của Khối tương ứng |
@@ -30,6 +31,7 @@ uc_number: "2.2.3"
 ![](media/image91.png)
 
 | **Thông tin** | **Kiểu dữ liệu** | **Mô tả** | **Logic nghiệp vụ** | **Bắt buộc** |
+| --- | --- | --- | --- | --- |
 | Mã khối | Trường dữ liệu | \- Hiển thị thông tin chi tiết của Khối tương ứng | Hiển thị dạng Read-only |  |
 |  |  | \- Những trường thông tin giống của "[[màn tạo mới một Khối]{.underline}](#uc-2.2.2-tạo-mới-một-khối)" |  |  |
 |  |  | - Thêm thông tin "Mã khối" |  |  |

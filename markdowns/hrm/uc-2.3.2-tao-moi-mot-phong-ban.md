@@ -7,6 +7,7 @@ uc_number: "2.3.2"
 ### UC 2.3.2: Tạo mới một Phòng ban
 
 | **Mục tiêu:** | Cho phép người dùng tạo Phòng ban mới |
+| --- | --- |
 | **Tài khoản:** | Tài khoản được phân quyền tạo mới trong phân hệ "Quản lý Phòng ban" |
 | **Sự kiện kích hoạt:** | Người dùng truy cập nhấn nút "Thêm mới" tại màn hình "Quản lý Phòng ban" |
 | **Điều kiện tiên quyết:** | Người dùng login vào hệ thống với tài khoản được phân quyền tương ứng |
@@ -20,6 +21,7 @@ uc_number: "2.3.2"
 #### Quy tắc nghiệp vụ
 
 | **Mã QTNV** | **Mô tả** |
+| --- | --- |
 | QTNV 2.3.2 | **Quy tắc Tạo mới Phòng ban:** |
 |  | - Người dùng nhấn nút "Thêm mới" -\> hệ thống hiển thị màn hình "Tạo Phòng ban mới" |
 |  | - Người dùng điền thông tin Phòng ban và nhấn "Tạo mới" để xác thực thông tin: |
@@ -28,7 +30,6 @@ uc_number: "2.3.2"
 |  | - Nếu thông tin "hợp lệ: |
 |  | - Hệ thống báo Tạo mới thành công |
 |  | - Mã phòng ban: hệ thống tự động sinh mã. Mã phòng ban có dạng: PBxxx |
-| --- | --- |
 |  | <!-- --> |
 |  | ``` |
 |  | - Với "PB" là cố định |
@@ -47,6 +48,7 @@ uc_number: "2.3.2"
 ![](media/image90.png)
 
 | **Thông tin** | **Kiểu dữ liệu** | **Mô tả** | **Logic nghiệp vụ** | **Bắt buộc** |
+| --- | --- | --- | --- | --- |
 | Tên phòng ban | Textbox | Nhập "Tên phòng ban" | N/A | Có |
 | Chi nhánh | Dropdown | Chọn "Chi nhánh" tương ứng | Nhấn vào sẽ hiển thị danh sách "Chi nhánh" đã tạo | Có |
 |  | list |  |  |  |

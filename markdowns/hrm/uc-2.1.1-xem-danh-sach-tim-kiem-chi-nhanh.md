@@ -7,6 +7,7 @@ uc_number: "2.1.1"
 ### UC 2.1.1: Xem danh sách + tìm kiếm chi nhánh
 
 | **Mục tiêu:** | Cho phép người dùng xem danh sách Chi nhánh đã tạo |
+| --- | --- |
 | **Tài khoản:** | Tài khoản được phân quyền xem trong phân hệ "Quản lý Chi nhánh" |
 | **Sự kiện kích hoạt:** | Người dùng truy cập Màn hình của Phân hệ con "Quản lý Chi nhánh" |
 | **Điều kiện tiên quyết:** | Người dùng login vào hệ thống với tài khoản được phân quyền tương ứng |
@@ -16,6 +17,7 @@ uc_number: "2.1.1"
 #### Quy tắc nghiệp vụ
 
 | **Mã QTNV** | **Mô tả** |
+| --- | --- |
 | QTNV 2.1.1.1 | **Quy tắc Xem màn hình danh sách các Chi nhánh:** |
 |  | - Hệ thống hiển thị Màn hình Xem danh sách những Chi nhánh đã tạo với đầy đủ thông tin tương ứng từng Chi nhánh |
 |  | - Mỗi khi truy cập màn hình này, hệ thống tự động sắp xếp dữ liệu theo thứ tự mã Chi nhánh từ cao xuống thấp |
@@ -32,6 +34,7 @@ uc_number: "2.1.1"
 ![](media/image121.png)
 
 | **Thông tin** | **Kiểu dữ liệu** | **Mô tả** | **Logic nghiệp vụ** | **Bắt buộc** |
+| --- | --- | --- | --- | --- |
 | STT | Trường dữ liệu | Hiển thị "Số thứ tự" tương ứng | N/A | Có |
 | Mã | Trường dữ liệu | Hiển thị "Mã chi nhánh" tương ứng | Khi nhấn vào tiêu đề cột, hệ thống sẽ đảo chiều sắp xếp giữa tăng dần và giảm dần | Có |
 | Tên chi nhánh | Trường dữ liệu | Hiển thị "Tên chi nhánh" tương ứng | N/A | Có |

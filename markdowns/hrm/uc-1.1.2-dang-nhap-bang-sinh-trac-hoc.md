@@ -7,6 +7,7 @@ uc_number: "1.1.2"
 ### UC1.1.2: Đăng nhập bằng sinh trắc học
 
 | **Mục tiêu:** | Cho phép người dùng đăng nhập vào hệ thống nhanh chóng và an toàn thông qua xác thực sinh trắc học (khuôn mặt hoặc vân tay), thay cho việc nhập tên đăng nhập và mật khẩu thủ công trên app mobile. |
+| --- | --- |
 | **Tác nhân:** | Người sử dụng. |
 | **Sự kiện kích hoạt:** | Người dùng truy cập màn hình đăng nhập và chọn phương thức Đăng nhập bằng khuôn mặt/vân tay. |
 | **Điều kiện tiên quyết:** | Người dùng đã đăng ký khuôn mặt hoặc vân tay trên thiết bị. |
@@ -18,6 +19,7 @@ uc_number: "1.1.2"
 #### Quy tắc nghiệp vụ
 
 | **Mã QTNV** | **Mô tả** |
+| --- | --- |
 | QTNV 1.1.2 | **Sign-in Rules:** |
 |  | - Hệ thống chỉ cho phép đăng nhập bằng sinh trắc học nếu người dùng đã đăng ký trước đó. |
 |  | - Dữ liệu sinh trắc học không được lưu trữ trực tiếp trên server, chỉ lưu mã hóa/hash để so khớp. |

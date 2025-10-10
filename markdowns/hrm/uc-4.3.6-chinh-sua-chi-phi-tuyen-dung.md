@@ -7,6 +7,7 @@ uc_number: "4.3.6"
 ### UC 4.3.6: Chỉnh sửa chi phí tuyển dụng
 
 | **Mục tiêu:** | Cho phép người dùng chỉnh sửa một chi phí tuyển dụng đã có trên hệ thống. |
+| --- | --- |
 | **Tài khoản:** | Người sử dụng. |
 | **Sự kiện kích hoạt:** | Người dùng click vào icon Sửa trong Màn hình Quản lý chi phí tuyển dụng |
 | **Điều kiện tiên quyết:** | Người dùng login vào hệ thống và được phân quyền. |
@@ -16,6 +17,7 @@ uc_number: "4.3.6"
 ####  Quy tắc nghiệp vụ
 
 | **Mã QTNV** | **Mô tả** |
+| --- | --- |
 | QTNV 4.3.6.1 | **Displaying Rules:** |
 |  | ❖ Hiển thị màn hình Chỉnh sửa chi phí tuyển dụng. |
 | QTNV 4.3.6.2 | **Editing Rules:** |
@@ -34,6 +36,7 @@ uc_number: "4.3.6"
 ![](media/image32.png)
 
 | **STT** | **Thông tin** | **Kiểu dữ liệu** | **Bắt buộc** | **Giá trị mặc định** | **Ràng buộc** |
+| --- | --- | --- | --- | --- | --- |
 | ***Thông tin chi tiết*** |  |  |  |  |  |
 | 1\. | Thời gian (tháng/năm) | Date (mm/yyyy) | Có | Hiện tại | Cho phép sửa. |
 | 2\. | Nguồn tuyển dụng | Dropdown | Có |  | Cho phép nhập tìm kiếm và chọn trong danh sách. Chỉ chọn một. |

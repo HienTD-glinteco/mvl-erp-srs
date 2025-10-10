@@ -7,6 +7,7 @@ uc_number: "5.4.6"
 ### UC 5.4.6: Xóa một Người phụ thuộc của Nhân viên
 
 | **Mục tiêu:** | Cho phép người dùng xóa đi một Người phụ thuộc đã có |
+| --- | --- |
 | **Tài khoản:** | Tài khoản được phân quyền Xóa tại phân hệ con "Quản lý Người phụ thuộc" |
 | **Sự kiện kích hoạt:** | Người dùng nhấn "Xóa" tại màn "Quản lý Người phụ thuộc" |
 | **Điều kiện tiên quyết:** | Người dùng login vào hệ thống với tài khoản được phân quyền tương ứng |
@@ -16,6 +17,7 @@ uc_number: "5.4.6"
 #### Quy tắc nghiệp vụ
 
 | **Mã QTNV** | **Mô tả** |
+| --- | --- |
 | QTNV 5.4.6 | **Quy tắc Xóa Người phụ thuộc:** |
 |  | - Người dùng nhấn nút "Xóa" Người phụ thuộc tại màn hình danh sách của phân hệ con "Quản lý Người phụ thuộc" → Hệ thống hiển thị màn hình Xác nhận Xóa Người phụ thuộc |
 |  | - Người dùng nhấn |
@@ -35,6 +37,7 @@ uc_number: "5.4.6"
 ![](media/image26.png)
 
 | **Thông tin** | **Kiểu dữ liệu** | **Mô tả** | **Logic nghiệp vụ** | **Bắt buộc** |
+| --- | --- | --- | --- | --- |
 | Xác nhận | Nút | Nhấn để xác nhận xóa Người phụ thuộc | \- Thông báo xóa thành công |  |
 |  |  |  | \- Về màn hình danh sách Người phụ thuộc |  |
 | Hủy | Nút | Nhấn để hủy luồng xóa | Nhấn để quay về màn hình danh sách Người phụ thuộc |  |

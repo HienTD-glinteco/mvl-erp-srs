@@ -21,6 +21,7 @@ uc_number: "3.1.3"
 #### Quy tắc nghiệp vụ
 
 | **Mã QTNV** | **Mô tả** |
+| --- | --- |
 | QTNV 3.1.3 | **Quy tắc Xem màn hình Chi tiết thông tin Vai trò (Role):** |
 |  | - Người dùng ở màn hình "Quản lý Vai trò (Role)" -\> nhấn nút "Xem chi tiết" của Vai trò (Role) tương ứng: |
 |  | - Hệ thống hiển thị màn hình xem thông tin theo lần thay đổi gần nhất của Vai trò (Role) tương ứng |
@@ -30,6 +31,7 @@ uc_number: "3.1.3"
 ![](media/image15.png)
 
 | **Thông tin** | **Kiểu dữ liệu** | **Mô tả** | **Logic nghiệp vụ** | **Bắt buộc** |
+| --- | --- | --- | --- | --- |
 | Mã vai trò | Trường dữ liệu | \- Hiển thị thông tin chi tiết của Vai trò (Role) tương ứng | Hiển thị dạng Read-only |  |
 |  |  | \- Những trường thông tin giống [[màn tạo mới một Vai trò (Role)]{.underline}](#uc-3.1.2-tạo-mới-vai-trò-role) |  |  |
 |  |  | - Thêm "Mã vai trò" và "Người tạo" |  |  |

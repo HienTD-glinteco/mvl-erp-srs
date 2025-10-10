@@ -7,6 +7,7 @@ uc_number: "4.7.6"
 ### UC4.7.6: Kết xuất lịch phỏng vấn
 
 | **Mục tiêu:** | Cho phép người dùng kết xuất lịch phỏng vấn trên hệ thống. |
+| --- | --- |
 | **Tài khoản:** | Người sử dụng. |
 | **Sự kiện kích hoạt:** | Người dùng click vào icon Kết xuất trong Màn hình Quản lý lịch phỏng vấn. |
 | **Điều kiện tiên quyết:** | Người dùng login vào hệ thống và được phân quyền. |
@@ -16,6 +17,7 @@ uc_number: "4.7.6"
 #### Quy tắc nghiệp vụ
 
 | **Mã QTNV** | **Mô tả** |
+| --- | --- |
 | QTNV 4.7.6 | **Exporting File Rules:** |
 |  | ❖ Người dùng click vào icon Kết xuất lịch phỏng vấn ở Thao tác. |
 |  | ❖ Hệ thống thực hiện kết xuất lịch phỏng vấn trên hệ thống. Nếu có bộ lọc, kết xuất theo lần ấn nút Áp dụng bộ lọc mới nhất. |

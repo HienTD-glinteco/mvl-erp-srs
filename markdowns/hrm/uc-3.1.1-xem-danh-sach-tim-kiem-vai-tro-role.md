@@ -7,6 +7,7 @@ uc_number: "3.1.1"
 ### UC 3.1.1:Xem danh sách + Tìm kiếm Vai trò (Role)
 
 | **Mục tiêu:** | Cho phép người dùng xem danh sách Vai trò (Role) đã tạo |
+| --- | --- |
 | **Tài khoản:** | Tài khoản được phân quyền xem trong phân hệ "Quản lý Vai trò" |
 | **Sự kiện kích hoạt:** | Người dùng truy cập Màn hình của Phân hệ con "Quản lý Vai trò" |
 | **Điều kiện tiên quyết:** | Người dùng login vào hệ thống với tài khoản được phân quyền tương ứng |
@@ -16,6 +17,7 @@ uc_number: "3.1.1"
 #### Quy tắc nghiệp vụ
 
 | **Mã QTNV** | **Mô tả** |
+| --- | --- |
 | QTNV 3.1.1.1 | **Quy tắc Xem màn hình danh sách các Vai trò:** |
 |  | - Hệ thống hiển thị Màn hình Xem danh sách những vai trò đã tạo với đầy đủ thông tin tương ứng từng Vai trò |
 |  | - Mỗi khi truy cập màn hình , hệ thống tự động sắp xếp dữ liệu theo thứ tự mã Vai trò từ cao xuống thấp |
@@ -32,6 +34,7 @@ uc_number: "3.1.1"
 ![](media/image43.png)
 
 | **Thông tin** | **Kiểu dữ liệu** | **Mô tả** | **Logic nghiệp vụ** | **Bắt buộc** |
+| --- | --- | --- | --- | --- |
 | STT | Trường dữ liệu | Hiển thị "Số thứ tự" tương ứng | N/A | Có |
 | Mã | Trường dữ liệu | Hiển thị "Mã vai trò" tương ứng | Khi nhấn vào tiêu đề cột, hệ thống sẽ đảo chiều sắp xếp giữa tăng dần và giảm dần | Có |
 | Tên vai trò | Trường dữ liệu | Hiển thị "Tên vai trò" tương ứng | N/A | Có |

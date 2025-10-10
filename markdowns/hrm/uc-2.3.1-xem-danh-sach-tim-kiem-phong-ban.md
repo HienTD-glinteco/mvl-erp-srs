@@ -7,6 +7,7 @@ uc_number: "2.3.1"
 ### UC 2.3.1: Xem danh sách + Tìm kiếm Phòng ban
 
 | **Mục tiêu:** | Cho phép người dùng xem danh sách Phòng ban đã tạo |
+| --- | --- |
 | **Tài khoản:** | Tài khoản được phân quyền xem trong phân hệ "Quản lý Phòng ban" |
 | **Sự kiện kích hoạt:** | Người dùng truy cập Màn hình của Phân hệ con "Quản lý Phòng ban" |
 | **Điều kiện tiên quyết:** | Người dùng login vào hệ thống với tài khoản được phân quyền tương ứng |
@@ -16,6 +17,7 @@ uc_number: "2.3.1"
 #### Quy tắc nghiệp vụ
 
 | **Mã QTNV** | **Mô tả** |
+| --- | --- |
 | QTNV 2.3.1.1 | **Quy tắc Xem màn hình danh sách các Phòng ban:** |
 |  | - Hệ thống hiển thị Màn hình Xem danh sách những Phòng ban đã tạo với đầy đủ thông tin tương ứng từng Phòng ban |
 |  | - Mỗi khi truy cập màn hình , hệ thống tự động sắp xếp dữ liệu theo thứ tự mã Phòng ban từ cao xuống thấp |
@@ -29,6 +31,7 @@ uc_number: "2.3.1"
 ![](media/image87.png)
 
 | **Thông tin** | **Kiểu dữ liệu** | **Mô tả** | **Logic nghiệp vụ** | **Bắt buộc** |
+| --- | --- | --- | --- | --- |
 | Ô textbox tìm kiếm | Textbox | Tìm kiếm "Phòng ban" tương ứng | Điền **"Mã, Tên Phòng ban"** và nhấn Enter để tìm kiếm |  |
 | Thêm mới | Nút | Nhấn để thêm "Phòng ban" mới | [[UC 2.2.3: Tạo mới một Phòng ban]{.underline}](#uc-2.3.2-tạo-mới-một-phòng-ban) |  |
 | STT | Trường dữ liệu | Hiển thị "Số thứ tự" tương ứng | N/A | Có |

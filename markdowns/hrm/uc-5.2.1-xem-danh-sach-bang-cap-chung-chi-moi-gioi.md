@@ -21,6 +21,7 @@ uc_number: "5.2.1"
 #### Quy tắc nghiệp vụ
 
 | **Mã QTNV** | **Mô tả** |
+| --- | --- |
 | QTNV 5.2.1 | **Quy tắc Xem màn hình danh sách Bằng cấp/ Chứng chỉ môi giới:** |
 |  | - Hệ thống hiển thị Màn hình Xem danh sách những Bằng cấp/ Chứng chỉ môi giới đã tạo với đầy đủ thông tin tương ứng từng Nhân viên |
 |  | - Mỗi khi truy cập màn hình , hệ thống tự động sắp xếp dữ liệu theo thứ tự mã Chứng chỉ từ cao xuống thấp |
@@ -30,6 +31,7 @@ uc_number: "5.2.1"
 ![](media/image22.png)
 
 | **Thông tin** | **Kiểu dữ liệu** | **Mô tả** | **Logic nghiệp vụ** | **Bắt buộc** |
+| --- | --- | --- | --- | --- |
 | Ô Tìm kiếm | Textbox | Nhập "Tên chứng chỉ" hoặc "Tên nhân viên" để tìm kiếm | [[UC 5.2.2: Tìm kiếm thông tin một Bằng cấp/ Chứng chỉ môi giới]{.underline}](#uc-5.2.2-tìm-kiếm-thông-tin-một-bằng-cấp-chứng-chỉ-môi-giới) |  |
 | Mã chứng chỉ | Trường dữ liệu | Hiển thị Mã của chứng chỉ tương ứng | Khi nhấn vào tiêu đề cột, hệ thống sẽ đảo chiều sắp xếp giữa tăng dần và giảm dần | Có |
 | Tên chứng chỉ | Trường dữ liệu | Hiển thị Tên chứng chỉ của nhân viên | N/A | Có |

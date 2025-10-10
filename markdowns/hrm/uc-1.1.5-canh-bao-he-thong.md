@@ -7,6 +7,7 @@ uc_number: "1.1.5"
 ### UC1.1.5: Cảnh báo hệ thống
 
 | **Mục tiêu:** | Đảm bảo hệ thống có khả năng phát hiện và thông báo kịp thời các tình huống hoặc sự kiện quan trọng để người dùng hoặc quản trị viên xử lý. |
+| --- | --- |
 | **Tác nhân:** | Người dùng: Nhận cảnh báo liên quan đến tài khoản. |
 |  | Quản trị viên: Nhận cảnh báo về sự cố hệ thống, an ninh, dữ liệu. |
 | **Sự kiện kích hoạt:** | Xảy ra sự kiện trên hệ thống. |
@@ -17,6 +18,7 @@ uc_number: "1.1.5"
 #### Quy tắc nghiệp vụ
 
 | **Mã QTNV** | **Mô tả** |
+| --- | --- |
 | QTNV 1.1.5 | **System Alert Rules:** |
 |  | - Mỗi cảnh báo phải được lưu trữ trong log thông báo. |
 |  | - Thông báo sắp xếp theo thời gian gần nhất từ trên xuống |

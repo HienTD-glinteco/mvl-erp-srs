@@ -21,10 +21,10 @@ uc_number: "5.1.9"
 #### Quy tắc nghiệp vụ
 
 | **Mã QTNV** | **Mô tả** |
+| --- | --- |
 | QTNV 5.1.9 | **Quy tắc Export danh sách Nhân viên:** |
 |  | - Người dùng Lọc màn hình danh sách hồ sơ nhân viên để hiển thị danh sách Hồ sơ muốn Export + Nhấn nút Export |
 |  | - Hệ thống tải về thiết bị người dùng File Danh sách hồ sơ nhân viên với những thông tin đang được lọc, tìm kiếm tại thời điểm tải về |
-| --- | --- |
 
 #### Mô tả màn hình
 

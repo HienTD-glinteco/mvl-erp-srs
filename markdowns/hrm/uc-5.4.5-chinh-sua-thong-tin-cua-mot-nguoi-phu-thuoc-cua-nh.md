@@ -7,6 +7,7 @@ uc_number: "5.4.5"
 ### UC 5.4.5: Chỉnh sửa thông tin của một Người phụ thuộc của nhân viên
 
 | **Mục tiêu:** | Cho phép người dùng chỉnh sửa thông tin của một Người phụ thuộc của nhân viên |
+| --- | --- |
 | **Tài khoản:** | Tài khoản được phân quyền chỉnh sửa tại "Quản lý Người phụ thuộc" |
 | **Sự kiện kích hoạt:** | Người dùng nhấn nút "Chỉnh sửa" tại màn danh sách "Quản lý Người phụ thuộc" hoặc màn Xem chi tiết Người phụ thuộc |
 | **Điều kiện tiên quyết:** | Người dùng login vào hệ thống với tài khoản được phân quyền tương ứng |
@@ -16,6 +17,7 @@ uc_number: "5.4.5"
 #### Quy tắc nghiệp vụ
 
 | **Mã QTNV** | **Mô tả** |
+| --- | --- |
 | QTNV 5.4.5 | **Quy tắc Chỉnh sửa Người phụ thuộc:** |
 |  | - Người dùng nhấn "Chỉnh sửa" tại màn danh sách "Quản lý Người phụ thuộc" |
 |  | - Chỉnh sửa thông tin + nhấn nút "Cập nhật" -\> Hệ thống xác thực những trường thông tin: |
@@ -37,6 +39,7 @@ uc_number: "5.4.5"
 ![](media/image120.png)
 
 | **Thông tin** | **Kiểu dữ liệu** | **Mô tả** | **Logic nghiệp vụ** | **Bắt buộc** |
+| --- | --- | --- | --- | --- |
 | Những trường thông tin hiển thị như của [[màn hình tạo mới một Người phụ thuộc]{.underline}](#uc-5.4.3-tạo-mới-một-người-phụ-thuộc-của-nhân-viên): |  |  |  |  |
 | \- Điền sẵn những thông tin của Người phụ thuộc tương ứng |  |  |  |  |
 | \- Tất cả những trường thông tin đều có thể chỉnh sửa |  |  |  |  |

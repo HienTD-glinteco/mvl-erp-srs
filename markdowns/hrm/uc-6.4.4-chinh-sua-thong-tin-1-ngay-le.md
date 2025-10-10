@@ -7,6 +7,7 @@ uc_number: "6.4.4"
 ### UC 6.4.4: Chỉnh sửa thông tin 1 Ngày lễ
 
 | **Mục tiêu:** | Cho phép người dùng chỉnh sửa thông tin của 1 Ngày lễ |
+| --- | --- |
 | **Tài khoản:** | Tài khoản được phân quyền chỉnh sửa tại "Quản lý Ngày lễ" |
 | **Sự kiện kích hoạt:** | Người dùng nhấn nút "Chỉnh sửa" tại màn danh sách "Quản lý Ngày lễ" |
 | **Điều kiện tiên quyết:** | Người dùng login vào hệ thống với tài khoản được phân quyền tương ứng |
@@ -16,6 +17,7 @@ uc_number: "6.4.4"
 #### Quy tắc nghiệp vụ
 
 | **Mã QTNV** | **Mô tả** |
+| --- | --- |
 | QTNV 6.4.4 | **Quy tắc Chỉnh sửa Ngày lễ:** |
 |  | - Người dùng nhấn "Chỉnh sửa" tại màn danh sách "Quản lý Ngày lễ" |
 |  | - Chỉnh sửa thông tin + nhấn nút "Cập nhật" -\> Hệ thống xác thực những trường thông tin: |

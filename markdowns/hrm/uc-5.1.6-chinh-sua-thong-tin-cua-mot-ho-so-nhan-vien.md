@@ -7,6 +7,7 @@ uc_number: "5.1.6"
 ### UC 5.1.6: Chỉnh sửa thông tin của một Hồ sơ nhân viên
 
 | **Mục tiêu:** | Cho phép người dùng chỉnh sửa thông tin của một Hồ sơ nhân viên |
+| --- | --- |
 | **Tài khoản:** | Tài khoản được phân quyền chỉnh sửa tại phân hệ con "Quản lý Hồ sơ Nhân viên" |
 | **Sự kiện kích hoạt:** | Người dùng nhấn nút "Chỉnh sửa" tại màn danh sách "Quản lý Hồ sơ Nhân viên" hoặc màn "Xem chi tiết" một Hồ sơ nhân viên |
 | **Điều kiện tiên quyết:** | Người dùng login vào hệ thống với tài khoản được phân quyền tương ứng |
@@ -16,6 +17,7 @@ uc_number: "5.1.6"
 #### Quy tắc nghiệp vụ
 
 | **Mã QTNV** | **Mô tả** |
+| --- | --- |
 | QTNV 5.1.6.1 | **Quy tắc Chỉnh sửa Hồ sơ Nhân viên:** |
 |  | - Người dùng nhấn nút "Chỉnh sửa" tại màn danh sách "Quản lý Hồ sơ Nhân viên" |
 |  | - Chỉnh sửa thông tin + nhấn nút "Cập nhật" -\> Hệ thống xác thực những trường thông tin của Hồ sơ nhân viên: |
@@ -56,6 +58,7 @@ uc_number: "5.1.6"
 ![](media/image50.png)
 
 | **Thông tin** | **Kiểu dữ liệu** | **Mô tả** | **Logic nghiệp vụ** | **Bắt buộc** |
+| --- | --- | --- | --- | --- |
 | Những trường thông tin hiển thị như của màn hình "[[Xem chi tiết một Hồ sơ nhân viên]{.underline}](#uc-5.1.2-xem-chi-tiết-thông-tin-một-nhân-viên)": |  |  |  |  |
 | \- Điền sẵn những thông tin của Hồ sơ Nhân viên tương ứng |  |  |  |  |
 | \- "Mã nhân viên" hiển thị dạng **Read-only** |  |  |  |  |

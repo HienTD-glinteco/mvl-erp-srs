@@ -21,6 +21,7 @@ uc_number: "2.3.5"
 #### Quy tắc nghiệp vụ
 
 | **Mã QTNV** | **Mô tả** |
+| --- | --- |
 | QTNV 2.3.5 | **Quy tắc Xóa Phòng ban:** |
 |  | - Người dùng nhấn "Xóa" với một Phòng ban đã tạo → hệ thống hiển thị màn hình "Xác nhận xóa thông tin Phòng ban" |
 |  | - Người dùng nhấn: |

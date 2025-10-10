@@ -7,6 +7,7 @@ uc_number: "5.2.6"
 ### UC 5.2.6: Xóa một Bằng cấp/ Chứng chỉ môi giới 
 
 | **Mục tiêu:** | Cho phép người dùng xóa đi một Bằng cấp/Chứng chỉ môi giới đã có |
+| --- | --- |
 | **Tài khoản:** | Tài khoản được phân quyền Xóa tại phân hệ con "Quản lý Bằng cấp/Chứng chỉ môi giới" |
 | **Sự kiện kích hoạt:** | Người dùng nhấn "Xóa" tại màn "Quản lý Bằng cấp/Chứng chỉ môi giới" |
 | **Điều kiện tiên quyết:** | Người dùng login vào hệ thống với tài khoản được phân quyền tương ứng |
@@ -16,6 +17,7 @@ uc_number: "5.2.6"
 #### Quy tắc nghiệp vụ
 
 | **Mã QTNV** | **Mô tả** |
+| --- | --- |
 | QTNV 5.2.6 | **Quy tắc Xóa Bằng cấp/Chứng chỉ môi giới:** |
 |  | - Người dùng nhấn nút "Xóa" Bằng cấp/Chứng chỉ môi giới tại màn hình danh sách của phân hệ con "Quản lý Bằng cấp/Chứng chỉ môi giới" → Hệ thống hiển thị màn hình Xác nhận Xóa Bằng cấp/Chứng chỉ môi giới |
 |  | - Người dùng nhấn |
@@ -35,6 +37,7 @@ uc_number: "5.2.6"
 ![](media/image26.png)
 
 | **Thông tin** | **Kiểu dữ liệu** | **Mô tả** | **Logic nghiệp vụ** | **Bắt buộc** |
+| --- | --- | --- | --- | --- |
 | Xác nhận | Nút | Nhấn để xác nhận xóa Bằng cấp/Chứng chỉ | \- Thông báo xóa thành công | Có |
 |  |  |  | \- Về màn hình danh sách Bằng cấp/Chứng chỉ môi giới |  |
 | Hủy | Nút | Nhấn để hủy luồng xóa hồ sơ | Nhấn để quay về màn hình danh sách Bằng cấp/Chứng chỉ | Có |

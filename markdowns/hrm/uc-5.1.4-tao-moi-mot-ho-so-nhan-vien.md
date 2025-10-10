@@ -7,6 +7,7 @@ uc_number: "5.1.4"
 ### UC 5.1.4: Tạo mới một Hồ sơ Nhân viên
 
 | **Mục tiêu:** | Cho phép người dùng tạo mới một Hồ sơ Nhân viên |
+| --- | --- |
 | **Tài khoản:** | Tài khoản được phân quyền Tạo mới với phân hệ con "Quản lý Hồ sơ Nhân viên" |
 | **Sự kiện kích hoạt:** | Người dùng nhấn nút "Thêm mới" tại màn "Quản lý Hồ sơ Nhân viên" |
 | **Điều kiện tiên quyết:** | Người dùng login vào hệ thống với tài khoản được phân quyền tương ứng |
@@ -22,6 +23,7 @@ uc_number: "5.1.4"
 #### Quy tắc nghiệp vụ
 
 | **Mã QTNV** | **Mô tả** |
+| --- | --- |
 | QTNV 5.1.4 | **Quy tắc Tạo mới Hồ sơ Nhân viên:** |
 |  | - Người dùng nhấn nút "Thêm mới" và điền thông tin tương ứng của nhân viên: |
 |  | - Nhấn "Lưu" để hệ thống xác thực thông tin |
@@ -49,7 +51,6 @@ uc_number: "5.1.4"
 |  | - Mật khẩu: |
 |  | - Hệ thống tự sinh một mã gồm 8 ký tự ngẫu nhiên |
 |  | - Hệ thống gửi mật khẩu vào mail của nhân viên |
-| --- | --- |
 |  | - Quay về màn hình danh sách Hồ sơ Nhân viên với Hồ sơ mới đã được tạo |
 |  | - Thêm thông tin tương ứng ở "Lịch sử công tác" |
 |  | - Nếu thông tin "không hợp lệ": |
@@ -63,6 +64,7 @@ uc_number: "5.1.4"
 ![](media/image79.png)
 
 | **Thông tin** | **Kiểu dữ liệu** | **Mô tả** | **Logic nghiệp vụ** | **Bắt buộc** |
+| --- | --- | --- | --- | --- |
 | Mã nhân viên | Textbox | Nhập "Mã nhân viên" tương ứng | Xác thực: không được trùng với mã nhân viên khác | Có |
 | Họ tên | Textbox | Nhập "Họ tên" tương ứng | N/A | Có |
 | Email | Textbox | Nhập "Email" tương ứng | Xác thực: đúng định dạng Email | Có |

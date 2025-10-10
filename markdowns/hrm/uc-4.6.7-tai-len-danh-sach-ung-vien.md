@@ -7,6 +7,7 @@ uc_number: "4.6.7"
 ### UC4.6.7: Tải lên danh sách ứng viên
 
 | **Mục tiêu:** | Cho phép người dùng đăng tải danh sách các ứng viên lên hệ thống. |
+| --- | --- |
 | **Tài khoản:** | Người sử dụng. |
 | **Sự kiện kích hoạt:** | Người dùng click vào icon Tải lên trong Màn hình Quản lý ứng viên. |
 | **Điều kiện tiên quyết:** | Người dùng login vào hệ thống và được phân quyền. |
@@ -17,6 +18,7 @@ uc_number: "4.6.7"
 #### Quy tắc nghiệp vụ
 
 | **Mã QTNV** | **Mô tả** |
+| --- | --- |
 | QTNV 4.6.7 | **Importing File Rules:** |
 |  | ❖ Chỉ nhận file excel, cvs. |
 |  | ❖ Dung lượng file tối đa: 10MB. |
@@ -28,4 +30,3 @@ uc_number: "4.6.7"
 |  | o Do không đầy đủ dữ liệu |
 |  | o File template không chuẩn) |
 |  | ❖ Hệ thống phải hỗ trợ rollback (không lưu dữ liệu dở dang nếu upload thất bại). |
-| --- | --- |

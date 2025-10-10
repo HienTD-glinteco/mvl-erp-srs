@@ -21,6 +21,7 @@ uc_number: "5.4.4"
 #### Quy tắc nghiệp vụ
 
 | **Mã QTNV** | **Mô tả** |
+| --- | --- |
 | QTNV 5.4.4 | **Quy tắc Xem màn hình Chi tiết Người phụ thuộc của Nhân viên:** |
 |  | - Người dùng ở màn hình "Quản lý Người phụ thuộc" -\> nhấn nút "Xem chi tiết" của Người phụ thuộc tương ứng |
 |  | - Hệ thống hiển thị màn hình xem thông tin Chi tiết theo lần thay đổi cuối cùng của Người phụ thuộc tương ứng |
@@ -30,6 +31,7 @@ uc_number: "5.4.4"
 ![](media/image130.png)
 
 | **Thông tin** | **Kiểu dữ liệu** | **Mô tả** | **Logic nghiệp vụ** | **Bắt buộc** |
+| --- | --- | --- | --- | --- |
 | Mã nhân viên | Trường dữ liệu | Autofill những thông tin tương ứng của Người phụ thuộc của Nhân viên | \- Hiển thị dạng: Read-only |  |
 |  |  |  | \- Những trường thông tin giống của [[màn hình Tạo mới một Người phụ thuộc]{.underline}](#uc-5.4.3-tạo-mới-một-người-phụ-thuộc-của-nhân-viên) |  |
 | Tên nhân viên | Trường dữ liệu |  |  |  |

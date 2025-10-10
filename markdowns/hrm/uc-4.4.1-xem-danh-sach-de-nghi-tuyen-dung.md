@@ -7,6 +7,7 @@ uc_number: "4.4.1"
 ### UC 4.4.1: Xem danh sách đề nghị tuyển dụng
 
 | **Mục tiêu:** | Cho phép người dùng xem danh sách các đề nghị tuyển dụng trên hệ thống |
+| --- | --- |
 | **Tài khoản:** | Người sử dụng. |
 | **Sự kiện kích hoạt:** | Người dùng truy cập chức năng *Quản lý tuyển dụng/Quản lý đề nghị tuyển dụng* |
 | **Điều kiện tiên quyết:** | Người dùng login vào hệ thống và được phân quyền. |
@@ -16,6 +17,7 @@ uc_number: "4.4.1"
 ####  Quy tắc nghiệp vụ
 
 | **Mã QTNV** | **Mô tả** |
+| --- | --- |
 | QTNV | **Screen Displaying Rules:** |
 | 4.4.1 | ❖ Hệ thống hiển thị Màn hình Xem danh sách các đề nghị tuyển dụng. |
 |  | ❖ Hiển thị danh sách được sắp xếp theo thời gian tạo gần nhất |
@@ -27,6 +29,7 @@ uc_number: "4.4.1"
 ![](media/image28.png)
 
 | **STT** | **Thông tin** | **Kiểu dữ liệu** | **Bắt buộc** | **Giá trị mặc định** | **Ràng buộc** |
+| --- | --- | --- | --- | --- | --- |
 | ***Thông tin tìm kiếm*** |  |  |  |  |  |
 | 1\. | Mã đề nghị | Ký tự (50) | Không |  | Cho phép nhập. |
 | 2\. | Tên đề nghị | Ký tự (100) | Không |  | Cho phép nhập. |

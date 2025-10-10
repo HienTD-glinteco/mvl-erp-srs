@@ -7,6 +7,7 @@ uc_number: "4.3.4"
 ### UC 4.3.4: Xem chi tiết chi phí tuyển dụng 
 
 | **Mục tiêu:** | Cho phép người dùng xem chi tiết thông tin chi phí tuyển dụng trên hệ thống. |
+| --- | --- |
 | **Tài khoản:** | Người sử dụng. |
 | **Sự kiện kích hoạt:** | Người dùng click vào icon Xem chi tiết trong Màn hình Quản lý chi phí tuyển dụng. |
 | **Điều kiện tiên quyết:** | Người dùng login vào hệ thống và được phân quyền. |
@@ -15,6 +16,7 @@ uc_number: "4.3.4"
 #### Quy tắc nghiệp vụ
 
 | **Mã QTNV** | **Mô tả** |
+| --- | --- |
 | QTNV 4.3.4 | **Screen Displaying Rules:** |
 |  | ❖ Hệ thống hiển thị màn hình chi tiết chi phí tuyển dụng: |
 |  | o Hiển thị tương ứng với dòng NSD thực hiện thao tác. |
@@ -24,6 +26,7 @@ uc_number: "4.3.4"
 ![](media/image25.png)
 
 | **STT** | **Thông tin** | **Kiểu dữ liệu** | **Bắt buộc** | **Giá trị mặc định** | **Ràng buộc** |
+| --- | --- | --- | --- | --- | --- |
 | ***Thông tin chi tiết*** |  |  |  |  |  |
 | 1\. | Thời gian (tháng/năm) | Date (mm/yyyy) | Có |  | Hiển thị theo CSDL |
 | 2\. | Nguồn tuyển dụng | Dropdown | Có |  | Hiển thị theo CSDL |

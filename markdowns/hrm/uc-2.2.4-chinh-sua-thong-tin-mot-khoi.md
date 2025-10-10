@@ -7,6 +7,7 @@ uc_number: "2.2.4"
 ### UC 2.2.4: Chỉnh sửa thông tin một Khối
 
 | **Mục tiêu:** | Cho phép người dùng chỉnh sửa thông tin Khối đã có |
+| --- | --- |
 | **Tài khoản:** | Tài khoản được phân quyền chỉnh sửa trong phân hệ "Quản lý Khối" |
 | **Sự kiện kích hoạt:** | Người dùng truy cập nhấn nút "Chỉnh sửa" tại màn hình "Quản lý Khối" hoặc màn Xem chi tiết thông tin 1 Khối |
 | **Điều kiện tiên quyết:** | Người dùng login vào hệ thống với tài khoản được phân quyền tương ứng |
@@ -16,6 +17,7 @@ uc_number: "2.2.4"
 #### Quy tắc nghiệp vụ
 
 | **Mã QTNV** | **Mô tả** |
+| --- | --- |
 | QTNV 2.2.4 | **Quy tắc Chỉnh sửa thông tin Khối:** |
 |  | - Người dùng nhấn "Chỉnh sửa" với một Khối đã tạo -\> hệ thống hiển thị màn "Chỉnh sửa thông tin Khối" với những thông tin theo lần thay đổi cuối cùng của Khối tương ứng |
 |  | - Người dùng chỉnh sửa thông tin Khối và nút "Cập nhật" để xác thực thông tin |
@@ -36,6 +38,7 @@ uc_number: "2.2.4"
 ![](media/image85.png)
 
 | **Thông tin** | **Kiểu dữ liệu** | **Mô tả** | **Logic nghiệp vụ** | **Bắt buộc** |
+| --- | --- | --- | --- | --- |
 | Những trường thông tin hiển thị như của màn hình "Tạo mới một Khối": |  |  |  |  |
 | \- Điền sẵn những thông tin theo lần thay đổi cuối cùng của Khối tương ứng |  |  |  |  |
 | \- Tất cả thông tin đều được chỉnh sửa |  |  |  |  |

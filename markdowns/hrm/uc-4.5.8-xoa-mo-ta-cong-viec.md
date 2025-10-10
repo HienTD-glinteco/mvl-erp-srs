@@ -7,6 +7,7 @@ uc_number: "4.5.8"
 ### UC4.5.8: Xoá mô tả công việc
 
 | **Mục tiêu:** | Cho phép người dùng xoá một mô tả công việc đã có trên hệ thống. |
+| --- | --- |
 | **Tài khoản:** | Người sử dụng. |
 | **Sự kiện kích hoạt:** | Người dùng click vào icon Xoá trong Màn hình Quản lý mô tả công việc. |
 | **Điều kiện tiên quyết:** | Người dùng login vào hệ thống và được phân quyền. |
@@ -17,6 +18,7 @@ uc_number: "4.5.8"
 #### Quy tắc nghiệp vụ
 
 | **Mã QTNV** | **Mô tả** |
+| --- | --- |
 | QTNV 4.5.8 | **Deleting Rules**\[3\] **:** |
 |  | ❖ Hệ thống chỉ hiển thị nút xoá đối với các mô tả công việc chưa được gắn với đề nghị tuyển dụng. |
 |  | ❖ Hệ thống hiển thị thông báo '*Bạn có chắc chắn muốn xoá dữ liệu không?'.* |

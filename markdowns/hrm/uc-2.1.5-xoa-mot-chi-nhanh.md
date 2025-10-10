@@ -21,6 +21,7 @@ uc_number: "2.1.5"
 #### Quy tắc nghiệp vụ
 
 | **Mã QTNV** | **Mô tả** |
+| --- | --- |
 | QTNV 2.1.5 | **Quy tắc Xóa Chi nhánh:** |
 |  | - Người dùng nhấn "Xóa" với một chi nhánh đã tạo → hệ thống hiển thị màn hình "Xác nhận xóa thông tin chi nhánh" |
 |  | - Người dùng nhấn: |
@@ -31,7 +32,6 @@ uc_number: "2.1.5"
 |  | - Nếu **Chi nhánh không còn được sử dụng trong thông tin khác**: |
 |  | - Hệ thống xóa Chi nhánh tương ứng khỏi màn danh sách |
 |  | - Thông tin vẫn được lưu trong CSDL, người dùng không thể khôi phục lại từ giao diện người dùng |
-| --- | --- |
 |  | - Hủy: |
 
 #### Mô tả màn hình

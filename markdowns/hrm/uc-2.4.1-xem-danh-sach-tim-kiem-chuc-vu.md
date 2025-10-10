@@ -7,6 +7,7 @@ uc_number: "2.4.1"
 ### UC 2.4.1: Xem danh sách + tìm kiếm Chức vụ
 
 | **Mục tiêu:** | Cho phép người dùng xem danh sách Chức vụ đã tạo |
+| --- | --- |
 | **Tài khoản:** | Tài khoản được phân quyền xem trong phân hệ "Quản lý Chức vụ" |
 | **Sự kiện kích hoạt:** | Người dùng truy cập Màn hình của Phân hệ con "Quản lý Chức vụ" |
 | **Điều kiện tiên quyết:** | Người dùng login vào hệ thống với tài khoản được phân quyền tương ứng |
@@ -16,6 +17,7 @@ uc_number: "2.4.1"
 #### Quy tắc nghiệp vụ
 
 | **Mã QTNV** | **Mô tả** |
+| --- | --- |
 | QTNV 2.2.1.1 | **Quy tắc Xem màn hình danh sách các Chức vụ:** |
 |  | - Hệ thống hiển thị Màn hình Xem danh sách những Chức vụ đã tạo với đầy đủ thông tin tương ứng từng Chức vụ |
 |  | - Mỗi khi truy cập màn hình , hệ thống tự động sắp xếp dữ liệu theo thứ tự mã Chức vụ từ cao xuống thấp |
@@ -29,6 +31,7 @@ uc_number: "2.4.1"
 ![](media/image11.png)
 
 | **Thông tin** | **Kiểu dữ liệu** | **Mô tả** | **Logic nghiệp vụ** | **Bắt buộc** |
+| --- | --- | --- | --- | --- |
 | Ô textbox tìm kiếm | Textbox | Tìm kiếm "Chức vụ" tương ứng | Điền "Mã, Tên Chức vụ" và nhấn Enter để tìm kiếm |  |
 | Thêm mới | Nút | Nhấn để thêm "Chức vụ" mới | [[UC 2.4.2: Tạo mới một Chức vụ]{.underline}](#uc-2.4.2-tạo-mới-một-chức-vụ) |  |
 | STT | Trường dữ liệu | Hiển thị "Số thứ tự" tương ứng | N/A | Có |

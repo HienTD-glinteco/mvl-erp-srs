@@ -7,6 +7,7 @@ uc_number: "4.2.4"
 ### UC 4.2.4: Tạo mới nguồn tuyển dụng
 
 | **Mục tiêu:** | Cho phép người dùng thêm mới một nguồn tuyển dụng mới trên hệ thống. |
+| --- | --- |
 | **Tài khoản:** | Người sử dụng. |
 | **Sự kiện kích hoạt:** | Người dùng click vào button Thêm mới trong Màn hình Quản lý nguồn tuyển dụng. |
 | **Điều kiện tiên quyết:** | Người dùng login vào hệ thống và được phân quyền. |
@@ -17,6 +18,7 @@ uc_number: "4.2.4"
 ####  Quy tắc nghiệp vụ
 
 | **Mã QTNV** | **Mô tả** |
+| --- | --- |
 | QTNV 4.2.4.1 | **Displaying Rules:** |
 |  | ❖ Hiển thị màn hình Thêm nguồn tuyển dụng mới. |
 | QTNV 4.2.4.2 | **Creating Rules:** |
@@ -35,6 +37,7 @@ uc_number: "4.2.4"
 ![](media/image58.png)
 
 | **STT** | **Thông tin** | **Kiểu dữ liệu** | **Bắt buộc** | **Giá trị mặc định** | **Ràng buộc** |
+| --- | --- | --- | --- | --- | --- |
 | ***Thông tin chi tiết*** |  |  |  |  |  |
 | 1\. | Mã nguồn | Kí tự (50) | Có |  | Không cho phép nhập |
 | 2\. | Tên nguồn | Kí tự (250) | Có |  | Cho phép chọn một trong danh sách: |

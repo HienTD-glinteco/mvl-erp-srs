@@ -7,6 +7,7 @@ uc_number: "3.1.2"
 ### UC 3.1.2: Tạo mới Vai trò (Role)
 
 | **Mục tiêu:** | Cho phép người dùng tạo Vai trò mới |
+| --- | --- |
 | **Tài khoản:** | Tài khoản được phân quyền tạo mới trong phân hệ "Quản lý Vai trò" |
 | **Sự kiện kích hoạt:** | Người dùng truy cập nhấn nút "Thêm mới" tại màn hình "Quản lý Vai trò" |
 | **Điều kiện tiên quyết:** | Người dùng login vào hệ thống với tài khoản được phân quyền tương ứng |
@@ -20,6 +21,7 @@ uc_number: "3.1.2"
 #### Quy tắc nghiệp vụ
 
 | **Mã QTNV** | **Mô tả** |
+| --- | --- |
 | QTNV 3.1.2.1 | **Quy tắc Tạo mới Vai trò:** |
 |  | - Người dùng nhấn nút "Thêm mới" -\> hệ thống hiển thị màn hình "Tạo Vai trò mới" |
 |  | - Khi mới truy cập, tất cả các quyền đều ở phần "Quyền chưa chỉ định" |
@@ -31,7 +33,6 @@ uc_number: "3.1.2"
 |  | - Hệ thống báo Tạo mới thành công |
 |  | - Vai trò tạo mới có những Quyền ở phần "Quyền đã chỉ định" |
 |  | - Mã vai trò mới được hệ thống tự động sinh. Mã vai trò có dạng: VTxxx |
-| --- | --- |
 |  | <!-- --> |
 |  | ``` |
 |  | - Với "VT" là cố định |
@@ -64,6 +65,7 @@ uc_number: "3.1.2"
 ![](media/image4.png)
 
 | **Thông tin** | **Kiểu dữ liệu** | **Mô tả** | **Logic nghiệp vụ** | **Bắt buộc** |
+| --- | --- | --- | --- | --- |
 | Tên vai trò | Textbox | Nhập "Tên vai trò" mới | N/A | Có |
 | Mô tả | Textbox | Nhập "Mô tả" tương ứng | N/A | Không |
 | Bảng danh sách quyền: phần "Quyền chưa chỉ định" có những thông tin |  |  |  |  |

@@ -21,6 +21,7 @@ uc_number: "3.1.5"
 #### Quy tắc nghiệp vụ
 
 | **Mã QTNV** | **Mô tả** |
+| --- | --- |
 | QTNV 3.1.5 | **Quy tắc Xóa Vai trò:** |
 |  | - Người dùng nhấn "Xóa" với một Vai trò đã tạo → hệ thống hiển thị màn hình "Xác nhận xóa thông tin chi nhánh" |
 |  | - Người dùng nhấn: |

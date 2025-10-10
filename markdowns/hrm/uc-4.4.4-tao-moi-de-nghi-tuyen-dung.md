@@ -7,6 +7,7 @@ uc_number: "4.4.4"
 ### UC 4.4.4: Tạo mới đề nghị tuyển dụng
 
 | **Mục tiêu:** | Cho phép người dùng thêm mới một đề nghị tuyển dụng mới trên hệ thống. |
+| --- | --- |
 | **Tài khoản:** | Người sử dụng. |
 | **Sự kiện kích hoạt:** | Người dùng click vào button Thêm mới trong Màn hình Quản lý đề nghị tuyển dụng. |
 | **Điều kiện tiên quyết:** | Người dùng login vào hệ thống và được phân quyền. |
@@ -17,6 +18,7 @@ uc_number: "4.4.4"
 #### Quy tắc nghiệp vụ
 
 | **Mã QTNV** | **Mô tả** |
+| --- | --- |
 | QTNV 4.4.4 | **Displaying Rules:** |
 |  | ❖ Hiển thị màn hình Thêm đề nghị tuyển dụng mới. |
 |  | **Creating Rules:** |
@@ -35,6 +37,7 @@ uc_number: "4.4.4"
 ![](media/image54.png)
 
 | **STT** | **Thông tin** | **Kiểu dữ liệu** | **Bắt buộc** | **Giá trị mặc định** | **Ràng buộc** |
+| --- | --- | --- | --- | --- | --- |
 | ***Thông tin chi tiết*** |  |  |  |  |  |
 | 1\. | Mã đề nghị | Ký tự (10) | Có |  | Không cho phép nhập |
 | 2\. | Tên đề nghị | Ký tự (50) | Có |  | Cho phép nhập |

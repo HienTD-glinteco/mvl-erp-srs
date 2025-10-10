@@ -21,6 +21,7 @@ uc_number: "6.3.1"
 #### Quy tắc nghiệp vụ
 
 | **Mã QTNV** | **Mô tả** |
+| --- | --- |
 | QTNV 6.3.1 | **Quy tắc Xem màn hình danh sách Lịch làm việc:** |
 |  | - Hệ thống hiển thị Màn hình Xem danh sách Lịch làm việc mặc định để tính ngày, giờ công |
 |  | - Không được chỉnh sửa thông tin ở phần này |
@@ -30,6 +31,7 @@ uc_number: "6.3.1"
 ![](media/image77.png)
 
 | **Thông tin** | **Kiểu dữ liệu** | **Mô tả** | **Logic nghiệp vụ** | **Bắt buộc** |
+| --- | --- | --- | --- | --- |
 | Thứ | Trường thông tin | Hiển thị lần lượt thứ tự Ngày trong tuần | Danh sách "Thứ" hiển thị là: | Có |
 |  |  |  | - Thứ 2 |  |
 |  |  |  | - Thứ 3 |  |

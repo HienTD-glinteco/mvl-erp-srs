@@ -7,6 +7,7 @@ uc_number: "4.6.5"
 ### UC4.6.5: Chỉnh sửa ứng viên
 
 | **Mục tiêu:** | Cho phép người dùng chỉnh sửa một ứng viên đã có trên hệ thống. |
+| --- | --- |
 | **Tài khoản:** | Người sử dụng (nhân viên phụ trách ứng viên). |
 | **Sự kiện kích hoạt:** | Người dùng click vào icon Sửa trong Màn hình Quản lý ứng viên hoặc khi xem chi tiết. |
 | **Điều kiện tiên quyết:** | Người dùng login vào hệ thống và được phân quyền. |
@@ -16,6 +17,7 @@ uc_number: "4.6.5"
 #### Quy tắc nghiệp vụ
 
 | **Mã QTNV** | **Mô tả** |
+| --- | --- |
 |  | **Displaying Rules:** |
 |  | ❖ Hiển thị màn hình Chỉnh sửa thông tin ứng viên. |
 |  | **Editing Rules:** |
@@ -34,6 +36,7 @@ uc_number: "4.6.5"
 ![](media/image92.png)
 
 | **STT** | **Thông tin** | **Kiểu dữ liệu** | **Bắt buộc** | **Giá trị mặc định** | **Ràng buộc** |
+| --- | --- | --- | --- | --- | --- |
 | ***Thông tin chi tiết*** |  |  |  |  |  |
 | 1\. | Mã ứng viên | Ký tự (10) | Có |  | Không cho phép sửa. |
 | 2\. | Tên ứng viên | Ký tự (100) | Có |  | Cho phép sửa. |

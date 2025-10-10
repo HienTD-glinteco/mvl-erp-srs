@@ -21,6 +21,7 @@ uc_number: "5.1.2"
 #### Quy tắc nghiệp vụ
 
 | **Mã QTNV** | **Mô tả** |
+| --- | --- |
 | QTNV 5.1.2 | **Quy tắc Xem màn hình Chi tiết Hồ sơ nhân viên:** |
 |  | - Người dùng ở màn hình "Quản lý Hồ sơ Nhân viên" -\> nhấn nút "Xem chi tiết" của Hồ sơ nhân viên tương ứng: |
 |  | - Hệ thống hiển thị màn hình xem thông tin Chi tiết theo lần thay đổi cuối cùng với Hồ sơ tương ứng |

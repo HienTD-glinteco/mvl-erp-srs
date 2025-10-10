@@ -7,6 +7,7 @@ uc_number: "4.7.8"
 ### UC4.7.8: Gửi mail cho ứng viên
 
 | **Mục tiêu:** | Cho phép người dùng gửi mail cho các ứng viên được tạo theo lịch phỏng vấn. |
+| --- | --- |
 | **Tài khoản:** | Người sử dụng. |
 | **Sự kiện kích hoạt:** | Người dùng tích chọn các ứng viên và ấn (click) vào icon Gửi mail trong Màn hình Quản lý lịch phỏng vấn. |
 | **Điều kiện tiên quyết:** | Người dùng login vào hệ thống và được phân quyền. |
@@ -18,6 +19,7 @@ uc_number: "4.7.8"
 ####  Quy tắc nghiệp vụ
 
 | **Mã QTNV** | **Mô tả** |
+| --- | --- |
 | QTNV 4.7.8 | **Sending Mail Rules:** |
 |  | ❖ Hệ thống cho phép HR tích chọn ứng viên hoặc danh sách ứng viên cần gửi email. |
 |  | ❖ Hệ thống phải kiểm tra định dạng email hợp lệ trước khi gửi. |
@@ -25,5 +27,4 @@ uc_number: "4.7.8"
 |  | ❖ Nội dung email hỗ trợ Unicode (đa ngôn ngữ, có dấu). |
 |  | ❖ Hệ thống đảm bảo bảo mật thông tin người nhận (không hiển thị email của ứng viên khác khi gửi nhiều người). |
 |  | ❖ Nội dung mail dựa theo template mẫu: |
-| --- | --- |
 |  | ❖ Hệ thống ghi nhận những lần gửi thành công vả hiển thị lần gửi thành công gần nhất. |

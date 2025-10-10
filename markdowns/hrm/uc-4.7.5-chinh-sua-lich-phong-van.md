@@ -7,6 +7,7 @@ uc_number: "4.7.5"
 ### UC4.7.5: Chỉnh sửa lịch phỏng vấn
 
 | **Mục tiêu:** | Cho phép người dùng chỉnh sửa lịch phỏng vấn đã có trên hệ thống. |
+| --- | --- |
 | **Tài khoản:** | Người sử dụng (nhân viên phụ trách ứng viên). |
 | **Sự kiện kích hoạt:** | Người dùng click vào icon Sửa trong Màn hình Quản lý ứng viên hoặc khi xem chi tiết. |
 | **Điều kiện tiên quyết:** | Người dùng login vào hệ thống và được phân quyền. |
@@ -16,6 +17,7 @@ uc_number: "4.7.5"
 #### Quy tắc nghiệp vụ
 
 | **Mã QTNV** | **Mô tả** |
+| --- | --- |
 | QTNV 4.7.5.1 | **Displaying Rules:** |
 |  | ❖ Hiển thị màn hình Chỉnh sửa thông tin lịch phỏng vấn. |
 | QTNV 4.7.5.2 | **Editing Rules:** |
@@ -34,6 +36,7 @@ uc_number: "4.7.5"
 ![](media/image61.png)
 
 | **STT** | **Thông tin** | **Kiểu dữ liệu** | **Bắt buộc** | **Giá trị mặc định** | **Ràng buộc** |
+| --- | --- | --- | --- | --- | --- |
 | ***Thông tin hiển thị*** |  |  |  |  |  |
 | 1\. | Lịch phỏng vấn | Ký tự (100) | Có |  | Cho phép sửa. |
 | 2\. | Đề nghị tuyển dụng | Ký tự (100) | Có |  | Cho phép tìm kiếm và chọn một trong danh sách đề nghị tuyển dụng. |

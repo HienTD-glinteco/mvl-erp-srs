@@ -7,6 +7,7 @@ uc_number: "5.3.6"
 ### UC 5.3.6: Xóa một Quan hệ nhân thân của Nhân viên
 
 | **Mục tiêu:** | Cho phép người dùng xóa đi một Quan hệ nhân thân đã có |
+| --- | --- |
 | **Tài khoản:** | Tài khoản được phân quyền Xóa tại phân hệ con "Quản lý Quan hệ nhân thân" |
 | **Sự kiện kích hoạt:** | Người dùng nhấn "Xóa" tại màn "Quản lý Quan hệ nhân thân" |
 | **Điều kiện tiên quyết:** | Người dùng login vào hệ thống với tài khoản được phân quyền tương ứng |
@@ -16,6 +17,7 @@ uc_number: "5.3.6"
 #### Quy tắc nghiệp vụ
 
 | **Mã QTNV** | **Mô tả** |
+| --- | --- |
 | QTNV 5.3.6 | **Quy tắc Xóa Quan hệ nhân thân:** |
 |  | - Người dùng nhấn nút "Xóa" Quan hệ nhân thân tại màn hình danh sách của phân hệ con "Quản lý Quan hệ nhân thân" → Hệ thống hiển thị màn hình Xác nhận Xóa Quan hệ nhân thân |
 |  | - Người dùng nhấn |
@@ -35,6 +37,7 @@ uc_number: "5.3.6"
 ![](media/image26.png)
 
 | **Thông tin** | **Kiểu dữ liệu** | **Mô tả** | **Logic nghiệp vụ** | **Bắt buộc** |
+| --- | --- | --- | --- | --- |
 | Xác nhận | Nút | Nhấn để xác nhận xóa Quan hệ nhân thân | \- Thông báo xóa thành công |  |
 |  |  |  | \- Về màn hình danh sách Quan hệ nhân thân |  |
 | Hủy | Nút | Nhấn để hủy luồng xóa | Nhấn để quay về màn hình danh sách Quan hệ nhân thân |  |

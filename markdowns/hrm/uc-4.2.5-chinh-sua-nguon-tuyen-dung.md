@@ -7,6 +7,7 @@ uc_number: "4.2.5"
 ### UC 4.2.5: Chỉnh sửa nguồn tuyển dụng
 
 | **Mục tiêu:** | Cho phép người dùng chỉnh sửa một nguồn tuyển dụng đã có trên hệ thống. |
+| --- | --- |
 | **Tài khoản:** | Người sử dụng. |
 | **Sự kiện kích hoạt:** | Người dùng click vào icon Sửa trong Màn hình Quản lý đề xuất |
 | **Điều kiện tiên quyết:** | Người dùng login vào hệ thống và được phân quyền. |
@@ -16,6 +17,7 @@ uc_number: "4.2.5"
 ####  Quy tắc nghiệp vụ
 
 | **Mã QTNV** | **Mô tả** |
+| --- | --- |
 | QTNV 4.2.5.1 | **Displaying Rules:** |
 |  | ❖ Hiển thị màn hình Chỉnh sửa nguồn tuyển dụng. |
 | QTNV 4.2.5.1 | **Editing Rules:** |
@@ -32,6 +34,7 @@ uc_number: "4.2.5"
 ![](media/image75.png)
 
 | **STT** | **Thông tin** | **Kiểu dữ liệu** | **Bắt buộc** | **Giá trị mặc định** | **Ràng buộc** |
+| --- | --- | --- | --- | --- | --- |
 | ***Thông tin chi tiết*** |  |  |  |  |  |
 | 1\. | Mã nguồn | Kí tự (50) | Có |  | Không cho phép sửa |
 | 2\. | Tên nguồn | Kí tự (250) | Có |  | Cho phép chọn một trong danh sách: |

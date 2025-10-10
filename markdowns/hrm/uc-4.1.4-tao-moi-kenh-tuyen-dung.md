@@ -7,6 +7,7 @@ uc_number: "4.1.4"
 ### UC 4.1.4: Tạo mới kênh tuyển dụng 
 
 | **Mục tiêu:** | Cho phép người dùng thêm mới một kênh tuyển dụng trên hệ thống. |
+| --- | --- |
 | **Tài khoản:** | Người sử dụng. |
 | **Sự kiện kích hoạt:** | Người dùng click vào button Thêm mới trong Màn hình Quản lý kênh tuyển dụng. |
 | **Điều kiện tiên quyết:** | Người dùng login vào hệ thống và được phân quyền. |
@@ -17,6 +18,7 @@ uc_number: "4.1.4"
 ####  Quy tắc nghiệp vụ
 
 | **Mã QTNV** | **Mô tả** |
+| --- | --- |
 | QTNV 4.1.4.1 | **Displaying Rules:** |
 |  | ❖ Hiển thị màn hình Thêm kênh tuyển dụng mới. |
 | QTNV 4.1.4.2 | **Creating Rules:** |
@@ -33,6 +35,7 @@ uc_number: "4.1.4"
 ![](media/image48.png)
 
 | **STT** | **Thông tin** | **Kiểu dữ liệu** | **Bắt buộc** | **Giá trị mặc định** | **Ràng buộc** |
+| --- | --- | --- | --- | --- | --- |
 | ***Thông tin chi tiết*** |  |  |  |  |  |
 | 1\. | Mã kênh | Kí tự (50) | Có |  | Không cho phép nhập |
 | 2\. | Tên kênh | Kí tự (250) | Có |  | Cho phép nhập |

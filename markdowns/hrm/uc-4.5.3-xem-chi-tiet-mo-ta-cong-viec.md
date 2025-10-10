@@ -7,6 +7,7 @@ uc_number: "4.5.3"
 ### UC4.5.3: Xem chi tiết mô tả công việc
 
 | **Mục tiêu:** | Cho phép người dùng xem chi tiết thông tin một mô tả công việc trên hệ thống. |
+| --- | --- |
 | **Tài khoản:** | Người sử dụng. |
 | **Sự kiện kích hoạt:** | Người dùng click vào icon Xem chi tiết trong Màn hình Quản lý mô tả công việc. |
 | **Điều kiện tiên quyết:** | Người dùng login vào hệ thống và được phân quyền. |
@@ -15,6 +16,7 @@ uc_number: "4.5.3"
 ####  Quy tắc nghiệp vụ
 
 | **Mã QTNV** | **Mô tả** |
+| --- | --- |
 | QTNV 4.5.3 | **Screen Displaying Rules:** |
 |  | ❖ Hệ thống hiển thị màn hình chi tiết mô tả công việc: |
 |  | o Hiển thị tương ứng với dòng NSD thực hiện thao tác. |
@@ -22,6 +24,7 @@ uc_number: "4.5.3"
 #### Mô tả màn hình
 
 | **STT** | **Thông tin** | **Kiểu dữ liệu** | **Bắt buộc** | **Giá trị mặc định** | **Ràng buộc** |
+| --- | --- | --- | --- | --- | --- |
 | ***Thông tin chi tiết*** |  |  |  |  |  |
 | 1\. | Mã JD | Ký tự (10) |  |  | Hiển thị theo CSDL |
 | 2\. | Tiêu đề | Ký tự (50) |  |  | Hiển thị theo CSDL |

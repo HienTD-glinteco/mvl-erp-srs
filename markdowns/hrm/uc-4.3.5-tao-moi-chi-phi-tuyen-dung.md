@@ -7,6 +7,7 @@ uc_number: "4.3.5"
 ### UC 4.3.5: Tạo mới Chi phí tuyển dụng
 
 | **Mục tiêu:** | Cho phép người dùng thêm mới chi phí tuyển dụng mới trên hệ thống. |
+| --- | --- |
 | **Tài khoản:** | Người sử dụng. |
 | **Sự kiện kích hoạt:** | Người dùng click vào button Thêm mới trong Màn hình Quản lý nguồn tuyển dụng. |
 | **Điều kiện tiên quyết:** | Người dùng login vào hệ thống và được phân quyền. |
@@ -17,6 +18,7 @@ uc_number: "4.3.5"
 ####  Quy tắc nghiệp vụ
 
 | **Mã QTNV** | **Mô tả** |
+| --- | --- |
 | QTNV 4.3.5.1 | **Displaying Rules:** |
 |  | ❖ Hiển thị màn hình Thêm chi phí tuyển dụng mới. |
 | QTNV 4.3.5.2 | **Creating Rules:** |
@@ -33,6 +35,7 @@ uc_number: "4.3.5"
 ![](media/image30.png)
 
 | **STT** | **Thông tin** | **Kiểu dữ liệu** | **Bắt buộc** | **Giá trị mặc định** | **Ràng buộc** |
+| --- | --- | --- | --- | --- | --- |
 | ***Thông tin chi tiết*** |  |  |  |  |  |
 | 1\. | Thời gian (tháng/năm) | Date (mm/yyyy) | Có | Hiện tại | Cho phép nhập. |
 | 2\. | Nguồn tuyển dụng | Dropdown | Có |  | Cho phép nhập tìm kiếm và chọn trong danh sách. Chỉ chọn một. |

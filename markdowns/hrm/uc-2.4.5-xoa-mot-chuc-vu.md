@@ -21,6 +21,7 @@ uc_number: "2.4.5"
 #### Quy tắc nghiệp vụ
 
 | **Mã QTNV** | **Mô tả** |
+| --- | --- |
 | QTNV 2.4.5 | **Quy tắc Xóa Chức vụ:** |
 |  | - Người dùng nhấn "Xóa" với một Chức vụ đã tạo → hệ thống hiển thị màn hình "Xác nhận xóa thông tin Chức vụ" |
 |  | - Người dùng nhấn: |

@@ -7,6 +7,7 @@ uc_number: "4.2.1"
 ### UC 4.2.1: Xem danh sách nguồn tuyển dụng
 
 | **Mục tiêu:** | Cho phép người dùng xem danh sách các nguồn trên hệ thống |
+| --- | --- |
 | **Tài khoản:** | Người sử dụng. |
 | **Sự kiện kích hoạt:** | Người dùng truy cập chức năng *Quản lý tuyển dụng/Quản lý nguồn tuyển dụng* |
 | **Điều kiện tiên quyết:** | Người dùng login vào hệ thống và được phân quyền. |
@@ -16,6 +17,7 @@ uc_number: "4.2.1"
 #### Quy tắc nghiệp vụ
 
 | **Mã QTNV** | **Mô tả** |
+| --- | --- |
 | QTNV 4.2.1 | **Screen Displaying Rules:** |
 |  | ❖ Hệ thống hiển thị Màn hình Xem danh sách nguồn tuyển dụng. |
 |  | ❖ Hiển thị danh sách đề xuất được sắp xếp theo thời gian tạo gần nhất |
@@ -26,6 +28,7 @@ uc_number: "4.2.1"
 ![](media/image40.png)
 
 | **STT** | **Thông tin** | **Kiểu dữ liệu** | **Bắt buộc** | **Giá trị mặc định** | **Ràng buộc** |
+| --- | --- | --- | --- | --- | --- |
 | ***Tra cứu thông tin*** |  |  |  |  |  |
 | 1. | Mã nguồn | Kí tự (50) | Không |  | Cho phép nhập. |
 | 2. | Tên nguồn | Kí tự (100) | Không |  | Cho phép nhập. |

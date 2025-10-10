@@ -7,6 +7,7 @@ uc_number: "4.5.4"
 ### UC4.5.4: Tạo mới mô tả công việc
 
 | **Mục tiêu:** | Cho phép người dùng thêm mới một đề nghị tuyển dụng mới trên hệ thống. |
+| --- | --- |
 | **Tài khoản:** | Người sử dụng. |
 | **Sự kiện kích hoạt:** | Người dùng click vào button Thêm mới trong Màn hình Quản lý mô tả công việc. |
 | **Điều kiện tiên quyết:** | Người dùng login vào hệ thống và được phân quyền. |
@@ -17,6 +18,7 @@ uc_number: "4.5.4"
 #### Quy tắc nghiệp vụ
 
 | **Mã QTNV** | **Mô tả** |
+| --- | --- |
 | QTNV 4.5.4.1 | **Displaying Rules:** |
 |  | ❖ Hiển thị màn hình Thêm mô tả công việc mới. |
 | QTNV 4.5.4.2 | **Creating Rules:** |
@@ -35,6 +37,7 @@ uc_number: "4.5.4"
 ![](media/image37.png)
 
 | **STT** | **Thông tin** | **Kiểu dữ liệu** | **Bắt buộc** | **Giá trị mặc định** | **Ràng buộc** |
+| --- | --- | --- | --- | --- | --- |
 | ***Thông tin chi tiết*** |  |  |  |  |  |
 | 1\. | Mã JD | Ký tự (10) | Có |  | Không cho phép nhập |
 | 2\. | Tiêu đề | Ký tự (50) | Có |  | Cho phép nhập |

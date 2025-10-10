@@ -7,6 +7,7 @@ uc_number: "4.7.3"
 ### UC4.7.3: Xem chi tiết lịch phỏng vấn
 
 | **Mục tiêu:** | Cho phép người dùng xem chi tiết thông tin lịch phỏng vấn trên hệ thống. |
+| --- | --- |
 | **Tài khoản:** | Người sử dụng. |
 | **Sự kiện kích hoạt:** | Người dùng click vào icon Xem chi tiết trong Màn hình Quản lý lịch phỏng vấn. |
 | **Điều kiện tiên quyết:** | Người dùng login vào hệ thống và được phân quyền. |
@@ -15,6 +16,7 @@ uc_number: "4.7.3"
 #### Quy tắc nghiệp vụ
 
 | **Mã QTNV** | **Mô tả** |
+| --- | --- |
 | QTNV 4.7.3 | **Screen Displaying Rules:** |
 |  | ❖ Hệ thống hiển thị màn hình chi tiết: |
 |  | o Hiển thị tương ứng với dòng NSD thực hiện thao tác. |
@@ -24,6 +26,7 @@ uc_number: "4.7.3"
 ![](media/image73.png)
 
 | **STT** | **Thông tin** | **Kiểu dữ liệu** | **Bắt buộc** | **Giá trị mặc định** | **Ràng buộc** |
+| --- | --- | --- | --- | --- | --- |
 | ***Thông tin hiển thị*** |  |  |  |  |  |
 | 1\. | Lịch phỏng vấn | Ký tự (100) |  |  | Hiển thị theo CSDL |
 | 2\. | Đề nghị tuyển dụng | Ký tự (100) |  |  | Hiển thị theo CSDL |

@@ -7,6 +7,7 @@ uc_number: "4.5.5"
 ### UC4.5.5: Chỉnh sửa mô tả công việc
 
 | **Mục tiêu:** | Cho phép người dùng chỉnh sửa một công việc đã có trên hệ thống. |
+| --- | --- |
 | **Tài khoản:** | Người sử dụng. |
 | **Sự kiện kích hoạt:** | Người dùng click vào icon Sửa trong Màn hình Quản lý mô tả công việc (JD). |
 | **Điều kiện tiên quyết:** | Người dùng login vào hệ thống và được phân quyền. |
@@ -16,6 +17,7 @@ uc_number: "4.5.5"
 #### Quy tắc nghiệp vụ
 
 | **Mã QTNV** | **Mô tả** |
+| --- | --- |
 | QTNV 4.5.5.1 | **Displaying Rules:** |
 |  | ❖ Hiển thị màn hình Chỉnh sửa mô tả công việc. |
 | QTNV 4.5.5.2 | **Editing Rules:** |
@@ -34,6 +36,7 @@ uc_number: "4.5.5"
 ![](media/image44.png)
 
 | **STT** | **Thông tin** | **Kiểu dữ liệu** | **Bắt buộc** | **Giá trị mặc định** | **Ràng buộc** |
+| --- | --- | --- | --- | --- | --- |
 | ***Thông tin chi tiết*** |  |  |  |  |  |
 | 1\. | Mã JD | Ký tự (10) | Có |  | Không cho phép sửa |
 | 2\. | Tiêu đề | Ký tự (50) | Có |  | Cho phép sửa |

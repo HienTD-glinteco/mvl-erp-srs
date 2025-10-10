@@ -21,6 +21,7 @@ uc_number: "6.5.1"
 #### Quy tắc nghiệp vụ
 
 | **Mã QTNV** | **Mô tả** |
+| --- | --- |
 | QTNV 6.5.1.1 | **Quy tắc Xem màn hình danh sách Bảng chấm công:** |
 |  | - Hệ thống hiển thị Màn hình Xem danh sách Bảng chấm công của tất cả Nhân viên |
 |  | - Khi mới truy cập, hệ thống lọc sẵn thông tin thời gian: |
@@ -39,7 +40,6 @@ uc_number: "6.5.1"
 |  | - Giá trị ngày công bằng 1 ngày công |
 |  | - Đi làm không đúng quy định (Màu vàng): |
 |  | - Hiển thị nếu "Giờ check đầu tiên \> Giờ bắt đầu ca" hoặc "Giờ Check cuối cùng \< Giờ kết thúc ca" |
-| --- | --- |
 |  | - Quên Check-in/out (Màu đỏ): |
 |  | - Hiển thị với ngày nhân viên chỉ chấm công 1 lần |
 |  | - Giá trị công của mặc định bằng: |
@@ -54,6 +54,7 @@ uc_number: "6.5.1"
 ![](media/image59.png)
 
 | **STT** | **Thông tin** | **Kiểu dữ liệu** | **Bắt buộc** | **Logic nghiệp vụ** |
+| --- | --- | --- | --- | --- |
 | 1 | Tìm kiếm | Textbox | Không | Điền "Mã, Tên nhân viên" và nhấn Enter để tìm kiếm |
 | 2 | Lọc theo Chi nhánh/Khối/PHòng ban/Chức vụ | Dropdownlist | Không | [[UC 6.5.2: Lọc thông tin, tìm kiếm nhân viên trong Bảng chấm công]{.underline}](#uc-6.5.2-lọc-thông-tin-tìm-kiếm-nhân-viên-trong-bảng-chấm-công) |
 | 3 | Nhân viên | Trường dữ liệu | Có | \- Hiển thị những thông tin: "Mã, Tên nhân viên, Chi nhánh, Khối, Phòng ban, Chức vụ" |
@@ -79,6 +80,7 @@ uc_number: "6.5.1"
 ![](media/image56.png)
 
 | **STT** | **Thông tin** | **Kiểu dữ liệu** | **Bắt buộc** | **Logic nghiệp vụ** |
+| --- | --- | --- | --- | --- |
 | Từ [[Màn hiển thị Giờ chấm công]{.underline}](#mô-tả-màn-hình-hiển-thị-giờ-chấm-công), thay đổi 2 trường thông tin sau |  |  |  |  |
 | 1 | Ô ngày công cụ thể của 1 nhân viên | Textbox | Không | \- Cách hiển thị: |
 |  |  |  |  | \+ Màu của ô tương ứng với trạng thái chấm công của ngày |

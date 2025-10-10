@@ -21,6 +21,7 @@ uc_number: "6.5.3"
 #### Quy tắc nghiệp vụ
 
 | **Mã QTNV** | **Mô tả** |
+| --- | --- |
 | QTNV 6.5.3 | **Quy tắc Xem chi tiết một ngày chấm công của nhân viên:** |
 |  | - Người dùng ở màn hình "Bảng chấm công" -\> nhấn vào ô của Ngày chấm công của nhân viên tương ứng |
 |  | - Hệ thống hiển thị màn hình xem thông tin chi tiết của Ngày chấm công tương ứng |
@@ -30,6 +31,7 @@ uc_number: "6.5.3"
 ![](media/image45.png)
 
 | **STT** | **Thông tin** | **Kiểu dữ liệu** | **Bắt buộc** | **Logic nghiệp vụ** |
+| --- | --- | --- | --- | --- |
 | 1 | Tên nhân viên | Trường dữ liệu |  | Hiển thị "Tên" của nhân viên tương ứng |
 | 2 | Ngày chấm công | Trường dữ liệu |  | \- Hiển thị "Ngày chấm công" tương ứng |
 |  |  |  |  | \- Hiển thị dạng: "Phút/Giờ" |
@@ -41,7 +43,6 @@ uc_number: "6.5.3"
 | 6 | Giờ kết thúc | Trường dữ liệu |  | \- Hiển thị "Giờ chấm công" cuối cùng trong ngày |
 |  |  |  |  | \- Hiển thị dạng: "Phút/Giờ" |
 | 7 | Thời gian làm việc | Trường dữ liệu |  | \- Công thức là |
-| --- | --- | --- | --- | --- |
 |  |  |  |  | \- Hiển thị số giờ: 2 số sau dấu thập phân |
 | 8 | Ngày công | Trường dữ liệu |  | \- Tính bằng: (Thời gian làm việc) / 8 |
 |  |  |  |  | \- Nếu "Ngày công" khác 1: |

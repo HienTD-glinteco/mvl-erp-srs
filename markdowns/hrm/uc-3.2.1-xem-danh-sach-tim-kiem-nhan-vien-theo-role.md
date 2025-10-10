@@ -7,6 +7,7 @@ uc_number: "3.2.1"
 ### UC 3.2.1:Xem danh sách + Tìm kiếm Nhân viên theo Role
 
 | **Mục tiêu:** | Cho phép người dùng xem danh sách Nhân viên đã tạo và Role tương ứng |
+| --- | --- |
 | **Tài khoản:** | Tài khoản được phân quyền xem trong phân hệ "Quản lý Nhân viên theo Role" |
 | **Sự kiện kích hoạt:** | Người dùng truy cập Màn hình của Phân hệ con "Quản lý Nhân viên theo Role" |
 | **Điều kiện tiên quyết:** | Người dùng login vào hệ thống với tài khoản được phân quyền tương ứng |
@@ -16,6 +17,7 @@ uc_number: "3.2.1"
 #### Quy tắc nghiệp vụ
 
 | **Mã QTNV** | **Mô tả** |
+| --- | --- |
 | QTNV 3.2.1.1 | **Quy tắc Xem màn hình danh sách Nhân viên theo Role:** |
 |  | - Hệ thống hiển thị Màn hình Xem danh sách những Nhân viên đã có với Role tương ứng |
 |  | - Mỗi khi truy cập màn hình , hệ thống tự động sắp xếp dữ liệu theo thứ tự mã Nhân viên từ cao xuống thấp |
@@ -71,6 +73,7 @@ uc_number: "3.2.1"
 ![](media/image47.png)
 
 | **Thông tin** | **Kiểu dữ liệu** | **Mô tả** | **Logic nghiệp vụ** | **Bắt buộc** |
+| --- | --- | --- | --- | --- |
 | Chỉnh sửa vai trò từng người | Nút | Nhấn để đổi giao diện chỉnh sửa vai trò hàng loạt | Nhấn để đổi sang nút "Chỉnh sửa vai trò hàng loạt" |  |
 | Khi hiển thị nút "Chỉnh sửa vai trò từng người", hiển thị thông tin |  |  |  |  |
 | Chọn vai trò | Nút | Nhấn để thay đổi Vai trò những nhân viên đã chọn | Nhấn để hiển thị [[màn hình pop-up Chỉnh sửa Role của nhân viên]{.underline}](#uc-3.2.2-chỉnh-sửa-role-của-nhân-viên) với những nhân viên được Check |  |
@@ -83,6 +86,7 @@ uc_number: "3.2.1"
 ![](media/image6.png)
 
 | **Thông tin** | **Kiểu dữ liệu** | **Mô tả** | **Logic nghiệp vụ** | **Bắt buộc** |
+| --- | --- | --- | --- | --- |
 | Lọc theo Chi nhánh\ | Dropdownlist | Hiển thị danh sách tương ứng để lọc tìm Nhân viên | Danh sách các giá trị:\ |  |
 | Lọc theo Khối\ |  |  | - Tất cả\ |  |
 | Lọc theo Phòng ban |  |  | - Danh mục Chi nhánh/Khối/Phòng ban/Chức vụ/Vai trò tương ứng |  |

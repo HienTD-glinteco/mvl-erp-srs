@@ -7,6 +7,7 @@ uc_number: "5.2.5"
 ### UC 5.2.5: Chỉnh sửa thông tin của một Bằng cấp/Chứng chỉ môi giới 
 
 | **Mục tiêu:** | Cho phép người dùng chỉnh sửa thông tin của một Bằng cấp/Chứng chỉ của nhân viên |
+| --- | --- |
 | **Tài khoản:** | Tài khoản được phân quyền chỉnh sửa tại phân hệ con "Quản lý Bằng cấp/ Chứng chỉ môi giới" |
 | **Sự kiện kích hoạt:** | Người dùng nhấn nút "Chỉnh sửa" tại màn danh sách "Quản lý Bằng cấp/Chứng chỉ môi giới" hoặc màn Xem chi tiết Bằng cấp/Chứng chỉ |
 | **Điều kiện tiên quyết:** | Người dùng login vào hệ thống với tài khoản được phân quyền tương ứng |
@@ -16,6 +17,7 @@ uc_number: "5.2.5"
 #### Quy tắc nghiệp vụ
 
 | **Mã QTNV** | **Mô tả** |
+| --- | --- |
 | QTNV 5.2.5 | **Quy tắc Chỉnh sửa Hồ sơ Nhân viên:** |
 |  | - Người dùng nhấn nút "Chỉnh sửa" tại màn danh sách "Quản lý Bằng cấp/Chứng chỉ môi giới" |
 |  | - Chỉnh sửa thông tin + nhấn nút "Cập nhật" -\> Hệ thống xác thực những trường thông tin: |
@@ -37,6 +39,7 @@ uc_number: "5.2.5"
 ![](media/image24.png)
 
 | **Thông tin** | **Kiểu dữ liệu** | **Mô tả** | **Logic nghiệp vụ** | **Bắt buộc** |
+| --- | --- | --- | --- | --- |
 | Những trường thông tin hiển thị như của [[màn hình "Tạo mới một Bằng cấp/Chứng chỉ"]{.underline}](#uc-5.2.3-tạo-mới-bằng-cấpchứng-chỉ-môi-giới): |  |  |  |  |
 | \- Điền sẵn những thông tin của Bằng cấp/Chứng chỉ tương ứng |  |  |  |  |
 | \- Tất cả những trường thông tin đều có thể chỉnh sửa |  |  |  |  |

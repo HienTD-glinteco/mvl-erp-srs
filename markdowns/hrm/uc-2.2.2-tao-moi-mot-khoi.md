@@ -7,6 +7,7 @@ uc_number: "2.2.2"
 ### UC 2.2.2: Tạo mới một Khối
 
 | **Mục tiêu:** | Cho phép người dùng tạo Khối mới |
+| --- | --- |
 | **Tài khoản:** | Tài khoản được phân quyền tạo mới Khối trong phân hệ "Quản lý Khối" |
 | **Sự kiện kích hoạt:** | Người dùng truy cập nhấn nút "Thêm mới" tại màn hình "Quản lý Khối" |
 | **Điều kiện tiên quyết:** | Người dùng login vào hệ thống với tài khoản được phân quyền tương ứng |
@@ -20,6 +21,7 @@ uc_number: "2.2.2"
 #### Quy tắc nghiệp vụ
 
 | **Mã QTNV** | **Mô tả** |
+| --- | --- |
 | QTNV 2.2.2 | **Quy tắc Tạo mới Khối:** |
 |  | - Người dùng nhấn nút "Thêm mới" -\> hệ thống hiển thị màn hình "Tạo Khối mới" |
 |  | - Người dùng điền thông tin Khối và nhấn "Tạo mới" để xác thực thông tin: |
@@ -28,7 +30,6 @@ uc_number: "2.2.2"
 |  | - Nếu thông tin "hợp lệ: |
 |  | - Hệ thống báo Tạo mới thành công |
 |  | - Mã khối mới được hệ thống tự động sinh. Mã khối có dạng: KHxxx |
-| --- | --- |
 |  | <!-- --> |
 |  | ``` |
 |  | - Với "KH" là cố định |
@@ -47,6 +48,7 @@ uc_number: "2.2.2"
 ![](media/image84.png)
 
 | **Thông tin** | **Kiểu dữ liệu** | **Mô tả** | **Logic nghiệp vụ** | **Bắt buộc** |
+| --- | --- | --- | --- | --- |
 | Tên khối | Textbox | Nhập "Tên khối" tương ứng | N/A | Có |
 | Loại Khối | Checkbox | Chọn "Loại Khối" tương ứng | Có 2 loại khối: | Có |
 |  |  |  | - Kinh doanh |  |

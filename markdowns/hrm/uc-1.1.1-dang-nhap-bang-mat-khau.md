@@ -7,6 +7,7 @@ uc_number: "1.1.1"
 ### UC1.1.1: Đăng nhập bằng mật khẩu
 
 | **Mục tiêu:** | Cho phép người dùng truy cập hệ thống bằng thông tin tài khoản đã được cấp, đảm bảo bảo mật và xác thực quyền sử dụng (trên nền tảng web và app mobile). |
+| --- | --- |
 | **Tác nhân:** | Người sử dụng. |
 | **Sự kiện kích hoạt:** | Người dùng truy cập màn hình đăng nhập và nhập thông tin (tên đăng nhập + mật khẩu), sau đó nhấn nút **Đăng nhập** |
 | **Điều kiện tiên quyết:** | Người dùng có tài khoản hợp lệ. |
@@ -17,6 +18,7 @@ uc_number: "1.1.1"
 #### Quy tắc nghiệp vụ
 
 | **Mã QTNV** | **Mô tả** |
+| --- | --- |
 | QTNV 1.1.1 | **Sign-in Rules:** |
 |  | - Người dùng nhập các trường thông tin: Tên đăng nhập và Mật khẩu |
 |  | - Người dùng ấn nút **Đăng nhập** |
@@ -36,6 +38,7 @@ uc_number: "1.1.1"
 Thông tin màn hình Đăng nhập
 
 | **STT** | **Thông tin** | **Kiểu dữ liệu** | **Bắt buộc** | **Giá trị mặc định** | **Ràng buộc** |
+| --- | --- | --- | --- | --- | --- |
 | ***Thông tin chi tiết*** |  |  |  |  |  |
 | 1. | Tên đăng nhập | Ký tự (100) | Có |  | Cho phép nhập. |
 | 2. | Mật khẩu | Ký tự (100) | Có |  | Cho phép nhập. |
@@ -52,6 +55,7 @@ Thông tin màn hình Đăng nhập
 Thông tin màn hình Xác thực bảo mật OTP
 
 | **STT** | **Thông tin** | **Kiểu dữ liệu** | **Bắt buộc** | **Giá trị mặc định** | **Ràng buộc** |
+| --- | --- | --- | --- | --- | --- |
 | ***Thông tin chi tiết*** |  |  |  |  |  |
 | 1. | Mã OTP | Ký tự (6) | Có |  | Cho phép nhập. |
 | ***Nút chức năng*** |  |  |  |  |  |
