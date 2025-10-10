@@ -14,10 +14,9 @@ This directory contains automatically generated Markdown files from DOCX SRS doc
 markdowns/
 ├── manifest.json              # Tracking file (SHA256 hashes, generated files list)
 └── <module>/                  # Module directory (e.g., hrm, crm, etc.)
-    └── <source-stem>/         # Named after the source DOCX file
-        ├── introduction.md    # Document header content
-        ├── uc-*.md           # Individual Use Case files
-        └── *.md              # Section files (for H1/H2 content)
+    ├── introduction.md       # Document header content
+    ├── uc-*.md              # Individual Use Case files
+    └── *.md                 # Section files (for H1/H2 content)
 ```
 
 ## File Types
@@ -71,8 +70,8 @@ This enables incremental conversion - only files that have changed are reconvert
 Reference specific files in your prompts:
 
 ```
-"Implement based on markdowns/hrm/.../uc-1.1.1-đăng-nhập-bằng-mật-khẩu.md"
-"Review requirements in markdowns/hrm/.../uc-2.1.1-xem-danh-sách-tìm-kiếm-chi-nhánh.md"
+"Implement based on markdowns/hrm/uc-1.1.1-đăng-nhập-bằng-mật-khẩu.md"
+"Review requirements in markdowns/hrm/uc-2.1.1-xem-danh-sách-tìm-kiếm-chi-nhánh.md"
 ```
 
 ### Searching

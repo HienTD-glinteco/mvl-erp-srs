@@ -15,9 +15,8 @@ srs/
 ├── markdowns/                  # Generated Markdown files
 │   ├── manifest.json          # Tracking file for conversions
 │   └── <module>/              # Organized by module (e.g., hrm, crm)
-│       └── <source-stem>/     # Named after source file
-│           ├── uc-*.md        # Individual Use Case files
-│           └── *.md           # Section files
+│       ├── uc-*.md           # Individual Use Case files
+│       └── *.md              # Section files
 ├── scripts/
 │   └── convert_srs.py         # Conversion script
 └── .github/workflows/
@@ -36,8 +35,7 @@ srs/
    - **H3 headings** (`###`) starting with "UC" - Individual Use Cases
 4. **Organization**: Files are organized as:
    - Module name extracted from filename (e.g., "SRS - HRM..." → `markdowns/hrm/`)
-   - Source file stem as subdirectory
-   - Individual UC and section files with descriptive names
+   - Individual UC and section files placed directly in module directory with descriptive names
 5. **Tracking**: Maintains a manifest with SHA256 hashes to detect changes
 6. **Cleanup**: Automatically removes old files when sources are updated or deleted
 

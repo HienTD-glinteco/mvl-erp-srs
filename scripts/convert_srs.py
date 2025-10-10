@@ -264,8 +264,7 @@ type: "section"
         
         # Extract module name and create output directory
         module_name = self.extract_module_name(docx_path.name)
-        source_stem = docx_path.stem
-        output_dir = self.markdowns_dir / module_name / source_stem
+        output_dir = self.markdowns_dir / module_name
         output_dir.mkdir(parents=True, exist_ok=True)
         
         # Convert DOCX to Markdown

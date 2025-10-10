@@ -34,7 +34,7 @@ Quick reference for using the SRS DOCX to Markdown automation system.
    git pull
    ```
 
-Your Markdown files will be in: `markdowns/<module>/<source-stem>/`
+Your Markdown files will be in: `markdowns/<module>/`
 
 ### Updating an Existing SRS Document
 
@@ -53,7 +53,7 @@ Reference specific Use Cases or sections in your prompts:
 **Find UC files:**
 ```bash
 # List all UC files for a module
-ls markdowns/hrm/*/uc-*.md
+ls markdowns/hrm/uc-*.md
 
 # Find a specific UC
 find markdowns -name "uc-1.1.1-*.md"
@@ -61,11 +61,11 @@ find markdowns -name "uc-1.1.1-*.md"
 
 **Example Copilot prompts:**
 ```
-"Implement login based on markdowns/hrm/.../uc-1.1.1-đăng-nhập-bằng-mật-khẩu.md"
+"Implement login based on markdowns/hrm/uc-1.1.1-đăng-nhập-bằng-mật-khẩu.md"
 
-"Review employee management requirements in markdowns/hrm/.../uc-5.1.*.md"
+"Review employee management requirements in markdowns/hrm/uc-5.1.*.md"
 
-"Generate test cases for UC 2.1.1 in markdowns/hrm/.../uc-2.1.1-*.md"
+"Generate test cases for UC 2.1.1 in markdowns/hrm/uc-2.1.1-*.md"
 ```
 
 ## For Developers

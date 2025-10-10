@@ -81,10 +81,9 @@ original/
 markdowns/
 ├── manifest.json                     # Tracking file
 └── <module>/                         # e.g., hrm, crm
-    └── <source-stem>/                # Named after DOCX file
-        ├── introduction.md           # Document header
-        ├── uc-{number}-{desc}.md     # Individual Use Cases
-        └── {section-name}.md         # Other sections
+    ├── introduction.md              # Document header
+    ├── uc-{number}-{desc}.md        # Individual Use Cases
+    └── {section-name}.md            # Other sections
 ```
 
 ## File Naming Conventions
@@ -302,7 +301,7 @@ Delete the DOCX file from `/original/`. On next run, the system will:
 
 ✅ DOCX files automatically converted to Markdown  
 ✅ Split into individual UC and section files  
-✅ Organized under `markdowns/<module>/<source-stem>/`  
+✅ Organized under `markdowns/<module>/`  
 ✅ Manifest tracks hashes and generated files  
 ✅ Only changed files are reconverted  
 ✅ Old files removed when sources change/are removed  
