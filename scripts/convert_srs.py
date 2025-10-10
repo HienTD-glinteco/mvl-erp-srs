@@ -197,6 +197,12 @@ class SRSConverter:
         text = re.sub(r'[-\s]+', '-', text)
         return text.strip('-')
     
+    def _clean_heading_text(self, text: str) -> str:
+        """Remove invisible characters and clean heading text"""
+        # Remove zero-width spaces and other invisible Unicode characters
+        text = re.sub(r'[\u200B-\u200D\uFEFF]', '', text)
+        return text.strip()
+    
     def split_markdown_by_sections(self, content: str) -> List[Tuple[str, str, str]]:
         """
         Split markdown content by H1 and H2 headings, creating individual files.
@@ -236,7 +242,7 @@ class SRSConverter:
             
             # Check for H2 (could be UC or regular section)
             elif line.startswith('## ') and not line.startswith('### '):
-                heading_text = line[3:].strip()
+                heading_text = self._clean_heading_text(line[3:])
                 
                 # Check if it's a Use Case
                 if re.match(r'^UC\s*[\d.]+', heading_text, re.IGNORECASE):
@@ -269,7 +275,7 @@ class SRSConverter:
             
             # Check for H3 (potential Use Case)
             elif line.startswith('### ') and not line.startswith('#### '):
-                heading_text = line[4:].strip()
+                heading_text = self._clean_heading_text(line[4:])
                 
                 # Check if it's a Use Case (starts with UC or UC followed by number)
                 if re.match(r'^UC\s*[\d.]+', heading_text, re.IGNORECASE):
@@ -289,7 +295,7 @@ class SRSConverter:
             
             # Check for H4 (potential Use Case)
             elif line.startswith('#### '):
-                heading_text = line[5:].strip()
+                heading_text = self._clean_heading_text(line[5:])
                 
                 # Check if it's a Use Case
                 if re.match(r'^UC\s*[\d.]+', heading_text, re.IGNORECASE):
@@ -334,7 +340,9 @@ class SRSConverter:
             # Match headings with UC numbers (any level)
             if line.startswith('#'):
                 # Extract heading text
-                heading_text = re.sub(r'^#+\s*', '', line).strip()
+                heading_text = re.sub(r'^#+\s*', '', line)
+                # Clean invisible characters
+                heading_text = self._clean_heading_text(heading_text)
                 # Check for UC pattern
                 match = re.match(r'^UC\s*([\d.]+)', heading_text, re.IGNORECASE)
                 if match:
