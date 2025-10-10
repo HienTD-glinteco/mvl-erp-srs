@@ -1,0 +1,52 @@
+---
+title: "UC 5.1.1: Xem danh sách Hồ sơ Nhân viên"
+type: "use-case"
+uc_number: "5.1.1"
+---
+
+### UC 5.1.1: Xem danh sách Hồ sơ Nhân viên
+
+  ---------------------------------------------------------------------------------------------------------
+  **Mục tiêu:**               Cho phép người dùng xem danh sách Hồ sơ Nhân viên
+  --------------------------- -----------------------------------------------------------------------------
+  **Tài khoản:**              Tài khoản được phân quyền xem phân hệ con "Quản lý Hồ sơ Nhân viên"
+
+  **Sự kiện kích hoạt:**      Người dùng truy cập Màn hình của Phân hệ con "Quản lý Hồ sơ Nhân viên"
+
+  **Điều kiện tiên quyết:**   Người dùng login vào hệ thống với tài khoản được phân quyền tương ứng
+
+  **Kết quả bắt buộc:**       Hệ thống hiển thị màn hình Danh sách "Hồ sơ nhân viên" với đầy đủ thông tin
+  ---------------------------------------------------------------------------------------------------------
+
+#### Quy tắc nghiệp vụ
+
+| **Mã QTNV** | **Mô tả** |
+| QTNV 5.1.1 | **Quy tắc Xem màn hình danh sách Hồ sơ Nhân viên:** |
+|  | - Hệ thống hiển thị Màn hình Xem danh sách những Hồ sơ Nhân viên đã tạo với đầy đủ thông tin tương ứng từng Hồ sơ Nhân viên |
+|  | - Mỗi khi truy cập màn hình , hệ thống tự động sắp xếp dữ liệu theo thứ tự mã Nhân viên từ cao xuống thấp |
+
+#### Mô tả màn hình
+
+![](media/image53.png)
+
+| **Thông tin** | **Kiểu dữ liệu** | **Mô tả** | **Logic nghiệp vụ** | **Bắt buộc** |
+| Ô Tìm kiếm | Textbox | Nhập "Họ Tên" hoặc "Mã nhân viên" để tìm kiếm | [[UC 5.1.3: Tìm kiếm thông tin nhân viên]{.underline}](#uc-5.1.3-tìm-kiếm-hồ-sơ-nhân-viên) |  |
+| STT | Trường dữ liệu | Hiển thị "Số thứ tự" tương ứng | N/A | Có |
+| Mã nhân viên | Trường dữ liệu | Hiển thị "Mã nhân viên" tương ứng | Khi nhấn vào tiêu đề cột, hệ thống sẽ đảo chiều sắp xếp giữa tăng dần và giảm dần | Có |
+| Họ tên | Trường dữ liệu | Hiển thị "Họ tên" tương ứng | N/A | Có |
+| Email | Trường dữ liệu | Hiển thị "Email" tương ứng | N/A | Có |
+| Chức vụ | Trường dữ liệu | Hiển thị "Chức vụ" tương ứng | N/A | Có |
+| Chi nhánh | Trường dữ liệu | Hiển thị "Chi nhánh" tương ứng | N/A | Có |
+| Khối | Trường dữ liệu | Hiển thị "Khối" tương ứng | N/A | Có |
+| Phòng ban | Trường dữ liệu | Hiển thị "Phòng ban" tương ứng | N/A | Có |
+| Trạng thái | Trường dữ liệu | Hiển thị "Trạng thái" tương ứng của nhân viên | Có 3 trạng thái + màu hiển thị:\ | Có |
+|  |  |  | - "Đang làm việc": màu xanh lá\ |  |
+|  |  |  | - "On-boarding": màu vàng\ |  |
+|  |  |  | - "Đã nghỉ việc": màu đỏ |  |
+| Thao tác | Nút | Hiển thị 3 nút thao tác: | \- Nút "Xem chi tiết": [[UC 5.1.2: Xem chi tiết thông tin một Nhân viên]{.underline}](#uc-5.1.2-xem-chi-tiết-thông-tin-một-nhân-viên) |  |
+|  |  | \- Xem chi tiết | \- Nút "Chỉnh sửa": [[UC 5.1.6: Chỉnh sửa thông tin của một Hồ sơ nhân viên]{.underline}](#uc-5.1.6-chỉnh-sửa-thông-tin-của-một-hồ-sơ-nhân-viên) |  |
+|  |  | \- Chỉnh sửa | \- "Nút "Xóa": [[UC 5.1.7: Xóa một Nhân viên đã có]{.underline}](#uc-5.1.7-xóa-một-nhân-viên-đã-có) |  |
+|  |  | \- Xóa |  |  |
+| Thêm mới | Nút | Nhấn để thêm Hồ sơ nhân viên mới | [[UC 5.1.4: Tạo mới Hồ sơ Nhân viên]{.underline}](#uc-5.1.4-tạo-mới-một-hồ-sơ-nhân-viên) |  |
+| Import | Nút | Nhấn để nhập lên danh sách Hồ sơ | [[UC 5.1.8: Import danh sách Nhân viên]{.underline}](#uc-5.1.8-import-danh-sách-nhân-viên) |  |
+| Export | Nút | Nhấn để tải về danh sách Hồ sơ nhân viên | [[UC 5.1.9: Export danh sách Nhân viên]{.underline}](#uc-5.1.9-export-danh-sách-nhân-viên) |  |

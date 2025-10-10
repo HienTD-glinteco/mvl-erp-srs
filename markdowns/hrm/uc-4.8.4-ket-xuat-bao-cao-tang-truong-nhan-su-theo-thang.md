@@ -1,0 +1,21 @@
+---
+title: "UC4.8.4: Kết xuất báo cáo Tăng trưởng nhân sự theo tháng"
+type: "use-case"
+uc_number: "4.8.4"
+---
+
+### UC4.8.4: Kết xuất báo cáo Tăng trưởng nhân sự theo tháng
+
+| **Mục tiêu:** | Cho phép người dùng kết xuất báo cáo Tăng trưởng nhân sự theo tháng trên hệ thống. |
+| **Tài khoản:** | Người sử dụng. |
+| **Sự kiện kích hoạt:** | Người dùng click vào icon Kết xuất trong Màn hình Báo cáo tăng giảm nhân sự (theo tháng). |
+| **Điều kiện tiên quyết:** | Người dùng login vào hệ thống và được phân quyền. |
+| **Kết quả bắt buộc:** | File được kết xuất thành công ra định dạng được chọn (Excel/PDF). Nếu có bộ lọc kết xuất theo bộ lọc cuối cùng được áp dụng. |
+|  | Người dùng có thể tải về file hoặc lưu trữ nội bộ hệ thống. |
+
+#### Quy tắc nghiệp vụ
+
+| **Mã QTNV** | **Mô tả** |
+| QTNV 4.8.4 | **Exporting File Rules:** |
+|  | ❖ Hệ thống thực hiện kết xuất báo cáo. Nếu có bộ lọc, kết xuất theo bộ lọc cuối cùng được áp dụng. |
+|  | ❖ File kết xuất có định dạng Excel hoặc PDF. |

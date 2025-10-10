@@ -1,0 +1,82 @@
+---
+title: "UC 3.1.2: Tạo mới Vai trò (Role)"
+type: "use-case"
+uc_number: "3.1.2"
+---
+
+### UC 3.1.2: Tạo mới Vai trò (Role)
+
+| **Mục tiêu:** | Cho phép người dùng tạo Vai trò mới |
+| **Tài khoản:** | Tài khoản được phân quyền tạo mới trong phân hệ "Quản lý Vai trò" |
+| **Sự kiện kích hoạt:** | Người dùng truy cập nhấn nút "Thêm mới" tại màn hình "Quản lý Vai trò" |
+| **Điều kiện tiên quyết:** | Người dùng login vào hệ thống với tài khoản được phân quyền tương ứng |
+| **Kết quả bắt buộc:** | Hệ thống hiển thị Vai trò mới tạo ở màn hình danh sách "Vai trò" |
+|  | Vai trò được tạo mới có thể: Xem chi tiết, Sửa, Xóa ( với TK được phân quyền tương ứng) |
+
+####  Luồng nghiệp vụ
+
+![](media/image2.png)
+
+#### Quy tắc nghiệp vụ
+
+| **Mã QTNV** | **Mô tả** |
+| QTNV 3.1.2.1 | **Quy tắc Tạo mới Vai trò:** |
+|  | - Người dùng nhấn nút "Thêm mới" -\> hệ thống hiển thị màn hình "Tạo Vai trò mới" |
+|  | - Khi mới truy cập, tất cả các quyền đều ở phần "Quyền chưa chỉ định" |
+|  | - Người dùng điền thông tin Vai trò và nhấn "Tạo mới" để xác thực thông tin: |
+|  | - Những trường thông tin cần xác thực: |
+|  | - Cần có ít nhất 1 Quyền ở phần Đã chỉ định |
+|  | - Những trường thông tin Bắt buộc điền thông tin |
+|  | - Nếu thông tin "hợp lệ: |
+|  | - Hệ thống báo Tạo mới thành công |
+|  | - Vai trò tạo mới có những Quyền ở phần "Quyền đã chỉ định" |
+|  | - Mã vai trò mới được hệ thống tự động sinh. Mã vai trò có dạng: VTxxx |
+| --- | --- |
+|  | <!-- --> |
+|  | ``` |
+|  | - Với "VT" là cố định |
+|  | - Với "xxx" có số thứ tự tăng dần 1 đơn vị bắt đầu từ 003 |
+|  | - Quay về màn hình danh sách Vai trò với Vai trò mới đã được tạo |
+|  | <!-- --> |
+|  | ``` |
+|  | - Nếu thông tin "không hợp lệ": |
+|  | - Báo lỗi tương ứng với những ô thông tin không hợp lệ |
+|  | - Những ô thông tin không hợp lệ: Hiển thị viền đỏ |
+|  | - Khi người dùng nhấn vào trường thông tin không hợp lệ, hệ thống báo lỗi tương ứng với thông tin đó. |
+|  | - Hệ thống dẫn màn hình đến ô thông tin không hợp lệ đầu tiên |
+| QTNV 3.1.2.2 | **Quy tắc Vai trò (Role) cơ bản cố định của nhân viên:** |
+|  | - Hệ thống tạo tự động 2 Vai trò đầu tiên với thông tin như sau: |
+|  | - Vai trò đầu tiên: |
+|  | - Mã vai trò: VT001 |
+|  | - Tên vai trò: Admin hệ thống |
+|  | - Mô tả: Vai trò có tất cả các quyền của hệ thống |
+|  | - Danh sách Quyền của Vai trò: Tất cả các quyền của hệ thống |
+|  | - Vai trò thứ 2: |
+|  | - Mã vai trò: VT002 |
+|  | - Tên vai trò: Vai trò cơ bản |
+|  | - Mô tả: Vai trò mặc định của tài khoản nhân viên khi được tạo mới |
+|  | - Danh sách Quyền của Vai trò: |
+|  | - Tobecontinue |
+|  | - Vai trò này không hiển thị nút "Chỉnh sửa" và "Xóa" ở màn hình danh sách |
+
+#### Mô tả màn hình
+
+![](media/image4.png)
+
+| **Thông tin** | **Kiểu dữ liệu** | **Mô tả** | **Logic nghiệp vụ** | **Bắt buộc** |
+| Tên vai trò | Textbox | Nhập "Tên vai trò" mới | N/A | Có |
+| Mô tả | Textbox | Nhập "Mô tả" tương ứng | N/A | Không |
+| Bảng danh sách quyền: phần "Quyền chưa chỉ định" có những thông tin |  |  |  |  |
+| Ô tìm kiếm | Textbox | Điền thông tin "Tên quyền" và nhấn Enter để tìm | Hỗ trợ tìm kiếm theo "Tên quyền" |  |
+| Đã chọn | Trường dữ liệu | Hiển thị số lượng Quyền chưa chỉ định được Check trên tổng số Quyền chưa chỉ định |  |  |
+| Danh sách quyền chưa chỉ định | Checkbox | Hiển thị danh sách các quyền chưa chỉ định | Check danh sách quyền tương ứng để chuyển sang phần "Quyền đã chỉ định" |  |
+| Cấp toàn bộ quyền | Button | Nhấn để chuyển toàn bộ quyền sang phần "Quyền đã chỉ định" | N/A |  |
+| Cấp quyền đã chọn | Button | Nhấn để chuyển những Quyền đang được Check sang "Quyền đã chỉ định" | N/A |  |
+| Bảng danh sách quyền: phần "Quyền đã chỉ định" |  |  |  |  |
+| Ô tìm kiếm | Textbox | Điền thông tin "Tên quyền" và nhấn Enter để tìm | Hỗ trợ tìm kiếm theo "Tên quyền" |  |
+| Đã chọn | Trường dữ liệu | Hiển thị số lượng Quyền đã chỉ định được Check trên tổng số Quyền đã chỉ định |  |  |
+| Danh sách quyền đã chỉ định | Checkbox | Hiển thị danh sách các quyền đã chỉ định | Khi tạo mới, những quyền ở phần này sẽ là Quyền của Vai trò | Có |
+| Xóa toàn bộ quyền | Button | Nhấn để chuyển toàn bộ quyền sang phần "Quyền chưa chỉ định" | N/A |  |
+| Xóa quyền đã chọn | Button | Nhấn để chuyển những Quyền đang được Check sang "Quyền chưa chỉ định" | N/A |  |
+| Tạo mới | Nút | Nhấn nút để hệ thống xác thực thông tin | Xác thực những trường thông tin đúng định dạng và bắt buộc điền |  |
+| Hủy | Nút | Nhấn nút để dừng luồng tạo mới. | Khi nhấn, hệ thống sẽ quay về [[màn hình hiển thị danh sách Vai trò]{.underline}](#uc-3.1.1xem-danh-sách-tìm-kiếm-vai-trò-role) |  |

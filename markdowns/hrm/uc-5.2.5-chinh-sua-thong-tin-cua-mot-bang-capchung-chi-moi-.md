@@ -1,0 +1,44 @@
+---
+title: "UC 5.2.5: Chỉnh sửa thông tin của một Bằng cấp/Chứng chỉ môi giới"
+type: "use-case"
+uc_number: "5.2.5"
+---
+
+### UC 5.2.5: Chỉnh sửa thông tin của một Bằng cấp/Chứng chỉ môi giới 
+
+| **Mục tiêu:** | Cho phép người dùng chỉnh sửa thông tin của một Bằng cấp/Chứng chỉ của nhân viên |
+| **Tài khoản:** | Tài khoản được phân quyền chỉnh sửa tại phân hệ con "Quản lý Bằng cấp/ Chứng chỉ môi giới" |
+| **Sự kiện kích hoạt:** | Người dùng nhấn nút "Chỉnh sửa" tại màn danh sách "Quản lý Bằng cấp/Chứng chỉ môi giới" hoặc màn Xem chi tiết Bằng cấp/Chứng chỉ |
+| **Điều kiện tiên quyết:** | Người dùng login vào hệ thống với tài khoản được phân quyền tương ứng |
+| **Kết quả bắt buộc:** | Hệ thống cập nhật thông tin đã chỉnh sửa của "Bằng cấp/Chứng chỉ" tương ứng |
+|  | Thông tin "Bằng cấp/Chứng chỉ" ở những thông tin liên quan cũng được cập nhật |
+
+#### Quy tắc nghiệp vụ
+
+| **Mã QTNV** | **Mô tả** |
+| QTNV 5.2.5 | **Quy tắc Chỉnh sửa Hồ sơ Nhân viên:** |
+|  | - Người dùng nhấn nút "Chỉnh sửa" tại màn danh sách "Quản lý Bằng cấp/Chứng chỉ môi giới" |
+|  | - Chỉnh sửa thông tin + nhấn nút "Cập nhật" -\> Hệ thống xác thực những trường thông tin: |
+|  | - Những trường thông tin cần xác thực: |
+|  | - Ngày cấp ≤ Ngày hết hạn |
+|  | - File chứng chỉ: dung lượng ≤ 10 MB |
+|  | - Những trường thông tin Bắt buộc điền thông tin |
+|  | - Nếu thông tin "hợp lệ": |
+|  | - Hệ thống báo Chỉnh sửa thành công |
+|  | - Quay về màn hình danh sách Bằng cấp/ Chứng chỉ với thông tin Hồ sơ mới đã được cập nhật |
+|  | - Nếu thông tin "không hợp lệ": |
+|  | - Báo lỗi tương ứng với những ô thông tin không hợp lệ |
+|  | - Những ô thông tin không hợp lệ hiển thị viền đỏ |
+|  | - Khi người dùng nhấn vào trường thông tin không hợp lệ, hệ thống báo lỗi tương ứng với thông tin đó. |
+|  | - Hệ thống dẫn màn hình đến ô thông tin không hợp lệ đầu tiên |
+
+#### Mô tả màn hình
+
+![](media/image24.png)
+
+| **Thông tin** | **Kiểu dữ liệu** | **Mô tả** | **Logic nghiệp vụ** | **Bắt buộc** |
+| Những trường thông tin hiển thị như của [[màn hình "Tạo mới một Bằng cấp/Chứng chỉ"]{.underline}](#uc-5.2.3-tạo-mới-bằng-cấpchứng-chỉ-môi-giới): |  |  |  |  |
+| \- Điền sẵn những thông tin của Bằng cấp/Chứng chỉ tương ứng |  |  |  |  |
+| \- Tất cả những trường thông tin đều có thể chỉnh sửa |  |  |  |  |
+| Cập nhật | Nút | Nhấn để hệ thống xác thực Hồ sơ | Xác thực những trường thông tin cần xác thực + bắt buộc | Có |
+| Hủy | Nút | Nhấn để quy về màn hình danh sách hồ sơ | N/A | Có |

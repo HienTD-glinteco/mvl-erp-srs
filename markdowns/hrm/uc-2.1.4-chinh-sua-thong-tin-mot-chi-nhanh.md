@@ -1,0 +1,45 @@
+---
+title: "UC 2.1.4: Chỉnh sửa thông tin một Chi nhánh"
+type: "use-case"
+uc_number: "2.1.4"
+---
+
+### UC 2.1.4: Chỉnh sửa thông tin một Chi nhánh
+
+| **Mục tiêu:** | Cho phép người dùng chỉnh sửa thông tin Chi nhánh đã có |
+| **Tài khoản:** | Tài khoản được phân quyền chỉnh sửa trong phân hệ "Quản lý Chi nhánh" |
+| **Sự kiện kích hoạt:** | Người dùng truy cập nhấn nút "Chỉnh sửa" tại màn hình "Quản lý chi nhánh" hoặc màn hình Xem chi tiết thông tin một Chi nhánh |
+| **Điều kiện tiên quyết:** | Người dùng login vào hệ thống với tài khoản được phân quyền tương ứng |
+| **Kết quả bắt buộc:** | Hệ thống cập nhật thông tin đã chỉnh sửa của Chi nhánh tương ứng. |
+|  | Thông tin "Chi nhánh" ở những thông tin liên quan cũng được cập nhật. |
+
+#### Quy tắc nghiệp vụ
+
+| **Mã QTNV** | **Mô tả** |
+| QTNV 2.1.4 | **Quy tắc Chỉnh sửa thông tin Chi nhánh:** |
+|  | - Người dùng nhấn "Chỉnh sửa" với một chi nhánh đã tạo -\> hệ thống hiển thị màn "Chỉnh sửa thông tin Chi nhánh" với những thông tin của Chi nhánh tương ứng |
+|  | - Người dùng chỉnh sửa thông tin Chi nhánh và nút "Cập nhật" để xác thực thông tin |
+|  | - Những trường thông tin cần xác thực: |
+|  | - Số điện thoại liên hệ: nếu điền nhiều số điện thoại cần được phân tách bằng dấu "-" |
+|  | - Email: cần đúng định dạng Email |
+|  | - Những trường thông tin Bắt buộc điền thông tin |
+|  | - Nếu thông tin "hợp lệ: |
+|  | - Hệ thống báo Chỉnh sửa thành công |
+|  | - Quay về màn hình danh sách Chi nhánh với thông tin Chi nhánh mới được cập nhật |
+|  | - Nếu đổi **"Tên Chi nhánh"** trong danh mục, tất cả thông tin liên quan (Hồ sơ nhân viên, báo cáo, màn hình hiển thị...) sẽ **tự động cập nhật theo tên mới** |
+|  | - Nếu thông tin "không hợp lệ": |
+|  | - Báo lỗi tương ứng với những ô thông tin không hợp lệ |
+|  | - Những ô thông tin không hợp lệ: Hiển thị viền đỏ |
+|  | - Khi người dùng nhấn vào trường thông tin không hợp lệ, hệ thống báo lỗi tương ứng với thông tin đó. |
+|  | - Hệ thống dẫn màn hình đến ô thông tin không hợp lệ đầu tiên |
+
+#### Mô tả màn hình
+
+![](media/image122.png)
+
+| **Thông tin** | **Kiểu dữ liệu** | **Mô tả** | **Logic nghiệp vụ** | **Bắt buộc** |
+| Những trường thông tin hiển thị như của màn hình "Tạo mới một Chi nhánh": |  |  |  |  |
+| \- Hiển thị các thông tin theo lần thay đổi cuối cùng của Chi nhánh tương ứng |  |  |  |  |
+| \- Tất cả thông tin đều được chỉnh sửa |  |  |  |  |
+| Lưu | Nút | Nhấn nút để hệ thống xác thực thông tin | Xác thực thông tin đúng định dạng + bắt buộc |  |
+| --- | --- | --- | --- | --- |

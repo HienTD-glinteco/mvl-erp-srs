@@ -1,0 +1,44 @@
+---
+title: "UC 5.3.1: Xem danh sách Quan hệ nhân thân của nhân viên"
+type: "use-case"
+uc_number: "5.3.1"
+---
+
+### UC 5.3.1: Xem danh sách Quan hệ nhân thân của nhân viên
+
+  ------------------------------------------------------------------------------------------------------
+  **Mục tiêu:**               Cho phép người dùng xem danh sách Quan hệ nhân thân của nhân viên
+  --------------------------- --------------------------------------------------------------------------
+  **Tài khoản:**              Tài khoản được phân quyền xem trong "Quản lý Quan hệ nhân thân"
+
+  **Sự kiện kích hoạt:**      Người dùng truy cập Màn hình của Phân hệ con "Quản lý Quan hệ nhân thân"
+
+  **Điều kiện tiên quyết:**   Người dùng login vào hệ thống với tài khoản được phân quyền tương ứng
+
+  **Kết quả bắt buộc:**       Hệ thống hiển thị màn Danh sách "Quan hệ nhân thân" với đầy đủ thông tin
+  ------------------------------------------------------------------------------------------------------
+
+#### Quy tắc nghiệp vụ
+
+| **Mã QTNV** | **Mô tả** |
+| QTNV 5.3.1 | **Quy tắc Xem màn hình danh sách Quan hệ nhân thân:** |
+|  | - Hệ thống hiển thị Màn hình Xem danh sách những Quan hệ nhân thân đã tạo với đầy đủ thông tin tương ứng từng Nhân viên |
+|  | - Mỗi khi truy cập màn hình , hệ thống tự động sắp xếp dữ liệu theo thứ tự được tạo ra từ gần nhất đến xa nhất |
+
+#### Mô tả màn hình
+
+![](media/image125.png)
+
+| **Thông tin** | **Kiểu dữ liệu** | **Mô tả** | **Logic nghiệp vụ** | **Bắt buộc** |
+| Ô Tìm kiếm | Textbox | Nhập "Tên,mã nhân viên", "Tên người thân", "Mối quan hệ" để tìm kiếm | [[UC 5.3.2: Tìm kiếm thông tin Quan hệ nhân thân của nhân viên]{.underline}](#uc-5.3.2-tìm-kiếm-thông-tin-quan-hệ-nhân-thân-của-nhân-viên) |  |
+| Mã nhân viên | Trường dữ liệu | Hiển thị "Mã nhân viên" tương ứng | Khi nhấn vào tiêu đề cột, hệ thống sẽ đảo chiều sắp xếp giữa tăng dần và giảm dần | Có |
+| Tên nhân viên | Trường dữ liệu | Hiển thị "Tên nhân viên" tương ứng | N/A | Có |
+| Tên người thân | Trường dữ liệu | Hiển thị "Tên người thân" tương ứng | N/A | Có |
+| Mối quan hệ | Trường dữ liệu | Hiển thị "Mối quan hệ" tương ứng | N/A | Có |
+| Ngày sinh | Trường dữ liệu | Hiển thị "Ngày sinh tương ứng | N/A | Có |
+| Số điện thoại | Trường dữ liệu | Hiển thị "Số điện thoại" tương ứng | \- Chỉ được điền số và dấu "+"\ | Có |
+|  |  |  | - Xác thực: 10 chữ số bắt đầu bằng 0 hoặc 9 chữ số nếu bắt đầu từ +84 |  |
+| Thao tác | Nút | Hiển thị 3 nút thao tác: | \- Nút "Xem chi tiết": [[UC 5.3.4: Xem chi tiết thông tin một Quan hệ nhân thân]{.underline}](#uc-5.3.4-xem-chi-tiết-thông-tin-một-quan-hệ-nhân-thân-của-nhân-viên) |  |
+|  |  | \- Xem chi tiết | \- Nút "Chỉnh sửa": [[UC 5.3.5: Chỉnh sửa thông tin một Quan hệ nhân thân]{.underline}](#uc-5.3.5-chỉnh-sửa-thông-tin-của-một-quan-hệ-nhân-thân-của-nhân-viên) |  |
+|  |  | \- Chỉnh sửa | \- Nút "Xóa": [[UC 5.3.6: Xóa một Quan hệ nhân thân]{.underline}](#uc-5.3.6-xóa-một-quan-hệ-nhân-thân-của-nhân-viên) |  |
+|  |  | \- Xóa |  |  |

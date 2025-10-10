@@ -1,0 +1,22 @@
+---
+title: "UC4.6.6: Kết xuất danh sách ứng viên"
+type: "use-case"
+uc_number: "4.6.6"
+---
+
+### UC4.6.6: Kết xuất danh sách ứng viên
+
+| **Mục tiêu:** | Cho phép người dùng kết xuất danh sách các ứng viên trên hệ thống. |
+| **Tài khoản:** | Người sử dụng. |
+| **Sự kiện kích hoạt:** | Người dùng click vào icon Kết xuất trong Màn hình Quản lý ứng viên. |
+| **Điều kiện tiên quyết:** | Người dùng login vào hệ thống và được phân quyền. |
+| **Kết quả bắt buộc:** | File danh sách ứng viên được tạo thành công và tải về máy người dùng đúng định dạng đã chọn. |
+|  | Hệ thống ghi log về hành động kết xuất (người thực hiện, thời gian, định dạng file). |
+
+#### Quy tắc nghiệp vụ
+
+| **Mã QTNV** | **Mô tả** |
+| QTNV 4.6.6 | **Exporting File Rules:** |
+|  | ❖ Người dùng click vào icon Kết xuất danh sách ứng viên. |
+|  | ❖ Hệ thống thực hiện kết xuất danh sách các ứng viên trên hệ thống. Nếu có bộ lọc, kết xuất danh sách theo lần ấn nút Áp dụng bộ lọc mới nhất. |
+|  | ❖ File kết xuất có định dạng Excel hoặc PDF. |
