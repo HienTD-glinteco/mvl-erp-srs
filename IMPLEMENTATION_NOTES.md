@@ -17,13 +17,16 @@ This document describes the completed implementation of the automated SRS DOCX t
 - ✅ Maintains manifest with SHA256 hashes for change tracking
 - ✅ Implements incremental conversion (only processes changed files)
 - ✅ Automatically cleans up old files when sources are updated/removed
+- ✅ Smart rename detection preserves unchanged UC files
 
 **Key Functions:**
 - `calculate_hash()`: SHA256 hash calculation for change detection
 - `extract_module_name()`: Extracts module name from filename
 - `convert_docx_to_markdown()`: Pandoc wrapper for DOCX conversion
 - `split_markdown_by_sections()`: Intelligent content splitting
-- `process_docx_file()`: Main processing pipeline
+- `extract_uc_contents()`: Extracts UC content hashes for comparison
+- `find_renamed_file()`: Detects renamed files by module and SRS prefix
+- `process_docx_file()`: Main processing pipeline with rename detection
 - `cleanup_old_files()`: Removes outdated generated files
 - `cleanup_removed_sources()`: Handles deleted source files
 

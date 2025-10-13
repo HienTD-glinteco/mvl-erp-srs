@@ -354,6 +354,74 @@ class SRSConverter:
         
         return uc_numbers
     
+    def extract_uc_contents(self, content: str) -> Dict[str, str]:
+        """
+        Extract UC content mapped by UC number.
+        Returns dict of {uc_number: content_hash}
+        """
+        uc_contents = {}
+        lines = content.split('\n')
+        
+        current_uc_num = None
+        current_uc_content = []
+        
+        for line in lines:
+            # Check if this is a UC heading (any level)
+            if line.startswith('#'):
+                heading_text = re.sub(r'^#+\s*', '', line)
+                heading_text = self._clean_heading_text(heading_text)
+                match = re.match(r'^UC\s*([\d.]+)', heading_text, re.IGNORECASE)
+                
+                if match:
+                    # Save previous UC if any
+                    if current_uc_num:
+                        content_str = '\n'.join(current_uc_content)
+                        # Create a hash of the content for comparison
+                        content_hash = hashlib.sha256(content_str.encode('utf-8')).hexdigest()
+                        uc_contents[current_uc_num] = content_hash
+                    
+                    # Start new UC
+                    current_uc_num = match.group(1).rstrip('.')
+                    current_uc_content = [line]
+                elif current_uc_num:
+                    # We're in a UC but hit a non-UC heading - end current UC
+                    content_str = '\n'.join(current_uc_content)
+                    content_hash = hashlib.sha256(content_str.encode('utf-8')).hexdigest()
+                    uc_contents[current_uc_num] = content_hash
+                    current_uc_num = None
+                    current_uc_content = []
+            elif current_uc_num:
+                # Regular line within a UC
+                current_uc_content.append(line)
+        
+        # Save final UC if any
+        if current_uc_num:
+            content_str = '\n'.join(current_uc_content)
+            content_hash = hashlib.sha256(content_str.encode('utf-8')).hexdigest()
+            uc_contents[current_uc_num] = content_hash
+        
+        return uc_contents
+    
+    def find_renamed_file(self, new_filename: str, new_module: str) -> Optional[str]:
+        """
+        Find if there's an old file that might be a renamed version.
+        Returns the old file_key if found, None otherwise.
+        """
+        # Extract base pattern from new filename (SRS - MODULE pattern)
+        for old_file_key in self.manifest["files"].keys():
+            # Check if old file has same module
+            old_module = self.manifest["files"][old_file_key].get("module")
+            if old_module != new_module:
+                continue
+            
+            # Both files should follow SRS - MODULE pattern
+            if re.match(r'SRS\s*-\s*' + re.escape(new_module), new_filename, re.IGNORECASE) and \
+               re.match(r'SRS\s*-\s*' + re.escape(old_module), old_file_key, re.IGNORECASE):
+                # Found a potential renamed file (same module, both follow SRS pattern)
+                return old_file_key
+        
+        return None
+    
     def _create_uc_section(self, uc_header: str, content: List[str]) -> Tuple[str, str, str]:
         """Create a section tuple for a Use Case"""
         # Extract UC number (e.g., "UC1.1.1" or "UC 2.1.1")
@@ -413,22 +481,53 @@ type: "section"
         # Calculate hash
         file_hash = self.calculate_hash(docx_path)
         
+        # Extract module name and create output directory
+        module_name = self.extract_module_name(docx_path.name)
+        output_dir = self.markdowns_dir / module_name
+        output_dir.mkdir(parents=True, exist_ok=True)
+        
         # Check if file has changed
         file_key = docx_path.name
+        old_file_key = None
+        old_uc_contents = {}
+        
         if file_key in self.manifest["files"]:
             old_hash = self.manifest["files"][file_key].get("hash")
             if old_hash == file_hash:
                 print(f"  Skipping (unchanged): {docx_path.name}")
                 return
             
-            # File changed, clean up old files
-            print(f"  File changed, cleaning up old generated files...")
-            self.cleanup_old_files(file_key)
+            # File changed, we'll need to compare UCs
+            print(f"  File changed, will compare UC content...")
+            old_file_key = file_key
+        else:
+            # Check if this might be a renamed file
+            old_file_key = self.find_renamed_file(docx_path.name, module_name)
+            if old_file_key:
+                print(f"  Detected potential file rename from: {old_file_key}")
+                print(f"  Will compare UC content to preserve unchanged UCs...")
         
-        # Extract module name and create output directory
-        module_name = self.extract_module_name(docx_path.name)
-        output_dir = self.markdowns_dir / module_name
-        output_dir.mkdir(parents=True, exist_ok=True)
+        # If we have an old file (changed or renamed), extract its UC contents for comparison
+        if old_file_key:
+            old_files = self.manifest["files"][old_file_key].get("generated_files", [])
+            for rel_path in old_files:
+                if '/uc-' in rel_path:
+                    file_path = self.repo_root / rel_path
+                    if file_path.exists():
+                        # Extract UC number from filename
+                        filename = file_path.name
+                        match = re.match(r'^uc-([\d.]+)-', filename)
+                        if match:
+                            uc_num = match.group(1)
+                            # Read the file content (skip YAML front matter)
+                            with open(file_path, 'r', encoding='utf-8') as f:
+                                content = f.read()
+                                # Extract content after YAML front matter
+                                parts = content.split('---', 2)
+                                if len(parts) >= 3:
+                                    uc_content = parts[2].strip()
+                                    content_hash = hashlib.sha256(uc_content.encode('utf-8')).hexdigest()
+                                    old_uc_contents[uc_num] = content_hash
         
         # Convert DOCX to Markdown
         print(f"  Converting to Markdown...")
@@ -442,17 +541,24 @@ type: "section"
         all_uc_numbers = self.extract_all_uc_numbers(markdown_content)
         print(f"  Found {len(all_uc_numbers)} UC sections in source")
         
+        # Extract UC contents for comparison
+        new_uc_contents = self.extract_uc_contents(markdown_content)
+        
         # Split into sections
         print(f"  Splitting into sections...")
         sections = self.split_markdown_by_sections(markdown_content)
         
-        # Track extracted UC numbers
+        # Track extracted UC numbers and their content
         extracted_uc_numbers = set()
+        new_uc_files = {}  # Map UC number to (filename, content)
+        
         for filename, title, content in sections:
             if filename.startswith('uc-'):
                 match = re.match(r'^uc-([\d.]+)-', filename)
                 if match:
-                    extracted_uc_numbers.add(match.group(1))
+                    uc_num = match.group(1)
+                    extracted_uc_numbers.add(uc_num)
+                    new_uc_files[uc_num] = (filename, content)
         
         # Report missing UCs
         missing_ucs = all_uc_numbers - extracted_uc_numbers
@@ -461,14 +567,85 @@ type: "section"
             for uc_num in sorted(missing_ucs, key=lambda x: [int(n) if n.isdigit() else n for n in re.split(r'\.', x)]):
                 print(f"      - UC {uc_num}")
         
-        # Write section files
+        # Process UC files - preserve, update, or create new
+        uc_preserved = 0
+        uc_updated = 0
+        uc_created = 0
+        uc_removed = 0
+        
         generated_files = []
-        for filename, title, content in sections:
+        
+        # Write or preserve UC files
+        for uc_num, (filename, content) in new_uc_files.items():
             output_path = output_dir / filename
-            with open(output_path, 'w', encoding='utf-8') as f:
-                f.write(content)
+            
+            # Check if we need to write the file
+            should_write = True
+            action = "Created"
+            
+            if output_path.exists() and uc_num in old_uc_contents:
+                # File exists, check if content is the same
+                with open(output_path, 'r', encoding='utf-8') as f:
+                    existing_content = f.read()
+                
+                # Compare the full content including YAML
+                existing_hash = hashlib.sha256(existing_content.encode('utf-8')).hexdigest()
+                new_hash = hashlib.sha256(content.encode('utf-8')).hexdigest()
+                
+                if existing_hash == new_hash:
+                    # Content identical, don't rewrite
+                    should_write = False
+                    uc_preserved += 1
+                    action = "Preserved (unchanged)"
+                else:
+                    # Content changed
+                    uc_updated += 1
+                    action = "Updated (content changed)"
+            elif uc_num in old_uc_contents:
+                # UC existed before but file doesn't exist (shouldn't happen normally)
+                uc_updated += 1
+                action = "Created (restored)"
+            else:
+                # New UC
+                uc_created += 1
+                action = "Created"
+            
+            # Write the file if needed
+            if should_write:
+                with open(output_path, 'w', encoding='utf-8') as f:
+                    f.write(content)
+            
+            print(f"    {action}: {output_path.relative_to(self.repo_root)}")
             generated_files.append(str(output_path.relative_to(self.repo_root)))
-            print(f"    Created: {output_path.relative_to(self.repo_root)}")
+        
+        # Write non-UC section files
+        for filename, title, content in sections:
+            if not filename.startswith('uc-'):
+                output_path = output_dir / filename
+                with open(output_path, 'w', encoding='utf-8') as f:
+                    f.write(content)
+                generated_files.append(str(output_path.relative_to(self.repo_root)))
+                print(f"    Created: {output_path.relative_to(self.repo_root)}")
+        
+        # Remove UC files that are no longer in the new file
+        if old_file_key:
+            old_files = self.manifest["files"][old_file_key].get("generated_files", [])
+            for rel_path in old_files:
+                if '/uc-' in rel_path:
+                    file_path = self.repo_root / rel_path
+                    filename = file_path.name
+                    match = re.match(r'^uc-([\d.]+)-', filename)
+                    if match:
+                        uc_num = match.group(1)
+                        # If this UC no longer exists in new file, remove it
+                        if uc_num not in new_uc_files and file_path.exists():
+                            file_path.unlink()
+                            uc_removed += 1
+                            print(f"    Removed (no longer exists): {rel_path}")
+                elif file_path.exists():
+                    # Remove non-UC files from old version
+                    file_path.unlink()
+                    print(f"    Removed: {rel_path}")
         
         # Update manifest
         self.manifest["files"][file_key] = {
@@ -479,7 +656,15 @@ type: "section"
             "processed_at": datetime.now().isoformat()
         }
         
+        # If this was a rename, remove the old manifest entry
+        if old_file_key and old_file_key != file_key:
+            del self.manifest["files"][old_file_key]
+            print(f"  Removed old manifest entry for: {old_file_key}")
+        
+        # Print summary
         print(f"  Generated {len(generated_files)} files ({len(extracted_uc_numbers)} UC files)")
+        if old_uc_contents:
+            print(f"  UC Summary: {uc_preserved} preserved, {uc_updated} updated, {uc_created} created, {uc_removed} removed")
     
     def cleanup_old_files(self, file_key: str):
         """Remove old generated files for a source file"""
