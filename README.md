@@ -38,6 +38,12 @@ srs/
    - Individual UC and section files placed directly in module directory with descriptive names
 5. **Tracking**: Maintains a manifest with SHA256 hashes to detect changes
 6. **Cleanup**: Automatically removes old files when sources are updated or deleted
+7. **Smart Rename Detection**: When SRS files are renamed (e.g., v0.2 → v0.3):
+   - Detects renames by matching module name and SRS prefix pattern
+   - Compares UC content between old and new files
+   - Preserves unchanged UC files (no data loss)
+   - Updates only modified UC files
+   - Removes UC files that no longer exist
 
 ### File Naming Convention
 
@@ -143,6 +149,7 @@ The GitHub Action (`.github/workflows/convert-srs.yml`) triggers on:
 ✅ **AI-Friendly**: Optimized for Copilot context retrieval  
 ✅ **Version Controlled**: All changes tracked in Git  
 ✅ **Clean**: Automatically removes outdated files  
+✅ **Smart Rename Handling**: Preserves UC files when SRS documents are renamed  
 
 ## Requirements
 
@@ -164,6 +171,11 @@ The GitHub Action (`.github/workflows/convert-srs.yml`) triggers on:
 **Issue: Use Cases not splitting correctly**
 - Verify H3 headings start with "UC" or "UC " followed by a number
 - Check the DOCX document structure
+
+**Issue: UC files deleted after rename**
+- This issue has been fixed! The script now preserves UC files when SRS documents are renamed
+- The script detects renames by matching module name and SRS prefix
+- Only UC files with changed content are updated; unchanged files are preserved
 
 ## Contributing
 
