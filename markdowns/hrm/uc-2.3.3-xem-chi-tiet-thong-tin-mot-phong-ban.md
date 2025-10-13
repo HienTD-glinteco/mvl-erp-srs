@@ -6,12 +6,17 @@ uc_number: "2.3.3"
 
 ### UC 2.3.3: Xem chi tiết thông tin một Phòng ban
 
+  ------------------------------------------------------------------------------------------------------------------------------------
   **Mục tiêu:**               Cho phép người dùng xem thông tin chi tiết một Phòng ban
   --------------------------- --------------------------------------------------------------------------------------------------------
   **Tài khoản:**              Tài khoản được phân quyền xem Phòng ban trong phân hệ "Quản lý Phòng ban"
+
   **Sự kiện kích hoạt:**      Người dùng nhấn nút "Xem chi tiết" của Phòng ban tương ứng trong màn danh sách của "Quản lý Phòng ban"
+
   **Điều kiện tiên quyết:**   Người dùng login vào hệ thống với tài khoản được phân quyền tương ứng
+
   **Kết quả bắt buộc:**       Hệ thống hiển thị màn hình "Chi tiết" thông tin của Phòng ban
+  ------------------------------------------------------------------------------------------------------------------------------------
 
 #### Quy tắc nghiệp vụ
 

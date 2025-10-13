@@ -6,12 +6,17 @@ uc_number: "2.1.3"
 
 ### UC 2.1.3: Xem chi tiết thông tin một Chi nhánh
 
+  -------------------------------------------------------------------------------------------------------------------------------------
   **Mục tiêu:**               Cho phép người dùng xem thông tin chi tiết một Chi nhánh
   --------------------------- ---------------------------------------------------------------------------------------------------------
   **Tài khoản:**              Tài khoản được phân quyền xem Chi nhánh trong phân hệ "Quản lý Chi nhánh"
+
   **Sự kiện kích hoạt:**      Người dùng nhấn nhấn nút "Xem chi tiết" Chi nhánh tương ứng trong màn danh sách của "Quản lý Chi nhánh"
+
   **Điều kiện tiên quyết:**   Người dùng login vào hệ thống với tài khoản được phân quyền tương ứng
+
   **Kết quả bắt buộc:**       Hệ thống hiển thị màn hình "Chi tiết" thông tin của Chi nhánh
+  -------------------------------------------------------------------------------------------------------------------------------------
 
 #### Quy tắc nghiệp vụ
 

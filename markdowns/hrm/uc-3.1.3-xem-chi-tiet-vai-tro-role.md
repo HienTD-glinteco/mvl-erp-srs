@@ -6,12 +6,17 @@ uc_number: "3.1.3"
 
 ### UC 3.1.3: Xem chi tiết Vai trò (Role)
 
+  -----------------------------------------------------------------------------------------------------------------------------------------------
   **Mục tiêu:**               Cho phép người dùng xem thông tin chi tiết một Vai trò (Role)
   --------------------------- -------------------------------------------------------------------------------------------------------------------
   **Tài khoản:**              Tài khoản được phân quyền xem chi tiết trong phân hệ "Quản lý Vai trò (Role)"
+
   **Sự kiện kích hoạt:**      Người dùng nhấn nhấn nút "Xem chi tiết" vai trò (Role) tương ứng trong màn danh sách của "Quản lý Vai trò (Role)"
+
   **Điều kiện tiên quyết:**   Người dùng login vào hệ thống với tài khoản được phân quyền tương ứng
+
   **Kết quả bắt buộc:**       Hệ thống hiển thị màn hình "Chi tiết" thông tin của Vai trò
+  -----------------------------------------------------------------------------------------------------------------------------------------------
 
 #### Quy tắc nghiệp vụ
 

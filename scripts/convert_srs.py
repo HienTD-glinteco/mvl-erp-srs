@@ -494,12 +494,40 @@ type: "section"
         if file_key in self.manifest["files"]:
             old_hash = self.manifest["files"][file_key].get("hash")
             if old_hash == file_hash:
-                print(f"  Skipping (unchanged): {docx_path.name}")
-                return
-            
-            # File changed, we'll need to compare UCs
-            print(f"  File changed, will compare UC content...")
-            old_file_key = file_key
+                # Quick validation: check if generated files actually exist
+                old_files = self.manifest["files"][file_key].get("generated_files", [])
+                missing_files = []
+                for rel_path in old_files:
+                    file_path = self.repo_root / rel_path
+                    if not file_path.exists():
+                        missing_files.append(rel_path)
+                
+                if missing_files:
+                    print(f"  ⚠️  File unchanged but {len(missing_files)} generated file(s) are missing")
+                    print(f"  Regenerating to restore missing files...")
+                    old_file_key = file_key
+                else:
+                    # Also verify UC count matches the source to catch incomplete generations
+                    # Do a quick conversion to check UC count
+                    markdown_content = self.convert_docx_to_markdown(docx_path)
+                    markdown_content = self.post_process_markdown(markdown_content)
+                    all_uc_numbers = self.extract_all_uc_numbers(markdown_content)
+                    
+                    # Count UC files in manifest
+                    uc_files_in_manifest = [f for f in old_files if '/uc-' in f]
+                    
+                    if len(uc_files_in_manifest) < len(all_uc_numbers):
+                        print(f"  ⚠️  File unchanged but UC count mismatch:")
+                        print(f"      Manifest has {len(uc_files_in_manifest)} UC files, source has {len(all_uc_numbers)} UCs")
+                        print(f"  Regenerating to create missing UC files...")
+                        old_file_key = file_key
+                    else:
+                        print(f"  Skipping (unchanged): {docx_path.name}")
+                        return
+            else:
+                # File changed, we'll need to compare UCs
+                print(f"  File changed, will compare UC content...")
+                old_file_key = file_key
         else:
             # Check if this might be a renamed file
             old_file_key = self.find_renamed_file(docx_path.name, module_name)
