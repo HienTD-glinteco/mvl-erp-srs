@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "last_updated": "2025-10-13T07:13:09.994082",
+  "last_updated": "2025-10-13T07:20:19.112475",
   "files": {
     "SRS - HRM (1,2,3,4)_v0.2 - Formatted.docx": {
       "hash": "68f6790acfe81c39a5e9d2206f34b6e88fbde884b69cc2c0e386a77c074c9cf9",
@@ -108,7 +108,7 @@
         "markdowns/hrm/phan-he-quan-ly-phan-quyen.md",
         "markdowns/hrm/phan-he-quan-ly-tuyen-dung.md"
       ],
-      "processed_at": "2025-10-13T07:12:23.560817"
+      "processed_at": "2025-10-13T07:16:41.962712"
     }
   }
 }
