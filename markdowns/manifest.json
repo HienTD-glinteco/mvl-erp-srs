@@ -1,9 +1,9 @@
 {
   "version": "1.0",
-  "last_updated": "2025-10-10T09:44:01.191267",
+  "last_updated": "2025-10-13T05:51:35.102091",
   "files": {
-    "SRS - HRM (1,2,3,4,5) - Bản Tổng hợp - Formatted.docx": {
-      "hash": "4fa9bc838b3774cb4d3374371e7d0c79ea3ea7b36d902fdda402df7a772fa944",
+    "SRS - HRM (1,2,3,4)_v0.2 - Formatted.docx": {
+      "hash": "68f6790acfe81c39a5e9d2206f34b6e88fbde884b69cc2c0e386a77c074c9cf9",
       "module": "hrm",
       "output_dir": "markdowns/hrm",
       "generated_files": [
@@ -106,53 +106,10 @@
         "markdowns/hrm/uc-4.8.8-ket-xuat-bao-cao-kenh-tuyen-dung.md",
         "markdowns/hrm/uc-4.8.9-xem-bao-cao-bao-cao-chi-phi-tuyen-dung.md",
         "markdowns/hrm/uc-4.8.10-ket-xuat-bao-cao-chi-phi-tuyen-dung.md",
-        "markdowns/hrm/phan-he-quan-ly-nhan-su.md",
-        "markdowns/hrm/uc-5.1.1-xem-danh-sach-ho-so-nhan-vien.md",
-        "markdowns/hrm/uc-5.1.2-xem-chi-tiet-thong-tin-mot-nhan-vien.md",
-        "markdowns/hrm/uc-5.1.3-tim-kiem-ho-so-nhan-vien.md",
-        "markdowns/hrm/uc-5.1.4-tao-moi-mot-ho-so-nhan-vien.md",
-        "markdowns/hrm/uc-5.1.5-tao-ban-sao-cua-mot-nhan-vien-da-co-duplicate.md",
-        "markdowns/hrm/uc-5.1.6-chinh-sua-thong-tin-cua-mot-ho-so-nhan-vien.md",
-        "markdowns/hrm/uc-5.1.7-xoa-mot-nhan-vien-da-co.md",
-        "markdowns/hrm/uc-5.1.8-import-danh-sach-nhan-vien.md",
-        "markdowns/hrm/uc-5.1.9-export-danh-sach-nhan-vien.md",
-        "markdowns/hrm/uc-5.2.1-xem-danh-sach-bang-cap-chung-chi-moi-gioi.md",
-        "markdowns/hrm/uc-5.2.2-tim-kiem-thong-tin-mot-bang-cap-chung-chi-moi-gioi.md",
-        "markdowns/hrm/uc-5.2.3-tao-moi-bang-capchung-chi-moi-gioi.md",
-        "markdowns/hrm/uc-5.2.4-xem-chi-tiet-thong-tin-mot-bang-cap-cua-mot-nhan-v.md",
-        "markdowns/hrm/uc-5.2.5-chinh-sua-thong-tin-cua-mot-bang-capchung-chi-moi-.md",
-        "markdowns/hrm/uc-5.2.6-xoa-mot-bang-cap-chung-chi-moi-gioi.md",
-        "markdowns/hrm/uc-5.3.1-xem-danh-sach-quan-he-nhan-than-cua-nhan-vien.md",
-        "markdowns/hrm/uc-5.3.2-tim-kiem-thong-tin-quan-he-nhan-than-cua-nhan-vien.md",
-        "markdowns/hrm/uc-5.3.3-tao-moi-mot-quan-he-nhan-than-cua-nhan-vien.md",
-        "markdowns/hrm/uc-5.3.4-xem-chi-tiet-thong-tin-mot-quan-he-nhan-than-cua-n.md",
-        "markdowns/hrm/uc-5.3.5-chinh-sua-thong-tin-cua-mot-quan-he-nhan-than-cua-.md",
-        "markdowns/hrm/uc-5.3.6-xoa-mot-quan-he-nhan-than-cua-nhan-vien.md",
-        "markdowns/hrm/uc-5.4.1-xem-danh-sach-nguoi-phu-thuoc-cua-nhan-vien.md",
-        "markdowns/hrm/uc-5.4.2-tim-kiem-thong-tin-nguoi-phu-thuoc-cua-nhan-vien.md",
-        "markdowns/hrm/uc-5.4.3-tao-moi-mot-nguoi-phu-thuoc-cua-nhan-vien.md",
-        "markdowns/hrm/uc-5.4.4-xem-chi-tiet-thong-tin-mot-nguoi-phu-thuoc-cua-nha.md",
-        "markdowns/hrm/uc-5.4.5-chinh-sua-thong-tin-cua-mot-nguoi-phu-thuoc-cua-nh.md",
-        "markdowns/hrm/uc-5.4.6-xoa-mot-nguoi-phu-thuoc-cua-nhan-vien.md",
-        "markdowns/hrm/uc-5.5.1-xem-danh-sach-cac-danh-vien-cung-lich-su-cong-tac-.md",
-        "markdowns/hrm/uc-5.5.2-tim-kiem-thong-tin-nhan-vien-de-xem-lich-su-cong-t.md",
-        "markdowns/hrm/uc-5.5.3-xem-lich-su-cong-tac-cua-mot-nhan-vien-tat-ca-cac-.md",
-        "markdowns/hrm/phan-he-quan-ly-cham-cong.md",
-        "markdowns/hrm/phan-he-con-quan-ly-thiet-bi-cham-cong-wi-fi.md",
-        "markdowns/hrm/phan-he-con-quan-ly-dinh-vi-du-an.md",
-        "markdowns/hrm/uc-6.3.1-xem-danh-sach-lich-lam-viec.md",
-        "markdowns/hrm/uc-6.4.1-xem-danh-sach-tim-kiem-ngay-le.md",
-        "markdowns/hrm/uc-6.4.2-tao-moi-1-ngay-le.md",
-        "markdowns/hrm/uc-6.4.3-xem-chi-tiet-1-ngay-le.md",
-        "markdowns/hrm/uc-6.4.4-chinh-sua-thong-tin-1-ngay-le.md",
-        "markdowns/hrm/uc-6.4.5-xoa-thong-tin-1-ngay-le.md",
-        "markdowns/hrm/uc-6.5.1-xem-danh-sach-bang-cham-cong.md",
-        "markdowns/hrm/uc-6.5.2-loc-thong-tin-tim-kiem-nhan-vien-trong-bang-cham-c.md",
-        "markdowns/hrm/uc-6.5.3-xem-chi-tiet-lich-su-mot-ngay-cham-cong-cua-nhan-v.md",
-        "markdowns/hrm/uc-6.5.4-export-danh-sach-bang-cham-cong.md",
-        "markdowns/hrm/uc-7-.md"
+        "markdowns/hrm/uc-4.8.11-xem-bao-cao-thong-ke-so-luong-ung-vien-trung-tuyen.md",
+        "markdowns/hrm/uc-4.8.12-ket-xuat-bao-cao-thong-ke-so-luong-ung-vien-trung-.md"
       ],
-      "processed_at": "2025-10-10T09:43:17.693190"
+      "processed_at": "2025-10-13T05:51:35.091701"
     }
   }
 }
