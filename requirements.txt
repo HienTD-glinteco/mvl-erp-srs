@@ -1,0 +1,6 @@
+# Python dependencies for SRS DOCX to Markdown Converter
+# Used by scripts/convert_srs.py
+
+# unidecode - ASCII transliterations of Unicode text
+# Used for converting Vietnamese text to URL-friendly slugs
+unidecode>=1.3.0
