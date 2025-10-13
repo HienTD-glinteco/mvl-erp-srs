@@ -6,12 +6,17 @@ uc_number: "2.2.3"
 
 ### UC 2.2.3: Xem chi tiết thông tin một Khối
 
+  ------------------------------------------------------------------------------------------------------------------------------------------
   **Mục tiêu:**               Cho phép người dùng xem thông tin chi tiết một Khối
   --------------------------- --------------------------------------------------------------------------------------------------------------
   **Tài khoản:**              Tài khoản được phân quyền xem Khối trong phân hệ "Quản lý Khối"
+
   **Sự kiện kích hoạt:**      Người dùng nhấn nút "Xem chi tiết" của Khối tương ứng trong màn danh sách của "Quản lý Khối"
+
   **Điều kiện tiên quyết:**   Người dùng login vào hệ thống với tài khoản được phân quyền tương ứng
+
   **Kết quả bắt buộc:**       Hệ thống hiển thị màn hình "Chi tiết" thông tin của Khối với thông tin theo lần thay đổi cuối cùng tương ứng
+  ------------------------------------------------------------------------------------------------------------------------------------------
 
 #### Quy tắc nghiệp vụ
 

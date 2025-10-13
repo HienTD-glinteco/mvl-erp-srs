@@ -6,12 +6,17 @@ uc_number: "2.4.3"
 
 ### UC 2.4.3: Xem chi tiết thông tin một Chức vụ
 
+  ---------------------------------------------------------------------------------------------------------------------------------------------
   **Mục tiêu:**               Cho phép người dùng xem thông tin chi tiết một Chức vụ
   --------------------------- -----------------------------------------------------------------------------------------------------------------
   **Tài khoản:**              Tài khoản được phân quyền xem chức vụ trong phân hệ "Quản lý Chức vụ"
+
   **Sự kiện kích hoạt:**      Người dùng nhấn nút "Xem chi tiết" của Chức vụ tương ứng trong màn danh sách của "Quản lý Chức vụ"
+
   **Điều kiện tiên quyết:**   Người dùng login vào hệ thống với tài khoản được phân quyền tương ứng
+
   **Kết quả bắt buộc:**       Hệ thống hiển thị màn hình "Chi tiết" thông tin của Chức vụ với thông tin theo lần thay đổi cuối cùng tương ứng
+  ---------------------------------------------------------------------------------------------------------------------------------------------
 
 #### Quy tắc nghiệp vụ
 
